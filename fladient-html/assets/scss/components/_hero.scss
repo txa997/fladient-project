@@ -1,0 +1,203 @@
+/* 
+    hero-1-start
+*/
+.fd-hero-1 {
+
+    &-area {
+        padding-top: 210px;
+        padding-bottom: 365px;
+        position: relative;
+        z-index: 1;
+
+        @media #{$md,$xs} {
+            padding-bottom: 255px;
+        }
+    }
+
+    &-app-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        &-width {
+            position: relative;
+            z-index: 1;
+            max-width: 1920px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        &-1 {
+            width: 32%;
+            position: absolute;
+            top: 6%;
+            left: -190px;
+
+            @media #{$md} {
+                left: -60px;
+            }
+
+            @media #{$xs} {
+                left: 0px;
+                width: 40%;
+            }
+        }
+        
+        &-2 {
+            position: absolute;
+            left: -6%;
+            width: 15%;
+            top: 48%;
+            box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.22);
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+        }
+
+        &-3 {
+            position: absolute;
+            left: 11%;
+            bottom: 0;
+            width: 14%;
+            box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.10);
+
+            @media #{$xs} {
+                width: 44%;
+            }
+        }
+
+        &-4 {
+            position: absolute;
+            right: 3%;
+            top: 15%;
+            width: 16%;
+            box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.05);
+
+            @media #{$xs} {
+                top: 9%;
+                width: 46%;
+            }
+        }
+
+        &-5 {
+            position: absolute;
+            right: 0;
+            top: 35%;
+            width: 17%;
+            box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.15);
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+        }
+
+        &-6 {
+            position: absolute;
+            right: 12%;
+            width: 15%;
+            bottom: 16%;
+            box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.22);
+
+            @media #{$xs} {
+                display: none;
+            }
+        }
+
+        &-7 {
+            position: absolute;
+            right: 1%;
+            bottom: 9%;
+            width: 9%;
+            box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.15);
+            
+            @media #{$xs} {
+                bottom: 0%;
+                width: 24%;
+            }
+        }
+    }
+
+    &-bg-illus {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 51%;
+        z-index: -2;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+
+    &-content {
+        max-width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media #{$xl} {
+            max-width: 790px;
+        }
+
+        @media #{$lg} {
+            max-width: 650px;
+        }
+
+
+
+        .fd-subtitle-1 {
+            margin-bottom: 30px;
+        }
+
+        .hero-title {
+            font-size: 80px;
+            margin-bottom: 20px;
+
+            @media #{$xxl} {
+                font-size: 70px;
+            }
+
+            @media #{$xl} {
+                font-size: 60px;
+            }
+
+            @media #{$lg} {
+                font-size: 50px;
+            }
+
+            @media #{$md} {
+                font-size: 45px;
+            }
+
+            @media #{$xs} {
+                font-size: 32px;
+            }
+
+            @media #{$sm} {
+                font-size: 40px;
+            }
+        }
+
+        .hero-disc {
+            font-size: 25px;
+            line-height: 1.6;
+            color: #000;
+            margin-bottom: 50px;
+
+            @media #{$xl,$lg,$md,$xs} {
+                font-size: 20px; 
+            }
+        }
+    }
+}
+/* 
+    hero-1-end
+*/

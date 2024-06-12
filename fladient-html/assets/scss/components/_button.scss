@@ -1,0 +1,237 @@
+
+/* 
+    button-component-start
+*/
+
+/* 
+    mobile-menu-btn-1-start
+*/
+.fd-mobile-menu-btn-1 {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    transition: 500ms var(--cube-2);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    
+    span {
+        display: block;
+        background: #000;
+        width: 100%;
+        height: 3px;
+        transition: 500ms var(--cube-2);  
+        border-radius: 3px;
+
+        &:nth-child(2) {
+            width: 80%;
+        }
+
+        &:nth-child(3) {
+            width: 60%;
+        }
+    }
+    &:focus {
+
+    }
+    &:hover {
+        span {
+
+            &:nth-child(1) {
+                width: 60%;
+            }
+
+            &:nth-child(2) {
+                width: 80%;
+            }
+    
+            &:nth-child(3) {
+                width: 100%;
+            }
+
+            background: var(--fd-clr-pr-1);
+        }
+    }
+}
+/* 
+    mobile-menu-btn-1-end 
+*/
+
+/* 
+    pr-btn-1-start
+*/
+
+.fd-pr-btn-1 {
+    display: inline-block;
+    font-family: var(--kd-font-pr-1);
+    color: #22281e;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1;
+    background: #000;
+    border-radius: 30px;
+    padding: 20px 31px;
+    position: relative;
+    z-index: 1;
+    transition: .3s var(--cube-1);
+
+    .icon {
+        display: inline-block;
+        margin-left: 5px;
+        transition: .3s var(--cube-1);
+    }
+
+    .text {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin-bottom: -3px;
+
+        &::after {
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            display: block;
+            transition: 0.5s;
+            position: absolute;
+            background: transparent;
+            color: #000;
+            content: attr(data-back);
+            transform: translateX(-100%);
+        }
+    
+        &::before {
+            top: 0;
+            left: 0;
+            opacity: 1;
+            display: block;
+            transition: 0.5s;
+            position: relative;
+            background: var(--blta-pr-1);
+            color: #fff;
+            content: attr(data-front);
+            transform: translateX(0);
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        background: var(--fd-clr-pr-1);
+        .text {
+            &::after {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            &::before {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+        }
+
+    }
+
+}
+/* 
+    pr-btn-1-end
+*/
+
+
+/* 
+    search-btn-1-start
+*/
+.fd-search-btn-1 {
+    background: transparent;
+    font-size: 22px;
+    color: #000;
+    transition: .3s ease;
+
+    &:hover {
+        color: var(--fd-clr-pr-1);
+    }
+}
+/* 
+    search-btn-1-end
+*/
+
+/* 
+    search-btn-1-start
+*/
+.fd-cart-btn-1 {
+    background: transparent;
+    font-size: 22px;
+    color: #000;
+    transition: .3s ease;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        color: var(--fd-clr-pr-1);
+    }
+
+    .count {
+        width: 25px;
+        height: 25px;
+        background: #7141b1;
+        border-radius: 50%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 500;
+        position: absolute;
+        bottom: -6px;
+        left: -10px;
+    }
+}
+/* 
+    search-btn-1-end
+*/
+
+
+/* 
+    lang-switch-btn-start
+*/
+.fd-lang-switch-btn-1 {
+    font-family: var(--fd-font-pr-1);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    gap: 5px;
+    flex: 0 0 auto;
+    line-height: 1.5;
+
+    span , .switch-btn {
+        opacity: 50%;
+        transition: .3s ease;
+    }
+
+    .switch-btn {
+        &:hover {
+            color: var(--kd-clr-pr-1);
+        }
+        &:is(.active) {
+            opacity: 100%;
+        }
+    }
+}
+
+/* 
+    lang-switch-btn-end
+*/
+
+/* 
+    button-component-end
+*/

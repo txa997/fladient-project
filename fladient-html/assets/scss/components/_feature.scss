@@ -1,0 +1,53 @@
+/* 
+    feature-1-start
+*/
+.fd-feature-1 {
+    &-area {
+        background-color: #000;
+    }
+
+    &-scn-title {
+        max-width: 1180px;
+    }
+
+    &-slider {
+        padding-right: 50px;
+
+
+
+        &-item {
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            img {
+                transition: 2s ease-in-out;
+                transform: scale(1.5);
+            }
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        .swiper-container {
+            height: 745px;
+            .swiper-slide {
+                &:is(.swiper-slide-active) {
+                    .fd-feature-1-slider-item img {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+/* 
+    feature-1-end
+*/
