@@ -222,14 +222,27 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 
-.fd-split-text {
+.txaa-split-text {
 	text-transform: unset !important;
-	letter-spacing: -.5px;
 	overflow: hidden;
-    perspective: 2000px;
-    transform-style: preserve-3d;
-    padding-bottom: 4px;
 	.split-line {
+        overflow: hidden;
+		div {
+
+			div {
+				&:nth-child(1) {
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}
+
+.txaa-split-text-2 {
+	text-transform: unset !important;
+	overflow: hidden;
+	.split-line {
+        overflow: hidden;
 		div {
 
 			div {

@@ -1547,15 +1547,25 @@ input:focus::placeholder, textarea:focus::placeholder {
   z-index: 1;
 }
 
-.fd-split-text {
+.txaa-split-text {
   text-transform: unset !important;
-  letter-spacing: -0.5px;
   overflow: hidden;
-  perspective: 2000px;
-  transform-style: preserve-3d;
-  padding-bottom: 4px;
 }
-.fd-split-text .split-line div div:nth-child(1) {
+.txaa-split-text .split-line {
+  overflow: hidden;
+}
+.txaa-split-text .split-line div div:nth-child(1) {
+  text-transform: capitalize;
+}
+
+.txaa-split-text-2 {
+  text-transform: unset !important;
+  overflow: hidden;
+}
+.txaa-split-text-2 .split-line {
+  overflow: hidden;
+}
+.txaa-split-text-2 .split-line div div:nth-child(1) {
   text-transform: capitalize;
 }
 

@@ -179,43 +179,74 @@ if (menuToggle2) {
 }
 
 // title-start
-$(window).on('load',function(){
-	var st = $(".kd-split-text");
+const st = $(".txaa-split-text");
+const st2 = $(".txaa-split-text-2");
 
-	if(st.length == 0) return; gsap.registerPlugin(SplitText); st.each(function(index, el) {
+if(st.length == 0) return; gsap.registerPlugin(SplitText); st.each(function(index, el) {
 
-	  el.split = new SplitText(el, { 
-		type: "lines,words,chars",
-		linesClass: "split-line"
-	  });
+	el.split = new SplitText(el, { 
+	type: "lines,words,chars",
+	linesClass: "split-line"
+	});
 
-	  gsap.set(el, { perspective: 400 });
-	
-	  if( $(el).hasClass('kd-title-ani') ){
-		gsap.set(el.split.chars, {
-		  opacity: 1,
-		  color:'#005e4f',
-		  x: "50",
-		  ease: "Back.easeOut",
-		});
-	  }
-	  
-	
-	  el.anim = gsap.to(el.split.chars, {
-		scrollTrigger: {
-		  trigger: el,
-		  start: "top 90%",
-		},
-		x: "0",
-		y: "0",
-		color: 'inherit',
+	gsap.set(el, { perspective: 400 });
+
+	if( $(el).hasClass('txaa-split-ani-1') ){
+	gsap.set(el.split.words, {
 		opacity: 1,
-		duration: 1, 
-		stagger: 0.02,
-	  });
+		y: "-100",
 
 	});
-})
+	}
+
+	el.anim = gsap.to(el.split.words, {
+	scrollTrigger: {
+		trigger: el,
+		start: "top 90%",
+	},
+	x: "0",
+	y: "0",
+	opacity: 1,
+	duration: .7,
+	ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
+	stagger: 0.2,
+	});
+
+});
+
+if(st2.length == 0) return; gsap.registerPlugin(SplitText); st2.each(function(index, el) {
+
+	el.split = new SplitText(el, { 
+	type: "lines,words,chars",
+	linesClass: "split-line"
+	});
+
+	gsap.set(el, { perspective: 400 });
+
+	if( $(el).hasClass('txaa-split-ani-2') ){
+	gsap.set(el.split.words, {
+		opacity: 1,
+		y: "-100",
+	});
+	}
+
+	el.anim = gsap.to(el.split.words, {
+	scrollTrigger: {
+		trigger: el,
+		start: "top 90%",
+	},
+	x: "0",
+	y: "0",
+	opacity: 1,
+	duration: 2,
+	duration: .5,
+	ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
+	stagger: 0.1,
+	delay: 1,
+	});
+
+});
+
 
 
 // course-1-slider
