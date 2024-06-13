@@ -28,6 +28,10 @@
         color: #fff;
     }
 
+    &:is(.has-para-sm) {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 
@@ -90,6 +94,10 @@
         }
     }
 
+    @media #{$xxl} {
+        font-size: 60px;
+    }
+
     @media #{$xl} {
         font-size: 50px;
     }
@@ -99,14 +107,14 @@
     }
 
     @media #{$md} {
-        font-size: 38px;
+        font-size: 35px;
     }
     
     @media #{$xs} {
-        font-size: 28px;
+        font-size: 26px;
     }
     @media #{$sm} {
-        font-size: 35px;
+        font-size: 30px;
     }
 
 

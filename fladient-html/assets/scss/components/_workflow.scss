@@ -1,0 +1,94 @@
+/* 
+    workflow-1-start
+*/
+.fd-workflow-1 {
+    &-area {
+        background: #000;
+    }
+
+    &-scn-title {
+        border-bottom: 1px solid #243334;
+        padding-bottom: 40px;
+    }
+
+    &-img {
+        margin-left: -250px;
+
+        @media #{$md,$xs} {
+            margin-left: 0px;
+        }
+
+        &-wrap {
+            position: relative;
+            z-index: 1;
+            padding-right: 30px;
+        }
+
+        &-il {
+            width: 59%;
+            height: 195px;
+            border-radius: 20px;
+            box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.05);
+            position: absolute;
+            top: 20px;
+            left: -90px;
+
+            @media #{$xxl,$xl,$lg,$md} {
+                left: 0;
+            }
+
+            @media #{$xs} {
+                display: none;
+                left: 0;
+            }
+        }
+    }
+
+    &-content {
+        .inner-div {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+
+            @media #{$xs} {
+                grid-template-columns: 1fr;
+            }
+
+            .left {
+                border-right: 1px solid #243334;
+                padding-right: 30px;
+                padding-top: 50px;
+
+                @media #{$xs} {
+                    padding-right: 0px;
+                    border-right: none;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .scn-disc {
+            margin-bottom: 35px;
+        }
+    }
+
+    &-item-wrap {
+        .fd-feature-1-item {
+            padding-top: 30px;
+            padding-left: 30px;
+
+            @media #{$xs} {
+                padding-left: 0px;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #243334;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+/* 
+    workflow-1-end
+*/

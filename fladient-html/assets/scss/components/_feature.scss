@@ -13,6 +13,14 @@
     &-slider {
         padding-right: 50px;
 
+        @media #{$lg} {
+            padding-right: 0px;
+        }
+
+        @media #{$md,$xs} {
+            padding-right: 0px;
+            margin-bottom: 50px;
+        }
 
 
         &-item {
@@ -34,6 +42,20 @@
 
         .swiper-container {
             height: 745px;
+
+
+            @media #{$xl,$lg,$md,$xs} {
+                height: 600px;
+            }
+
+            @media #{$xs} {
+                height: 400px;
+            }
+
+            @media #{$sm} {
+                height: 500px;
+            }
+
             .swiper-slide {
                 &:is(.swiper-slide-active) {
                     .fd-feature-1-slider-item img {
@@ -41,6 +63,125 @@
                     }
                 }
             }
+        }
+    }
+    
+
+    &-pagination {
+        @media #{$lg,$md,$xs} {
+            display: flex;
+            transform: unset !important;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 20px;
+        }
+
+        &-posi {
+            position: absolute;
+            top: 50%;
+            left: -74px;
+            transform: translateY(-50%);
+
+            @media #{$xxl} {
+                left: -30px;
+            }
+
+            @media #{$xl} {
+                left: -30px;
+            }
+
+            @media #{$lg,$md,$xs} {
+                position: unset;
+                transform: unset;
+            }
+        }
+
+        span {
+            width: 13px;
+            height: 28px;
+            border-radius: 6.5px;
+            background: #21201d;
+            opacity: 1;
+            transition: .3s ease-in-out;
+
+            &:is(.swiper-pagination-bullet-active) {
+                background: var(--fd-clr-pr-1);
+            }
+        }
+    }
+
+    &-item-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px 45px;
+        max-width: 530px;
+
+        @media #{$lg} {
+            gap: 50px 25px;
+        }
+
+        @media #{$xs} {
+            gap: 50px 25px;
+            grid-template-columns: 1fr ;
+        }
+
+        @media #{$sm} {
+            gap: 50px 25px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &-item {
+        .item-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #4586FA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 22px;
+            margin-bottom: 13px;
+        }
+
+        .item-title {
+            font-size: 25px;
+            margin-bottom: 7px;
+
+            @media #{$lg,$md,$xs} {
+                font-size: 22px;
+            }
+        }
+
+        .item-disc {
+            color: #aeaeae;
+        }
+
+
+        &:nth-child(2) {
+            .item-icon {
+                background: #F76551;
+            }
+        }
+
+        &:nth-child(3) {
+            .item-icon {
+                background: #53CF84;
+            }
+        }
+
+        &:nth-child(4) {
+            .item-icon {
+                background: #AE52FB;
+            }
+        }
+    }
+
+    &-content {
+        .scn-disc {
+            color: #aeaeae;
+            margin-bottom: 70px;
         }
     }
     
