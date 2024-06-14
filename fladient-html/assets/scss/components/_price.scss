@@ -18,6 +18,27 @@
         border-radius: 140px;
         gap: 35px;
 
+        @media #{$xl} {
+            grid-template-columns: 0.7fr 1.1fr 1fr auto;
+            padding: 50px 60px;
+        }
+
+        @media #{$lg,$md} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+            padding: 50px 35px;
+            border-radius: 40px;
+        }
+
+        @media #{$sm} {
+            grid-template-columns: 1fr;
+            padding: 50px 70px;
+            border-radius: 140px;
+        }
+
         &:not(:last-child) {
             margin-bottom: 20px;
         }
@@ -32,6 +53,14 @@
         .item-title {
             font-size: 35px;
             margin-bottom: 10px;
+
+            @media #{$xl,$lg,$md} {
+                font-size: 32px;
+            }
+
+            @media #{$xs} {
+                font-size: 26px;
+            }
         }
 
         .item-disc {
@@ -61,6 +90,8 @@
         }
     }
 }
+
+
 /* 
     price-1-end
 */
