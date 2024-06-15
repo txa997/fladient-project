@@ -2,6 +2,12 @@
     reports-1-start
 */
 .fd-reports-1 {
+
+    &-area {
+        padding-top: 240px;
+        padding-bottom: 220px;
+    }
+
     &-scn-title {
         margin-right: -10px;
 
@@ -11,6 +17,10 @@
     }
 
     &-content {
+        @media #{$md,$xs} {
+            margin-bottom: 50px;
+        }
+
         .fd-list-1 li {
             color: #000;
             font-weight: 900;
@@ -24,6 +34,22 @@
             grid-template-columns: 1.2fr 1fr;
             gap: 30px;
             align-items: center;
+
+            @media #{$xl} {
+                grid-template-columns: 1.5fr 1fr;
+            }
+
+            @media #{$lg} {
+                grid-template-columns: 1fr;
+            }
+
+            @media #{$xs} {
+                grid-template-columns: 1fr;
+            }
+
+            @media #{$sm} {
+                grid-template-columns: 1.2fr 1fr;
+            }
         }
     }
 
@@ -31,6 +57,14 @@
         padding-left: 220px;
         position: relative;
         z-index: 1;
+
+        @media #{$xs} {
+            padding-left: 0px;
+        }
+
+        @media #{$sm} {
+            padding-left: 220px;
+        }
     }
 
     &-img {
@@ -45,7 +79,6 @@
         }
 
         &-3 {
-            height: 135px;
             width: 30%;
             position: absolute;
             top: 11%;
@@ -58,6 +91,10 @@
             position: absolute;
             bottom: -20%;
             left: 9%;
+
+            @media #{$xl,$lg,$md,$xs} {
+                left: 0%;
+            }
         }
 
         &-illus-1 {
@@ -85,6 +122,18 @@
     &-number {
         font-size: 95px;
         line-height: 1;
+
+        @media #{$xl,$lg,$md} {
+            font-size: 70px;
+        }
+
+        @media #{$xs} {
+            font-size: 50px;
+        }
+
+        @media #{$sm} {
+            font-size: 70px;
+        }
     }
     &-text {
         font-size: 20px;
