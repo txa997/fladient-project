@@ -285,25 +285,15 @@ $(".kd-price-1-table-feature-item").on("click", function(){
 	marquee-activiton
 */
 $('.js-marquee-wrapper').marquee({
-	speed: 100,
-	gap: 30,
+	speed: 50,
+	gap: 12,
 	delayBeforeStart: 0,
 	direction: 'left',
 	duplicated: true,
 	pauseOnHover: true,
 	startVisible:true,
 })
-  
-$('.js-marquee-wrapper-2').marquee({
-	speed: 100,
-	gap: 30,
-	delayBeforeStart: 0,
-	direction: 'right',
-	duplicated: true,
-	pauseOnHover: true,
-	startVisible:true,
-})
-  
+
   
 /*
 	mouse-move-animation

@@ -1,0 +1,109 @@
+/* 
+    interactive-1-start
+*/
+.fd-interactive-1 {
+    &-img {
+        height: 740px;
+        @media #{$xl,$lg,$md,$xs} {
+            height: 100%;
+        }
+
+
+        &-wrap {
+            width: 74%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        &-btn {
+            position: absolute;
+            top: 1.5%;
+            left: -75px;
+            z-index: 1;
+
+            @media #{$xs} {
+                display: none;
+            }
+
+            .fd-pr-btn-1 {
+                background: #fff;
+
+                .text {
+                    &::before {
+                        color: #000;
+                    }
+                    &::after {
+                        color: #fff;
+                    }
+                }
+
+                &:hover {
+                    background: var(--fd-clr-pr-1);
+                }
+            }
+        }
+        &-btn-2 {
+            position: absolute;
+            bottom: 32%;
+            right: -120px;
+            z-index: 1;
+
+            @media #{$md} {
+                right: -90px;
+            }
+
+            @media #{$xs} {
+                display: none;
+            }
+
+            .fd-pr-btn-1 {
+                background: #fff;
+
+                .text {
+                    &::before {
+                        color: #000;
+                    }
+                    &::after {
+                        color: #fff;
+                    }
+                }
+
+                &:hover {
+                    background: var(--fd-clr-pr-1);
+                }
+            }
+        }
+    }
+    &-play-btn {
+        position: absolute;
+        right: -190px;
+        bottom: 30px;
+        z-index: 1;
+
+        @media #{$xxxl,$xxl,$xl,$lg,$md,$xs} {
+            right: 0px;
+        }
+
+        .fd-pr-btn-1 {
+            background: #62b692;
+
+            .text {
+                &::before {
+                    color: #fff;
+                }
+                &::after {
+                    color: #000;
+                }
+            }
+
+            &:hover {
+                background: var(--fd-clr-pr-1);
+            }
+        }
+    }
+}
+/* 
+    interactive-1-end
+*/

@@ -1,0 +1,111 @@
+/* 
+    faq-1-start
+*/
+
+.fd-faq-1 {
+    
+    
+
+
+    &-count {
+        &-item-wrap {
+            display: flex;
+            justify-content: space-between;
+            max-width: 910px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            .number {
+                font-size: 45px;
+                line-height: 1;
+                display: flex;
+                gap: 10px;
+
+                @media #{$md,$xs} {
+                    font-size: 30px;
+                }
+    
+                span {
+                    display: inline-block;
+                    font-size: 30px;
+                    line-height: 1;
+                    margin-top: -10px;
+
+                    @media #{$md,$xs} {
+                        font-size: 25px;
+                    }
+        
+                }
+            }
+    
+            .disc {
+                font-weight: 600;
+                color: #000;
+            }
+        }
+    }
+
+}
+
+.fd-accordion-1 {
+
+    max-width: 1145px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-item {
+        background: #f5f7fa;
+        padding: 30px 60px;
+
+        @media #{$lg,$md,$xs} {
+            padding: 30px 20px;
+        }
+
+        .item-title {
+            padding: 0;
+            background: transparent;
+            font-size: 25px;
+            color: #242f51;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+            align-items: baseline;
+            text-align: left;
+
+            @media #{$md,$xs} {
+                font-size: 20px;
+            }
+
+            .icon {
+                flex: 0 0 auto;
+                font-size: 20px;
+                transition: .3s;
+            }
+
+            &:is(:not(.collapsed)) {
+                .icon {
+                    opacity: 0;
+                }
+            }
+        }
+        
+        .item-body {
+            padding-top: 30px;
+            > .disc  {
+                max-width: 900px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+
+
+    
+}
+
+/* 
+    faq-1-end
+*/
