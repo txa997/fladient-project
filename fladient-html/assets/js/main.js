@@ -179,10 +179,10 @@ if (menuToggle2) {
 }
 
 // title-start
-const st = $(".txaa-split-text");
+const st1 = $(".txaa-split-text-1");
 const st2 = $(".txaa-split-text-2");
 
-if(st.length == 0) return; gsap.registerPlugin(SplitText); st.each(function(index, el) {
+if(st1.length == 0) return; gsap.registerPlugin(SplitText); st.each(function(index, el) {
 
 	el.split = new SplitText(el, { 
 	type: "lines,words,chars",

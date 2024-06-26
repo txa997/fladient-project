@@ -1944,7 +1944,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 */
 .fd-pr-btn-1 {
   display: inline-block;
-  font-family: var(--kd-font-pr-1);
+  font-family: var(--fd-font-pr-1);
   color: #22281e;
   font-weight: 800;
   font-size: 15px;
@@ -1955,6 +1955,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: relative;
   z-index: 1;
   transition: 0.3s var(--cube-1);
+  overflow: hidden;
 }
 .fd-pr-btn-1 .icon {
   display: inline-block;
@@ -1965,7 +1966,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: inline-block;
   position: relative;
   z-index: 1;
-  overflow: hidden;
   margin-bottom: -3px;
 }
 .fd-pr-btn-1 .text::after {
@@ -1979,7 +1979,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   background: transparent;
   color: #000;
   content: attr(data-back);
-  transform: translateX(-100%);
+  transform: translateY(240%);
 }
 .fd-pr-btn-1 .text::before {
   top: 0;
@@ -1991,19 +1991,31 @@ input:focus::placeholder, textarea:focus::placeholder {
   background: var(--blta-pr-1);
   color: #fff;
   content: attr(data-front);
-  transform: translateX(0);
+  transform: translateY(0);
 }
-.fd-pr-btn-1:hover {
-  color: #fff;
-  background: var(--fd-clr-pr-1);
+.fd-pr-btn-1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--fd-clr-pr-2);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 100%;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+.fd-pr-btn-1:hover::after {
+  top: 0%;
+  border-radius: 0%;
 }
 .fd-pr-btn-1:hover .text::after {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0%);
 }
 .fd-pr-btn-1:hover .text::before {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(-240%);
 }
 
 /* 
@@ -2751,6 +2763,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   transform: translateY(15px) translateZ(0);
   transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
+.main-navigation .navbar-nav li .dropdown-menu li:hover > a {
+  transform: translateX(5px);
+}
 .main-navigation .navbar-nav li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -2758,6 +2773,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .main-navigation .navbar-nav li:hover > a {
   color: var(--fd-clr-pr-1);
+  transform: translateY(5px);
 }
 .main-navigation .navbar-nav li:hover .dropdown-menu {
   opacity: 1;

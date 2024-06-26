@@ -225,6 +225,9 @@
           }
 
           &:hover {
+            > a {
+              transform: translateX(5px);
+            }
             .dropdown-menu {
               opacity: 1;
               visibility: visible;
@@ -237,7 +240,7 @@
       &:hover {
         > a {
           color: var(--fd-clr-pr-1);
-
+          transform: translateY(5px);
         }
         .dropdown-menu {
           opacity: 1;

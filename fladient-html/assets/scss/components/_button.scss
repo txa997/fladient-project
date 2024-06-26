@@ -71,7 +71,7 @@
 
 .fd-pr-btn-1 {
     display: inline-block;
-    font-family: var(--kd-font-pr-1);
+    font-family: var(--fd-font-pr-1);
     color: #22281e;
     font-weight: 800;
     font-size: 15px;
@@ -82,6 +82,7 @@
     position: relative;
     z-index: 1;
     transition: .3s var(--cube-1);
+    overflow: hidden;
 
     .icon {
         display: inline-block;
@@ -93,7 +94,6 @@
         display: inline-block;
         position: relative;
         z-index: 1;
-        overflow: hidden;
         margin-bottom: -3px;
 
         &::after {
@@ -107,7 +107,7 @@
             background: transparent;
             color: #000;
             content: attr(data-back);
-            transform: translateX(-100%);
+            transform: translateY(240%);
         }
     
         &::before {
@@ -120,21 +120,40 @@
             background: var(--blta-pr-1);
             color: #fff;
             content: attr(data-front);
-            transform: translateX(0);
+            transform: translateY(0);
         }
     }
 
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: var(--fd-clr-pr-2);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-radius: 100%;
+        z-index: -1;
+        transition: .5s ease-in-out;
+    }
+
     &:hover {
-        color: #fff;
-        background: var(--fd-clr-pr-1);
+        
+        &::after {
+            top: 0%;
+            border-radius: 0%;
+        }
+
+
         .text {
             &::after {
                 opacity: 1;
-                transform: translateX(0);
+                transform: translateY(0%);
             }
             &::before {
                 opacity: 0;
-                transform: translateX(100%);
+                transform: translateY(-240%);
             }
         }
 
