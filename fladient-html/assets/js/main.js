@@ -14,12 +14,12 @@ const lenis = new Lenis({
 	duration: 1.2,	
 })
 
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
 
-requestAnimationFrame(raf)
+lenis.on('scroll', ScrollTrigger.update);
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000)
+});
+gsap.ticker.lagSmoothing(0);
 
 
 // preloader
@@ -289,6 +289,15 @@ $('.js-marquee-wrapper').marquee({
 	gap: 12,
 	delayBeforeStart: 0,
 	direction: 'left',
+	duplicated: true,
+	pauseOnHover: true,
+	startVisible:true,
+})
+$('.js-marquee-wrapper-2').marquee({
+	speed: 50,
+	gap: 12,
+	delayBeforeStart: 0,
+	direction: 'right',
 	duplicated: true,
 	pauseOnHover: true,
 	startVisible:true,

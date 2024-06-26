@@ -3,7 +3,7 @@
 */
 .fd-feature-1 {
     &-area {
-        background-color: #000;
+        background-color: #111111;
     }
 
     &-scn-title {
@@ -191,4 +191,56 @@
 
 /* 
     feature-1-end
+*/
+
+/* 
+    feature-2-start
+*/
+.fd-feature-2 {
+    &-item {
+        display: flex;
+        align-items: center;
+        border: 2px solid #f1f1f1;
+        border-radius: 66px;
+        padding: 30px  50px;
+        gap: 25px;
+        margin-bottom: 30px;
+
+        @media #{$xl} {
+            padding: 30px  20px;
+        }
+
+        @media #{$lg,$md} {
+            padding: 30px  20px;
+            gap: 10px;
+        }
+
+        @media #{$xs} {
+            padding: 30px  20px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .item-icon {
+            max-width: 60px;
+        }
+
+        .item-title {
+            font-size: 26px;
+            margin-bottom: 2px;
+
+            @media #{$lg,$md,$xs} {
+                font-size: 20px;
+            }
+        }
+
+
+        .item-disc {
+            text-transform: capitalize;
+        }
+    }
+}
+
+/* 
+    feature-2-end
 */

@@ -176,7 +176,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 @media (min-width: 1300px) {
     .container{
         &.fd-container-1 {
-            max-width: 1330px;
+            max-width: 1325px;
+        }
+        &.fd-container-2 {
+            max-width: 1275px;
         }
 
     }

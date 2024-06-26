@@ -3,6 +3,19 @@
 */
 .fd-price-1 {
 
+    &-area {
+        background: #131D1E;
+    }
+
+    &-bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    
     &-scn-title {
         max-width: 700px;
         margin-left: auto;
@@ -86,6 +99,18 @@
             justify-content: center;
             span {
                 font-size: 30px;
+            }
+        }
+    }
+
+    &-all-link {
+        font-weight: 500;
+        a {
+            color: var(--fd-clr-pr-1);
+            display: inline-block;
+            transition: .3s;
+            &:hover {
+                transform: translateX(3px);
             }
         }
     }

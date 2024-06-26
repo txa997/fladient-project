@@ -1,0 +1,114 @@
+/* 
+    about-2-start
+*/
+.fd-about-2 {
+    &-area {
+        padding-bottom: 210px;
+
+        @media #{$md,$xs} {
+            padding-bottom: 100px;
+        }
+    }
+
+    &-content {
+        padding-left: 15px;
+    }
+
+    &-left {
+        padding-left: 50px;
+
+        @media #{$lg} {
+            padding-left: 0;
+        }
+
+        @media #{$md,$xs} {
+            padding-left: 0;
+            margin-bottom: 130px;
+        }
+    }
+
+    &-img {
+        &-1 {
+            height: 615px;
+            border-radius: 15px;
+        }
+        &-2 {
+            width: 80%;
+            height: 365px;
+            border-radius: 20px;
+            box-shadow: 0 2px 60px rgba(0, 0, 0, 0.13);
+            position: absolute;
+            bottom: -75px;
+            left: -15px;
+        }
+    }
+
+    &-feature-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 30px;
+        max-width: 530px;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr ;
+        }
+
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &-feature {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        .item-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #4586FA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 30px;
+            flex: 0 0 auto;
+        }
+
+        .item-title {
+            font-size: 24px;
+            @media #{$xl,$lg,$md,$xs} {
+                font-size: 20px;
+            }
+        }
+
+        .item-disc {
+            color: #aeaeae;
+        }
+
+
+        &:nth-child(2) {
+            .item-icon {
+                background: #F76551;
+            }
+        }
+
+        &:nth-child(3) {
+            .item-icon {
+                background: #53CF84;
+            }
+        }
+
+        &:nth-child(4) {
+            .item-icon {
+                background: #AE52FB;
+            }
+        }
+    
+    }
+
+}
+/* 
+    about-2-end
+*/
