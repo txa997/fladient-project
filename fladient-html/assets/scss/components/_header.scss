@@ -78,6 +78,9 @@
     }
 
     .fd-pr-btn-1  {
+      font-size: 15px;
+      padding: 18px 30px;
+
       @media #{$xs} {
         display: none;
       }

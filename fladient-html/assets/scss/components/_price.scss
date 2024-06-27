@@ -101,6 +101,11 @@
                 font-size: 30px;
             }
         }
+
+        .fd-pr-btn-1 {
+            font-size: 16px;
+            padding: 23px 33px;
+        }
     }
 
     &-all-link {
@@ -119,4 +124,120 @@
 
 /* 
     price-1-end
+*/
+
+/* 
+    price-2-start
+*/
+.fd-price-2 {
+    &-bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 36%);
+        z-index: -1;
+    }
+
+    &-scn-title {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-card {
+        background: #3d76dd;
+        border-radius: 20px;
+        padding: 70px 65px;
+        margin-bottom: 30px;
+
+        @media #{$xs} {
+            padding: 70px 20px;
+        }
+
+        @media #{$sm} {
+            padding: 70px 65px;
+        }
+
+        .card-title {
+            font-size: 35px;
+            line-height: 1.28;
+            margin-bottom: 23px;
+
+            @media #{$xs} {
+                font-size: 26px;
+            }
+
+            @media #{$sm} {
+                font-size: 30px;
+            }
+        }
+
+        .card-list {
+            li {
+                font-size: 20px;
+                font-weight: 600;
+                position: relative;
+                z-index: 1;
+                padding-left: 25px;
+                margin-bottom: 13px;
+    
+                &::after {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                }
+            }
+        }
+        
+        .card-price {
+            font-size: 60px;
+            line-height: 1;
+            margin-bottom: 30px;
+
+            @media #{$xs} {
+                font-size: 40px;
+            }
+
+            @media #{$sm} {
+                font-size: 50px;
+            }
+        }
+
+        .card-img {
+            height: 225px;
+        }
+        
+        &:is(.has-card-2) {
+            background: var(--fd-clr-pr-2);
+            position: relative;
+            z-index: 1;
+
+            .card-img {
+
+                margin-bottom: -90px;
+
+                img {
+                    width: 67%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+        }
+        
+    }
+
+
+}
+
+
+/* 
+    price-2-end
 */

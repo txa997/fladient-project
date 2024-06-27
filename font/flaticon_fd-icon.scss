@@ -1,0 +1,77 @@
+$flaticon_fd-icon-font: "flaticon_fd-icon";
+
+@font-face {
+    font-family: $flaticon_fd-icon-font;
+    src: url("./flaticon_fd-icon.woff2?a9b3ee6568b3d3305f65d66ff2e62833") format("woff2"),
+url("./flaticon_fd-icon.woff?a9b3ee6568b3d3305f65d66ff2e62833") format("woff"),
+url("./flaticon_fd-icon.eot?a9b3ee6568b3d3305f65d66ff2e62833#iefix") format("embedded-opentype"),
+url("./flaticon_fd-icon.ttf?a9b3ee6568b3d3305f65d66ff2e62833") format("truetype"),
+url("./flaticon_fd-icon.svg?a9b3ee6568b3d3305f65d66ff2e62833#flaticon_fd-icon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_fd-icon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_fd-icon-map: (
+    "phone": "\f101",
+    "save-money": "\f102",
+    "finance": "\f103",
+    "invention": "\f104",
+    "stakeholder": "\f105",
+    "browser-settings": "\f106",
+    "production": "\f107",
+    "lauch": "\f108",
+    "innovation": "\f109",
+    "stakeholder-1": "\f10a",
+    "relationship": "\f10b",
+    "pre-release-access": "\f10c",
+    "video-marketing": "\f10d",
+);
+
+.flaticon-phone:before {
+    content: map-get($flaticon_fd-icon-map, "phone");
+}
+.flaticon-save-money:before {
+    content: map-get($flaticon_fd-icon-map, "save-money");
+}
+.flaticon-finance:before {
+    content: map-get($flaticon_fd-icon-map, "finance");
+}
+.flaticon-invention:before {
+    content: map-get($flaticon_fd-icon-map, "invention");
+}
+.flaticon-stakeholder:before {
+    content: map-get($flaticon_fd-icon-map, "stakeholder");
+}
+.flaticon-browser-settings:before {
+    content: map-get($flaticon_fd-icon-map, "browser-settings");
+}
+.flaticon-production:before {
+    content: map-get($flaticon_fd-icon-map, "production");
+}
+.flaticon-lauch:before {
+    content: map-get($flaticon_fd-icon-map, "lauch");
+}
+.flaticon-innovation:before {
+    content: map-get($flaticon_fd-icon-map, "innovation");
+}
+.flaticon-stakeholder-1:before {
+    content: map-get($flaticon_fd-icon-map, "stakeholder-1");
+}
+.flaticon-relationship:before {
+    content: map-get($flaticon_fd-icon-map, "relationship");
+}
+.flaticon-pre-release-access:before {
+    content: map-get($flaticon_fd-icon-map, "pre-release-access");
+}
+.flaticon-video-marketing:before {
+    content: map-get($flaticon_fd-icon-map, "video-marketing");
+}
