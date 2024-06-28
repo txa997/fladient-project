@@ -19,7 +19,7 @@
 
         &-btn {
             position: absolute;
-            top: 1.5%;
+            top: 0%;
             left: -75px;
             z-index: 1;
 
@@ -46,7 +46,7 @@
         }
         &-btn-2 {
             position: absolute;
-            bottom: 32%;
+            bottom: 30%;
             right: -120px;
             z-index: 1;
 
@@ -98,8 +98,16 @@
                 }
             }
 
+            i {
+                color: #fff;
+                transition: .3s;
+            }
+
             &:hover {
                 background: var(--fd-clr-pr-1);
+                i {
+                    color: #000;
+                }
             }
         }
     }

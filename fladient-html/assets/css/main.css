@@ -1554,25 +1554,28 @@ input:focus::placeholder, textarea:focus::placeholder {
   z-index: 1;
 }
 
-.txaa-split-text {
+.txaa-split-subtitle-1 {
   text-transform: unset !important;
   overflow: hidden;
 }
-.txaa-split-text .split-line {
+.txaa-split-subtitle-1 .split-line {
   overflow: hidden;
 }
-.txaa-split-text .split-line div div:nth-child(1) {
+.txaa-split-subtitle-1 .split-line div div:nth-child(1) {
   text-transform: capitalize;
 }
 
-.txaa-split-text-2 {
+.txaa-split-subtitle-2 {
   text-transform: unset !important;
   overflow: hidden;
 }
-.txaa-split-text-2 .split-line {
+.txaa-split-subtitle-2:is(.fd-scn-title-1) {
+  letter-spacing: -1px;
+}
+.txaa-split-subtitle-2 .split-line {
   overflow: hidden;
 }
-.txaa-split-text-2 .split-line div div:nth-child(1) {
+.txaa-split-subtitle-2 .split-line div div:nth-child(1) {
   text-transform: capitalize;
 }
 
@@ -2031,6 +2034,18 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .fd-pr-btn-1:is(.has-clr-pr-1):hover {
   background: #fff;
+}
+.fd-pr-btn-1:is(.has-clr-black-1) {
+  background: var(--fd-clr-pr-1);
+}
+.fd-pr-btn-1:is(.has-clr-black-1)::after {
+  background: #000;
+}
+.fd-pr-btn-1:is(.has-clr-black-1) .text::after {
+  color: #fff;
+}
+.fd-pr-btn-1:is(.has-clr-black-1):hover {
+  background: #000;
 }
 
 /* 
@@ -2520,6 +2535,23 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 /* 
     search-box-css-end
+*/
+/* 
+  spilting-wrating-start
+*/
+.splitting.animated .char {
+  -webkit-animation: fadeInUp 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
+  animation: fadeInUp 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
+  -webkit-animation-delay: calc(30ms * var(--char-index));
+  animation-delay: calc(30ms * var(--char-index));
+}
+
+.splitting .whitespace {
+  width: 10px;
+}
+
+/* 
+  spilting-wrating-end
 */
 .scroll-top {
   position: fixed;
@@ -3809,6 +3841,8 @@ input:focus::placeholder, textarea:focus::placeholder {
 */
 .fd-marquee-1-area {
   background: #131D1E;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fd-marquee-1-item-wrap {
   display: flex;
@@ -4695,7 +4729,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .fd-interactive-1-img-btn {
   position: absolute;
-  top: 1.5%;
+  top: 0%;
   left: -75px;
   z-index: 1;
 }
@@ -4718,7 +4752,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .fd-interactive-1-img-btn-2 {
   position: absolute;
-  bottom: 32%;
+  bottom: 30%;
   right: -120px;
   z-index: 1;
 }
@@ -4764,8 +4798,15 @@ input:focus::placeholder, textarea:focus::placeholder {
 .fd-interactive-1-play-btn .fd-pr-btn-1 .text::after {
   color: #000;
 }
+.fd-interactive-1-play-btn .fd-pr-btn-1 i {
+  color: #fff;
+  transition: 0.3s;
+}
 .fd-interactive-1-play-btn .fd-pr-btn-1:hover {
   background: var(--fd-clr-pr-1);
+}
+.fd-interactive-1-play-btn .fd-pr-btn-1:hover i {
+  color: #000;
 }
 
 /* 

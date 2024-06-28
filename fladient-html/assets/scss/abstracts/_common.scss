@@ -225,7 +225,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 
-.txaa-split-text {
+.txaa-split-subtitle-1 {
 	text-transform: unset !important;
 	overflow: hidden;
 	.split-line {
@@ -241,7 +241,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 	}
 }
 
-.txaa-split-text-2 {
+.txaa-split-subtitle-2 {
+    &:is(.fd-scn-title-1) {
+        letter-spacing: -1px;
+    }
 	text-transform: unset !important;
 	overflow: hidden;
 	.split-line {
@@ -251,11 +254,13 @@ input:focus::placeholder, textarea:focus::placeholder {
 			div {
 				&:nth-child(1) {
 					text-transform: capitalize;
+                    
 				}
 			}
 		}
 	}
 }
+
 
 .rtl-home {
     direction: rtl;

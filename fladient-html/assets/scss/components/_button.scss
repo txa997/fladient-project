@@ -39,9 +39,7 @@
             width: 60%;
         }
     }
-    &:focus {
 
-    }
     &:hover {
         span {
 
@@ -173,6 +171,24 @@
 
         &:hover {
             background: #fff;
+        }
+    }
+
+    &:is(.has-clr-black-1) {
+        background: var(--fd-clr-pr-1);
+
+        &::after {
+            background: #000;
+        }
+
+        .text {
+            &::after {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            background: #000;
         }
     }
 }
