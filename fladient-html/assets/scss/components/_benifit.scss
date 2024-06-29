@@ -105,3 +105,99 @@
 
     benifit-1-end
 */
+
+/* 
+
+    benifit-2-start
+*/
+.fd-benifit-2 {
+    &-content {
+        background: #ffecef;
+        border-radius: 20px;
+        text-align: center;
+        padding: 80px 50px;
+        padding-bottom: 50px;
+        margin-bottom: 30px;
+
+        
+        @media #{$lg} {
+            padding: 80px 20px;
+        }
+
+        @media #{$xs} {
+            padding: 80px 20px;
+        }
+
+        @media #{$sm} {
+            padding: 80px 50px;
+        }
+
+        .content-title {
+            font-size: 30px;
+            line-height: 1.33;
+            margin-bottom: 10px;
+
+            @media #{$xs} {
+                font-size: 22px;
+            }
+
+            @media #{$sm} {
+                font-size: 30px;
+            }
+        }
+
+        .content-disc {
+            margin-bottom: 33px;
+        }
+        
+        .item-img {
+            margin-bottom: 17px;
+        }
+
+        &:is(.has-clr-2) {
+            background: #e4ffee;
+        }
+    }
+
+    &-content-2 {
+        background: #fff6d3;
+        border-radius: 20px;
+        padding: 110px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+        align-items: center;
+
+        @media #{$lg} {
+            padding: 110px 40px;
+        }
+
+        @media #{$md} {
+            padding: 90px 50px;
+            grid-template-columns: 1fr;
+        }
+
+        @media #{$xs} {
+            padding: 90px 20px;
+            grid-template-columns: 1fr;
+        }
+
+        @media #{$sm} {
+            padding: 90px 50px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-scn-title {
+        .fd-scn-title-2 {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+
+
+/* 
+
+    benifit-2-end
+*/

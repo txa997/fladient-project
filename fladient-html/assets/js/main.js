@@ -11,7 +11,7 @@
 
 // smoooth scroll activation start
 const lenis = new Lenis({
-	duration: 1.2,	
+	duration: 1.5,	
 })
 
 
@@ -179,82 +179,88 @@ if (menuToggle2) {
 	
 }
 
-var st1 = $(".txaa-split-subtitle-1");
-
-if(st1.length == 0) return; gsap.registerPlugin(SplitText); st1.each(function(index, el) {
-
-	el.split = new SplitText(el, { 
-	type: "lines,words,chars",
-	linesClass: "split-line"
-	});
-
-	gsap.set(el, { perspective: 400 });
-
-		if( $(el).hasClass('txaa-ani-subtitle-1') ){
-		gsap.set(el.split.words, {
-			opacity: 1,
-			y: "-100",
-
+if($('.txaa-split-subtitle-1').length) {
+	var st1 = $(".txaa-split-subtitle-1");
+	if(st1.length == 0) return; gsap.registerPlugin(SplitText); st1.each(function(index, el) {
+	
+		el.split = new SplitText(el, { 
+		type: "lines,words,chars",
+		linesClass: "split-line"
 		});
-	}
-
-	el.anim = gsap.to(el.split.words, {
-		scrollTrigger: {
-			trigger: el,
-			start: "top 90%",
-		},
-
-		x: "0",
-		y: "0",
-		opacity: 1,
-		duration: .7,
-		ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
-		stagger: 0.2,
-		delay: 1
-	});
-
-});
-
-var st2 = $(".txaa-split-subtitle-2");
-
-if(st2.length == 0) return; gsap.registerPlugin(SplitText); st2.each(function(index, el) {
-
-	el.split = new SplitText(el, { 
-	type: "lines,words,chars",
-	linesClass: "split-line"
-	});
-
-	gsap.set(el, { perspective: 400 });
-
-		if( $(el).hasClass('txaa-ani-subtitle-2') ){
-		gsap.set(el.split.words, {
+	
+		gsap.set(el, { perspective: 400 });
+	
+			if( $(el).hasClass('txaa-ani-subtitle-1') ){
+			gsap.set(el.split.words, {
+				opacity: 1,
+				y: "-100",
+	
+			});
+		}
+	
+		el.anim = gsap.to(el.split.words, {
+			scrollTrigger: {
+				trigger: el,
+				start: "top 90%",
+			},
+	
+			x: "0",
+			y: "0",
 			opacity: 1,
-			y: "-100",
-
+			duration: .7,
+			ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
+			stagger: 0.2,
+			delay: 1
 		});
-	}
-
-	el.anim = gsap.to(el.split.words, {
-		scrollTrigger: {
-			trigger: el,
-			start: "top 90%",
-		},
-
-		x: "0",
-		y: "0",
-		opacity: 1,
-		duration: .7,
-		ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
-		stagger: 0.2,
+	
 	});
+}
 
-});
+if($('.txaa-split-subtitle-2').length) {
+
+	var st2 = $(".txaa-split-subtitle-2");
+
+	if(st2.length == 0) return; gsap.registerPlugin(SplitText); st2.each(function(index, el) {
+	
+		el.split = new SplitText(el, { 
+		type: "lines,words,chars",
+		linesClass: "split-line"
+		});
+	
+		gsap.set(el, { perspective: 400 });
+	
+			if( $(el).hasClass('txaa-ani-subtitle-2') ){
+			gsap.set(el.split.words, {
+				opacity: 1,
+				y: "-100",
+	
+			});
+		}
+	
+		el.anim = gsap.to(el.split.words, {
+			scrollTrigger: {
+				trigger: el,
+				start: "top 90%",
+			},
+	
+			x: "0",
+			y: "0",
+			opacity: 1,
+			duration: .7,
+			ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
+			stagger: 0.2,
+		});
+	
+	});
+}
+
+
 
 const txaafadedown = gsap.utils.toArray('.txaafadedown');
 txaafadedown.forEach((box, i) => {
 	const anim = gsap.fromTo(box, 
 		
-	{ y: 50 , duration: 1, autoAlpha: 0, stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
+	{ y: 100 , duration: 1, autoAlpha: 0, stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
 	{ y: 0 , duration: 1, autoAlpha: 1, stagger: .5, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ")  });
 
 	ScrollTrigger.create({
@@ -264,7 +270,7 @@ txaafadedown.forEach((box, i) => {
 		toggleActions: 'play none none reverse',
 		once: false,
 		
-		markers: true,
+		markers: false,
 
 	});
 });
@@ -283,7 +289,7 @@ txaascale15.forEach((box, i) => {
 		toggleActions: 'play none none reverse',
 		once: false,
 		
-		markers: true,
+		markers: false,
 
 	});
 });
@@ -302,7 +308,7 @@ txaascale0.forEach((box, i) => {
 		toggleActions: 'play none none reverse',
 		once: false,
 		
-		markers: true,
+		markers: false,
 
 	});
 });
@@ -352,6 +358,7 @@ $('.js-marquee-wrapper').marquee({
 	pauseOnHover: true,
 	startVisible:true,
 })
+
 $('.js-marquee-wrapper-2').marquee({
 	speed: 50,
 	gap: 12,
@@ -362,7 +369,6 @@ $('.js-marquee-wrapper-2').marquee({
 	startVisible:true,
 })
 
-  
 /*
 	mouse-move-animation
 */

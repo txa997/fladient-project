@@ -92,3 +92,116 @@
 /* 
     workflow-1-end
 */
+
+/* 
+    workflow-2-start
+*/
+.fd-workflow-2 {
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        border-radius: 60px;
+        overflow: hidden;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-content {
+        background: #cfccfc;
+        padding: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+        gap: 60px;
+
+        @media #{$xs} {
+            padding: 65px 20px;
+        }
+
+        @media #{$sm} {
+            padding: 65px;
+        }
+    }
+
+    &-item-wrap {
+        background: #d6d3ff;
+        padding: 80px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px 40px;
+
+
+
+        @media #{$xl,$lg} {
+            padding: 80px 50px;
+        }
+
+        @media #{$xs} {
+            padding: 80px 20px;
+            grid-template-columns: 1fr;
+        }
+
+        @media #{$sm} {
+            padding: 80px 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+
+    &-item {
+        .item-icon {
+            display: flex;
+            width: 88px;
+            height: 88px;
+            background: #ffecef;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 40px;
+            color: var(--fd-clr-h-2);
+            margin-bottom: 30px;
+        }
+
+        .item-title {
+            font-size: 22px;
+            color: var(--fd-clr-h-3);
+            transition: .2s;
+            margin-bottom: 10px;
+
+            &:hover {
+                color: var(--fd-clr-pr-2);
+                transform: translateX(3px);
+            }
+        }
+
+        .item-disc {
+            font-size: 17px;
+        }
+
+        &:nth-child(2) {
+            .item-icon {
+                background: #e4ffee;
+            }
+        }
+
+        &:nth-child(3) {
+            .item-icon {
+                background: #fff6d3;
+            }
+        }
+
+        &:nth-child(4) {
+            .item-icon {
+                background: #f4f4ff;
+            }
+        }
+    }
+
+}
+
+/* 
+    workflow-2-end
+*/
