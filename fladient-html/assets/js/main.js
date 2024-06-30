@@ -39,12 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		// h1-start
 		const fdh1 = gsap.timeline();
+		fdh1.from(".fd-hero-1-slideup " , { stagger: .5,  y: 100 , duration:1,  opacity:0 , delay: 1.5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
+		fdh1.from(".fd-hero-1-slideleft " , { stagger: .5,  x: -100 , duration:1,  opacity:0 ,   ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<.5")
+		fdh1.from(".fd-hero-1-slideright " , { stagger: .5,  x: 100 , duration:1,  opacity:0 ,   ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<=")
 
-
-
-		fdh1.from(".fd-hero-1-slideup " , { stagger: .5,  y: 100 , duration:1, ease: "easeInOut", opacity:0 , delay: 1.5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
-		fdh1.from(".fd-hero-1-slideleft " , { stagger: .5,  x: -100 , duration:1, ease: "easeInOut", opacity:0 ,   ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<.5")
-		fdh1.from(".fd-hero-1-slideright " , { stagger: .5,  x: 100 , duration:1, ease: "easeInOut", opacity:0 ,   ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<=")
+		// h2-start
+		const fdh2 = gsap.timeline();
+		fdh2.from(".fd-hero-2-slidedown " , { stagger: .3,  y: 100 , duration:1,  opacity:0 , delay: 1,   ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<.5")
+		fdh2.from(".fd-hero-2-slideleft " , { stagger: .3,  x: -100 , duration:1,  opacity:0 ,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<.5")
+		fdh2.from(".fd-hero-2-slideright " , { stagger: .3,  x: 100 , duration:1,  opacity:0 , ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<.5")
 
 
 
@@ -179,6 +182,7 @@ if (menuToggle2) {
 	
 }
 
+// title-animation
 if($('.txaa-split-subtitle-1').length) {
 	var st1 = $(".txaa-split-subtitle-1");
 	if(st1.length == 0) return; gsap.registerPlugin(SplitText); st1.each(function(index, el) {
@@ -193,7 +197,7 @@ if($('.txaa-split-subtitle-1').length) {
 			if( $(el).hasClass('txaa-ani-subtitle-1') ){
 			gsap.set(el.split.words, {
 				opacity: 1,
-				y: "-100",
+				y: "-150",
 	
 			});
 		}
@@ -256,6 +260,56 @@ if($('.txaa-split-subtitle-2').length) {
 
 
 
+if (window.innerWidth >= 991) {
+	const composeTl =  gsap.timeline({
+		scrollTrigger: {
+			trigger: ".fd-benifit-workflow-area",
+			start: "top 0%",
+			end:'bottom 0%',
+			scrub: 1,
+			pinSpacing: true, 
+			pin: true,
+			toggleActions: "play pause reverse reset",
+			markers: false,
+		}
+	});
+	
+	composeTl.to(".fd-benifit-1-content", {
+		
+		opacity: 0,
+		y: "-100%",
+		scale: 0.8,
+		duration: 1,
+	})
+	
+	composeTl.from(".fd-workflow-1-img-wrap", {
+		opacity: 1,
+		y: "100%",
+		scale: 0.8,
+		duration: 1,
+	}, "<")
+	
+	
+	
+	composeTl.to(".fd-benifit-1-img-2", {
+		opacity: 0,
+		y: "-100%",
+		scale: 0.8,
+		duration: 1,
+	})
+	
+	
+	
+	composeTl.from(".fd-workflow-1-content", {
+		opacity: 1,
+		y: "100%",
+		scale: 0.8,
+		duration: 1,
+	}, "<")
+
+}
+
+
 const txaafadedown = gsap.utils.toArray('.txaafadedown');
 txaafadedown.forEach((box, i) => {
 	const anim = gsap.fromTo(box, 
@@ -275,11 +329,68 @@ txaafadedown.forEach((box, i) => {
 	});
 });
 
-const txaascale15 = gsap.utils.toArray('.txaascale15');
-txaascale15.forEach((box, i) => {
+const txaafadeleft = gsap.utils.toArray('.txaafadeleft');
+txaafadeleft.forEach((box, i) => {
 	const anim = gsap.fromTo(box, 
 		
-	{ scale: 1.5 , duration: 1,  stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
+	{ x: -100 , duration: 1, autoAlpha: 0, stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
+	{ x: 0 , duration: 1, autoAlpha: 1, stagger: .5, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ")  });
+
+	ScrollTrigger.create({
+		trigger: box,
+		start: "top 90%",
+		animation: anim,
+		toggleActions: 'play none none reverse',
+		once: false,
+		
+		markers: false,
+
+	});
+});
+
+const txaafaderight = gsap.utils.toArray('.txaafaderight');
+txaafaderight.forEach((box, i) => {
+	const anim = gsap.fromTo(box, 
+		
+	{ x: 100 , duration: 1, autoAlpha: 0, stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
+	{ x: 0 , duration: 1, autoAlpha: 1, stagger: .5, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ")  });
+
+	ScrollTrigger.create({
+		trigger: box,
+		start: "top 90%",
+		animation: anim,
+		toggleActions: 'play none none reverse',
+		once: false,
+		
+		markers: false,
+
+	});
+});
+
+const txaaslideleft = gsap.utils.toArray('.txaaslideleft');
+txaaslideleft.forEach((box, i) => {
+	const anim = gsap.fromTo(box, 
+		
+	{ x: -200 , duration: 1,  stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
+	{ x: 0 , duration: 1,  stagger: .5, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ")  });
+
+	ScrollTrigger.create({
+		trigger: box,
+		start: "top 90%",
+		animation: anim,
+		toggleActions: 'play none none reverse',
+		once: false,
+		
+		markers: false,
+
+	});
+});
+
+const txaascale2 = gsap.utils.toArray('.txaascale2');
+txaascale2.forEach((box, i) => {
+	const anim = gsap.fromTo(box, 
+		
+	{ scale: 2 , duration: 1,  stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
 	{ scale: 1 , duration: 1,  stagger: .5, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ")  });
 
 	ScrollTrigger.create({
@@ -313,6 +424,65 @@ txaascale0.forEach((box, i) => {
 	});
 });
 
+const txaasx0 = gsap.utils.toArray('.txaasx0');
+txaasx0.forEach((box, i) => {
+	const anim = gsap.fromTo(box, 
+		
+	{ scaleX: 0 , duration: 3,  stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
+	{ scaleX: 1 , duration: 3,  stagger: .5, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ")  });
+
+	ScrollTrigger.create({
+		trigger: box,
+		start: "top 85%",
+		animation: anim,
+		toggleActions: 'play none none reverse',
+		once: false,
+		
+		markers: false,
+
+	});
+});
+
+const txaay0 = gsap.utils.toArray('.txaay0');
+txaay0.forEach((box, i) => {
+	const anim = gsap.fromTo(box, 
+		
+	{ scaleY: 0 , duration: 3,  stagger: .5,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, 
+	{ scaleY: 1 , duration: 3,  stagger: .5, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ")  });
+
+	ScrollTrigger.create({
+		trigger: box,
+		start: "top 85%",
+		animation: anim,
+		toggleActions: 'play none none reverse',
+		once: false,
+		
+		markers: false,
+
+	});
+});
+
+
+// overview-1
+gsap.utils.toArray('.fd-overview-1-img').forEach((el, index) => { 
+	let tl1 = gsap.timeline({
+	  scrollTrigger: {
+		trigger: el,
+		scrub: 1,
+		start: "top 85%",
+		end: "top 50%",
+		toggleActions: "play none none reverse",
+		 markers: false
+	  }
+	})
+	
+	tl1
+	.from(el, { x: 100 , y: 100 , scale: .5 }, {opacity: 1, duration: 1, immediateRender: false})
+})
+
+
+
+
 
 // course-1-slider
 if($('.fd-feature-1-active').length) {
@@ -331,6 +501,37 @@ if($('.fd-feature-1-active').length) {
 		  clickable: true,
 		},
 	
+	});
+}
+ 
+
+// course-1-slider
+if($('.fd-testionial-2-active').length) {
+	let slider = new Swiper('.fd-testionial-2-active', {
+		loop: true,
+		spaceBetween: 30,
+		speed: 1000,
+		autoplay: {
+			delay: 3000,
+		},
+
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			576: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+			1200: {
+				slidesPerView: 3,
+			},
+		},
 	});
 }
  

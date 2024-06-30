@@ -1561,22 +1561,6 @@ input:focus::placeholder, textarea:focus::placeholder {
 .txaa-split-subtitle-1:is(.hero-title) {
   letter-spacing: -2px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .txaa-split-subtitle-1:is(.hero-title) {
-    letter-spacing: 0px;
-  }
-}
-.txaa-split-subtitle-1:is(.fd-hero-2-title) {
-  letter-spacing: -4px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .txaa-split-subtitle-1:is(.fd-hero-2-title) {
-    letter-spacing: 0px;
-  }
-}
-.txaa-split-subtitle-1:is(.fd-hero-2-title) .split-line {
-  padding-bottom: 8px;
-}
 .txaa-split-subtitle-1 .split-line {
   overflow: hidden;
 }
@@ -1590,22 +1574,6 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .txaa-split-subtitle-2:is(.fd-scn-title-1) {
   letter-spacing: -1px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .txaa-split-subtitle-2:is(.fd-scn-title-1) {
-    letter-spacing: 0px;
-  }
-}
-.txaa-split-subtitle-2:is(.fd-scn-title-2) {
-  letter-spacing: -2px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .txaa-split-subtitle-2:is(.fd-scn-title-2) {
-    letter-spacing: 0px;
-  }
-}
-.txaa-split-subtitle-2:is(.fd-scn-title-2) .split-line {
-  padding-bottom: 3px;
 }
 .txaa-split-subtitle-2 .split-line {
   overflow: hidden;
@@ -1815,7 +1783,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-weight: 900;
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: var(--fd-clr-pr-2);
   letter-spacing: 4px;
 }
@@ -2081,35 +2049,6 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .fd-pr-btn-1:is(.has-clr-black-1):hover {
   background: #000;
-}
-.fd-pr-btn-1:is(.has-clr-pr-2) {
-  background: var(--fd-clr-pr-2);
-  font-size: 16px;
-  padding: 24px 30px;
-}
-.fd-pr-btn-1:is(.has-clr-pr-2)::after {
-  background: #000;
-}
-.fd-pr-btn-1:is(.has-clr-pr-2) .text::after {
-  color: #fff;
-}
-.fd-pr-btn-1:is(.has-clr-black-2) {
-  font-size: 16px;
-  padding: 24px 30px;
-}
-.fd-pr-btn-1:is(.has-clr-black-2)::after {
-  background: var(--fd-clr-pr-2);
-}
-.fd-pr-btn-1:is(.has-clr-white-2) {
-  font-size: 16px;
-  padding: 24px 30px;
-  background: #fff;
-}
-.fd-pr-btn-1:is(.has-clr-white-2) .text::before {
-  color: #000;
-}
-.fd-pr-btn-1:is(.has-clr-white-2)::after {
-  background: var(--fd-clr-pr-2);
 }
 
 /* 
@@ -2938,11 +2877,6 @@ input:focus::placeholder, textarea:focus::placeholder {
     display: none;
   }
 }
-.fd-header-2-action-link .fd-pr-btn-1 {
-  background: #272727;
-  font-size: 14px;
-  padding: 21px 28px;
-}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .fd-header-2-action-link .fd-pr-btn-1 {
     display: none;
@@ -3737,12 +3671,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   background: #111111;
   position: relative;
   z-index: 2;
-  padding-bottom: 100px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .fd-benifit-workflow-area {
-    padding-bottom: 0px;
-  }
 }
 .fd-benifit-workflow-bg {
   position: absolute;
@@ -3753,9 +3681,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   z-index: -1;
 }
 
-.fd-benifit-1-content {
+.fd-benifit-1-area {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .fd-benifit-1-content .inner-div {
   display: grid;
@@ -4299,7 +4227,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 100%;
   height: 64%;
   z-index: -1;
-  background: #101213;
 }
 .fd-price-2-scn-title {
   max-width: 640px;
@@ -4387,9 +4314,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   bottom: 0;
   right: 0;
   z-index: -1;
-}
-.fd-price-2-card:is(.has-card-2) .fd-pr-btn-1::after {
-  background: #fff;
 }
 
 /* 
@@ -5449,7 +5373,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #080733;
 }
 .fd-services-2-scn-title {
   max-width: 610px;
@@ -6249,4 +6172,4 @@ input:focus::placeholder, textarea:focus::placeholder {
    footer-2-end
 */
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.csss.map */

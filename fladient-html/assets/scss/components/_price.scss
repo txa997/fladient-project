@@ -137,6 +137,7 @@
         width: 100%;
         height: calc(100% - 36%);
         z-index: -1;
+        background: #101213;
     }
 
     &-scn-title {
@@ -228,6 +229,12 @@
                     bottom: 0;
                     right: 0;
                     z-index: -1;
+                }
+            }
+
+            .fd-pr-btn-1 {
+                &::after {
+                    background: #fff;
                 }
             }
         }

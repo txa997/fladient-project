@@ -191,6 +191,47 @@
             background: #000;
         }
     }
+
+    &:is(.has-clr-pr-2) {
+        background: var(--fd-clr-pr-2);
+        font-size: 16px;
+        padding: 24px 30px;
+
+        &::after {
+            background: #000;
+        }
+
+        .text {
+            &::after {
+                color: #fff;
+            }
+        }
+    }
+
+    &:is(.has-clr-black-2) {
+        font-size: 16px;
+        padding: 24px 30px;
+
+        &::after {
+            background: var(--fd-clr-pr-2);
+        }
+    }
+
+    &:is(.has-clr-white-2) {
+        font-size: 16px;
+        padding: 24px 30px;
+        background: #fff;
+
+        .text {
+            &::before {
+                color: #000;
+            }
+        }
+
+        &::after {
+            background: var(--fd-clr-pr-2);
+        }
+    }
 }
 /* 
     pr-btn-1-end

@@ -3,7 +3,14 @@
 */
 .fd-workflow-1 {
     &-area {
-        background: #131d1e;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        @media #{$md,$xs} {
+            position: unset;
+        }
     }
 
     &-scn-title {

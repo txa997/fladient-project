@@ -303,6 +303,10 @@
     }
 
     .fd-pr-btn-1  {
+      background: #272727;
+      font-size: 14px;
+      padding: 21px 28px;
+
       @media #{$lg} {
         display: none;
       }
