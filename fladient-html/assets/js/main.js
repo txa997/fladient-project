@@ -11,7 +11,7 @@
 
 // smoooth scroll activation start
 const lenis = new Lenis({
-	duration: 1.5,	
+	duration: 1.8,	
 })
 
 

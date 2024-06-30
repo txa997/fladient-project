@@ -1,0 +1,12 @@
+txaa-ani-subtitle-2 txaa-split-subtitle-2
+
+
+txaafadedown
+txaafaderight
+txaafadeleft
+
+txaascale2
+
+txaasx0
+
+txaascale0
