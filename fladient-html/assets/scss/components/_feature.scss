@@ -245,3 +245,56 @@
 /* 
     feature-2-end
 */
+
+/* 
+    feature-3-start
+*/
+.fd-feature-3 {
+    &-content {
+        padding-bottom: 100px;
+        &-img {
+            max-width: 300px;
+        }
+    }
+
+    &-img {
+        margin-right: -130px;
+
+        @media #{$md,$xs} {
+            margin-right: 0px;
+        }
+    }
+
+    &-img-2 {
+        width: 36%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: absolute;
+        right: -40px;
+        top: 50px;
+
+        @media #{$lg,$md,$xs} {
+            right: 0px;
+        }
+    }
+
+    &-img-3 {
+        width: 50%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: absolute;
+        right: -100px;
+        top: 38%;
+
+        @media #{$xxl} {
+            right: -60px;
+        }
+
+        @media #{$xl,$lg,$md,$xs} {
+            right: 0px;
+        }
+    }
+}
+/* 
+    feature-3-end
+*/

@@ -115,3 +115,41 @@
 /* 
     interactive-1-end
 */
+
+/* 
+    interactive-2-start
+*/
+.fd-interactive-3 {
+    &-img {
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-right: 40px;
+
+            @media #{$md,$xs} {
+                padding-right: 0px;
+                margin-bottom: 50px;
+            }
+        }
+
+        
+    }
+
+    &-content {
+        margin-right: -130px;
+
+        @media #{$xxl,$xl,$lg,$md,$xs} {
+            margin-right: 0px;
+        }
+
+        &-iner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px 50px;
+        }
+    }
+}
+/* 
+    interactive-2-end
+*/

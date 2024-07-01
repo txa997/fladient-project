@@ -388,6 +388,21 @@
 /* 
   header-2-end
 */
+/* 
+  header-3-start
+*/
+.fd-header-3 {
+  &-area {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+/* 
+  header-3-end
+*/
 
 
 

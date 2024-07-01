@@ -380,3 +380,130 @@
 /* 
     hero-2-end
 */
+/* 
+    hero-3-start
+*/
+.fd-hero-3 {
+    &-area {
+        padding-top: 250px;
+        padding-bottom: 105px;
+    }
+
+    &-bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 29%);
+        z-index: -1;
+    }
+
+    &-subtitle {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    &-title {
+        font-size: 75px;
+        max-width: 675px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 45px;
+
+        @media #{$lg} {
+            font-size: 70px;
+        }
+
+        @media #{$md} {
+            font-size: 60px;
+        }
+
+        @media #{$xs} {
+            font-size: 32px;
+        }
+
+        @media #{$sm} {
+            font-size: 50px;
+        }
+    }
+
+    &-img {
+        &-grid {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1.6fr 1fr;
+            grid-template-rows: 320px 220px;
+            gap: 30px;
+
+            @media #{$xs} {
+                grid-template-columns: 1fr ;
+                
+            }
+
+            @media #{$sm} {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+            }
+        }
+
+        &-item {
+            border-radius: 10px;
+
+            &:nth-child(1) {
+                grid-area: 1 / 1 / 2 / 2; 
+                @media #{$xs} {
+                    grid-area: unset; 
+                }
+            }
+
+            &:nth-child(2) {
+                grid-area: 1 / 2 / 3 / 3;
+                @media #{$xs} {
+                    grid-area: unset; 
+                }
+            }
+
+            &:nth-child(3) {
+                grid-area: 1 / 3 / 2 / 4;
+                @media #{$xs} {
+                    grid-area: unset; 
+                }
+            }
+
+            &:nth-child(4) {
+                grid-area: 2 / 1 / 3 / 2;
+                @media #{$xs} {
+                    grid-area: unset; 
+                }
+            }
+
+            &:nth-child(5) {
+                grid-area: 2 / 3 / 3 / 4;
+                @media #{$xs} {
+                    grid-area: unset; 
+                }
+            }
+        }
+
+
+        
+    }
+
+    &-btn {
+        gap: 30px;
+
+        &-link {
+            max-width: 190px;
+            transition: .3s;
+            &:hover {
+                transform: scale(90%);
+            }
+        }
+    }
+}
+/* 
+    hero-3-end
+*/

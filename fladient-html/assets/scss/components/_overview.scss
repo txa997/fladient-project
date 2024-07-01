@@ -269,3 +269,99 @@
 /* 
     overview-2-end
 */
+
+/* 
+    overview-3-stat
+*/
+.fd-overview-3 {
+
+    &-content {
+        max-width: 580px;
+        padding-top: 80px;
+
+        @media #{$md,$xs} {
+            padding-top: 0px;
+            margin-bottom: 50px;
+        }
+
+        &-iner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            .iner-img {
+                max-width: 210px;
+                height: 135px;
+                flex: 0 0 auto;
+                border-radius: 30px;
+                
+            }
+        }
+    }
+    
+    &-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 570px;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        li {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    &-right {
+        padding-left: 160px;
+
+        @media #{$xs} {
+            padding-left: 0;
+        }
+    }
+
+    &-img {
+        margin-right: -340px;
+
+        @media #{$xxxl} {
+            margin-right: -180px;
+        }
+
+        @media #{$xxl} {
+            margin-right: -80px;
+        }
+
+        @media #{$xl,$lg,$md,$xs} {
+            margin-right: 0px;
+        }
+
+        &-2 {
+            position: absolute;
+            top: 30px;
+            left: -25px;
+            width: 59%;
+
+            @media #{$md,$xs} {
+                width: 30%;
+                left: 0px;
+            }
+
+            img {
+                filter: drop-shadow(0 2px 60px rgba(0, 0, 0, 0.13));
+            }
+        }
+    }
+}
+
+
+/* 
+    overview-3-end
+*/
