@@ -182,6 +182,57 @@ if (menuToggle2) {
 	
 }
 
+
+if (window.innerWidth >= 991) {
+	const composeTl =  gsap.timeline({
+		scrollTrigger: {
+			trigger: ".fd-benifit-workflow-area",
+			start: "top 0%",
+			end:'bottom 0%',
+			scrub: 1,
+			pinSpacing: true, 
+			pin: true,
+			toggleActions: "play pause reverse reset",
+			markers: false,
+		}
+	});
+	
+	composeTl.to(".fd-benifit-1-content", {
+		
+		opacity: 0,
+		y: "-100%",
+		scale: 0.8,
+		duration: 1,
+	})
+	
+	composeTl.from(".fd-workflow-1-img-wrap", {
+		opacity: 1,
+		y: "100%",
+		scale: 0.8,
+		duration: 1,
+	}, "<")
+	
+	
+	
+	composeTl.to(".fd-benifit-1-img-2", {
+		opacity: 0,
+		y: "-100%",
+		scale: 0.8,
+		duration: 1,
+	})
+	
+	
+	
+	composeTl.from(".fd-workflow-1-content", {
+		opacity: 1,
+		y: "100%",
+		scale: 0.8,
+		duration: 1,
+	}, "<")
+
+}
+
+
 // title-animation
 if($('.txaa-split-subtitle-1').length) {
 	var st1 = $(".txaa-split-subtitle-1");
@@ -245,6 +296,7 @@ if($('.txaa-split-subtitle-2').length) {
 			scrollTrigger: {
 				trigger: el,
 				start: "top 90%",
+				markers: false,
 			},
 	
 			x: "0",
@@ -260,54 +312,6 @@ if($('.txaa-split-subtitle-2').length) {
 
 
 
-if (window.innerWidth >= 991) {
-	const composeTl =  gsap.timeline({
-		scrollTrigger: {
-			trigger: ".fd-benifit-workflow-area",
-			start: "top 0%",
-			end:'bottom 0%',
-			scrub: 1,
-			pinSpacing: true, 
-			pin: true,
-			toggleActions: "play pause reverse reset",
-			markers: false,
-		}
-	});
-	
-	composeTl.to(".fd-benifit-1-content", {
-		
-		opacity: 0,
-		y: "-100%",
-		scale: 0.8,
-		duration: 1,
-	})
-	
-	composeTl.from(".fd-workflow-1-img-wrap", {
-		opacity: 1,
-		y: "100%",
-		scale: 0.8,
-		duration: 1,
-	}, "<")
-	
-	
-	
-	composeTl.to(".fd-benifit-1-img-2", {
-		opacity: 0,
-		y: "-100%",
-		scale: 0.8,
-		duration: 1,
-	})
-	
-	
-	
-	composeTl.from(".fd-workflow-1-content", {
-		opacity: 1,
-		y: "100%",
-		scale: 0.8,
-		duration: 1,
-	}, "<")
-
-}
 
 
 const txaafadedown = gsap.utils.toArray('.txaafadedown');
