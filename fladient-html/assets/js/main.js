@@ -535,6 +535,26 @@ if($('.fd-testionial-2-active').length) {
 	});
 }
  
+
+// testimonial-3-slider
+if($('.fd-testimonial-3-active').length) {
+	let slider = new Swiper('.fd-testimonial-3-active', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		autoplay: {
+			delay: 4000,
+		},
+
+
+		navigation: {
+			nextEl: ".testimonial_3_next",
+			prevEl: ".testimonial_3_prev",
+		},
+
+	});
+}
+ 
   
 
 

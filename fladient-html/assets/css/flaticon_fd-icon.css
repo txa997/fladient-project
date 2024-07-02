@@ -19,43 +19,61 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-phone:before {
+.flaticon-customer-service:before {
     content: "\f101";
 }
-.flaticon-save-money:before {
+.flaticon-phone:before {
     content: "\f102";
 }
-.flaticon-finance:before {
+.flaticon-save-money:before {
     content: "\f103";
 }
-.flaticon-invention:before {
+.flaticon-app-development:before {
     content: "\f104";
 }
-.flaticon-stakeholder:before {
+.flaticon-finance:before {
     content: "\f105";
 }
-.flaticon-browser-settings:before {
+.flaticon-data-collection:before {
     content: "\f106";
 }
-.flaticon-production:before {
+.flaticon-invention:before {
     content: "\f107";
 }
-.flaticon-lauch:before {
+.flaticon-ux-design:before {
     content: "\f108";
 }
-.flaticon-innovation:before {
+.flaticon-app-development-1:before {
     content: "\f109";
 }
-.flaticon-stakeholder-1:before {
+.flaticon-stakeholder:before {
     content: "\f10a";
 }
-.flaticon-relationship:before {
+.flaticon-browser-settings:before {
     content: "\f10b";
 }
-.flaticon-pre-release-access:before {
+.flaticon-production:before {
     content: "\f10c";
 }
-.flaticon-video-marketing:before {
+.flaticon-lauch:before {
     content: "\f10d";
+}
+.flaticon-innovation:before {
+    content: "\f10e";
+}
+.flaticon-stakeholder-1:before {
+    content: "\f10f";
+}
+.flaticon-relationship:before {
+    content: "\f110";
+}
+.flaticon-pre-release-access:before {
+    content: "\f111";
+}
+.flaticon-content-creation:before {
+    content: "\f112";
+}
+.flaticon-video-marketing:before {
+    content: "\f113";
 }
 

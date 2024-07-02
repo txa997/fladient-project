@@ -2,11 +2,11 @@ $flaticon_fd-icon-font: "flaticon_fd-icon";
 
 @font-face {
     font-family: $flaticon_fd-icon-font;
-    src: url("./flaticon_fd-icon.woff2?a9b3ee6568b3d3305f65d66ff2e62833") format("woff2"),
-url("./flaticon_fd-icon.woff?a9b3ee6568b3d3305f65d66ff2e62833") format("woff"),
-url("./flaticon_fd-icon.eot?a9b3ee6568b3d3305f65d66ff2e62833#iefix") format("embedded-opentype"),
-url("./flaticon_fd-icon.ttf?a9b3ee6568b3d3305f65d66ff2e62833") format("truetype"),
-url("./flaticon_fd-icon.svg?a9b3ee6568b3d3305f65d66ff2e62833#flaticon_fd-icon") format("svg");
+    src: url("./flaticon_fd-icon.woff2?b85f0d3a4a589e67f8d93380f99a945b") format("woff2"),
+url("./flaticon_fd-icon.woff?b85f0d3a4a589e67f8d93380f99a945b") format("woff"),
+url("./flaticon_fd-icon.eot?b85f0d3a4a589e67f8d93380f99a945b#iefix") format("embedded-opentype"),
+url("./flaticon_fd-icon.ttf?b85f0d3a4a589e67f8d93380f99a945b") format("truetype"),
+url("./flaticon_fd-icon.svg?b85f0d3a4a589e67f8d93380f99a945b#flaticon_fd-icon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,32 +21,53 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon_fd-icon-map: (
-    "phone": "\f101",
-    "save-money": "\f102",
-    "finance": "\f103",
-    "invention": "\f104",
-    "stakeholder": "\f105",
-    "browser-settings": "\f106",
-    "production": "\f107",
-    "lauch": "\f108",
-    "innovation": "\f109",
-    "stakeholder-1": "\f10a",
-    "relationship": "\f10b",
-    "pre-release-access": "\f10c",
-    "video-marketing": "\f10d",
+    "customer-service": "\f101",
+    "phone": "\f102",
+    "save-money": "\f103",
+    "app-development": "\f104",
+    "finance": "\f105",
+    "data-collection": "\f106",
+    "invention": "\f107",
+    "ux-design": "\f108",
+    "app-development-1": "\f109",
+    "stakeholder": "\f10a",
+    "browser-settings": "\f10b",
+    "production": "\f10c",
+    "lauch": "\f10d",
+    "innovation": "\f10e",
+    "stakeholder-1": "\f10f",
+    "relationship": "\f110",
+    "pre-release-access": "\f111",
+    "content-creation": "\f112",
+    "video-marketing": "\f113",
 );
 
+.flaticon-customer-service:before {
+    content: map-get($flaticon_fd-icon-map, "customer-service");
+}
 .flaticon-phone:before {
     content: map-get($flaticon_fd-icon-map, "phone");
 }
 .flaticon-save-money:before {
     content: map-get($flaticon_fd-icon-map, "save-money");
 }
+.flaticon-app-development:before {
+    content: map-get($flaticon_fd-icon-map, "app-development");
+}
 .flaticon-finance:before {
     content: map-get($flaticon_fd-icon-map, "finance");
 }
+.flaticon-data-collection:before {
+    content: map-get($flaticon_fd-icon-map, "data-collection");
+}
 .flaticon-invention:before {
     content: map-get($flaticon_fd-icon-map, "invention");
+}
+.flaticon-ux-design:before {
+    content: map-get($flaticon_fd-icon-map, "ux-design");
+}
+.flaticon-app-development-1:before {
+    content: map-get($flaticon_fd-icon-map, "app-development-1");
 }
 .flaticon-stakeholder:before {
     content: map-get($flaticon_fd-icon-map, "stakeholder");
@@ -71,6 +92,9 @@ $flaticon_fd-icon-map: (
 }
 .flaticon-pre-release-access:before {
     content: map-get($flaticon_fd-icon-map, "pre-release-access");
+}
+.flaticon-content-creation:before {
+    content: map-get($flaticon_fd-icon-map, "content-creation");
 }
 .flaticon-video-marketing:before {
     content: map-get($flaticon_fd-icon-map, "video-marketing");
