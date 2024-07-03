@@ -67,3 +67,65 @@
 /* 
     blog-2-end
 */
+
+/* 
+    blog-3-start
+*/
+.fd-blog-3-item {
+    margin-bottom: 30px;
+
+    .item-img {
+        height: 280px;
+        border-radius: 20px;
+
+        img {
+            transition: .3s;
+            transform-origin: left;
+        }
+    }
+
+    .item-date {
+        background: #6a38c2;
+        font-size: 15px;
+        display: inline-block;
+        line-height: 28px;
+        border-radius: 30px;
+        padding: 7px 21px;
+        margin-left: 30px;
+        transform: translateY(-23px);
+    }
+
+    .item-title {
+        font-size: 27px;
+        line-height: 1.18;
+        margin-bottom: 11px;
+        transition: .3s;
+
+        @media #{$xl} {
+            font-size: 24px;
+        }
+
+        @media #{$lg,$md,$xs} {
+            font-size: 20px;
+        }
+
+        &:hover {
+            color: var(--fd-clr-pr-1);
+            transform: translateX(3px) ;
+        }
+    }
+
+    &:hover {
+        .item-img {
+            img {
+                transform: scaleX(105%);
+            }
+        }
+    }
+    
+}
+
+
+/* 
+    blog-3-end
+*/

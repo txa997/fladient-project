@@ -1,0 +1,92 @@
+/* 
+    showcase-3-start
+*/
+.fd-showcase-3 {
+    &-container {
+        max-width: 1735px;
+    }
+
+    &-item {
+        display: flex;
+        gap: 25px;
+
+        @media #{$md,$xs} {
+            flex-wrap: wrap;
+        }
+
+        &-single {
+            width: 408px;
+            flex: 0 0 auto;
+            background: #e1e8f1;
+            border-radius: 20px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            gap: 50px;
+
+            @media #{$xxl} {
+                width: 345px;
+            }
+
+            @media #{$xl} {
+                width: 345px;
+                padding: 40px 20px;
+            }
+
+            @media #{$lg} {
+                width: 265px;
+                padding: 40px 20px;
+            }
+
+            @media #{$md,$xs} {
+                width: 48%;
+                padding: 40px 20px;
+            }
+
+            @media #{$xs} {
+                width: 100%;
+                padding: 40px 20px;
+            }
+
+            @media #{$sm} {
+                width: 47%;
+                padding: 40px 20px;
+            }
+
+            img {
+                filter: drop-shadow(0 2px 60px rgba(0, 0, 0, 0.13));
+            }
+
+            .item-name {
+                font-size: 26px;
+
+                @media #{$xl,$lg,$md,$xs} {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
+
+    &-all-btn {
+        font-size: 20px;
+        line-height: 30px;
+
+        a {
+            display: inline-block;
+            transition: .3s;
+
+            &:hover {
+                color: var(--fd-clr-pr-1);
+                transform: translateX(3px);
+            }
+        }
+    }
+}
+
+
+/* 
+    showcase-3-end
+*/

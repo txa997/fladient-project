@@ -144,3 +144,134 @@
 /* 
     reports-1-end
 */
+
+/* 
+    reports-3-start
+*/
+.fd-reports-3 {
+
+    &-area {
+        padding-top: 270px;
+
+    }
+
+    &-item {
+        background: linear-gradient(260deg, rgb(249, 255, 226) 45%, rgb(254, 223, 217) 100%);
+        padding: 105px 110px;
+        border-radius: 20px;
+
+        @media #{$lg} {
+            padding: 105px 40px;
+        }
+
+        @media #{$md,$xs} {
+            padding: 105px 40px;
+            padding-bottom: 0;
+        }
+
+        &-single {
+            display: flex;
+            gap: 35px;
+            max-width: 355px;
+
+            @media #{$xs} {
+                flex-wrap: wrap;
+            }
+
+            @media #{$sm} {
+                flex-wrap: nowrap;
+            }
+
+            &:not(:nth-last-child(1)) {
+                margin-bottom: 30px;
+            }
+
+            .item-serial {
+                flex: 0 0 auto;
+                width: 88px;
+                height: 88px;
+                border-radius: 50%;
+                background: #c1b4ff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .item-title {
+                font-size: 20px;
+                margin-bottom: 8px;
+            }
+
+            .item-disc {
+                font-size: 16px;
+                line-height: 23px;
+                color: #616368;
+            }
+            
+
+            &:nth-child(2) {
+                .item-serial {
+                    background: #eefc98;
+                }
+            }
+
+            &:nth-child(3) {
+                .item-serial {
+                    background: #ffd763;
+                }
+            }
+        }
+
+        &-img {
+            width: 65%;
+            position: absolute;
+            bottom: 0;
+            right: -50px;
+
+            @media #{$lg} {
+                width: 55%;
+                right: 0;
+            }
+
+            @media #{$md,$xs} {
+                position: unset;
+            }
+        }
+
+
+        &-btn {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            position: absolute;
+            right: 30px;
+            bottom: 45px;
+            z-index: 1;
+
+
+            @media #{$md,$xs} {
+                position: unset;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            &-single {
+                display: inline-block;
+                flex: 0 0 auto;
+                width: 180px;
+                transition: .3s;
+
+                &:hover {
+                    transform: scale(95%);
+                }
+            }
+        }
+
+    }
+}
+
+/* 
+    reports-3-end
+*/

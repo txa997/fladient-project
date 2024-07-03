@@ -1,0 +1,35 @@
+/* 
+    milestone-3-start
+*/
+.fd-milestone-3 {
+    &-scn-title {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-counter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 1000px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media #{$xs} {
+            justify-content: center;
+        }
+
+        &-item {
+            .fd-counter-1-number {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}
+/* 
+    milestone-3-end
+*/
+

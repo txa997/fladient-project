@@ -555,6 +555,45 @@ if($('.fd-testimonial-3-active').length) {
 	});
 }
  
+
+// price-3-slider
+if($('.fd-price-3-active').length) {
+	let slider = new Swiper('.fd-price-3-active', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		autoplay: {
+			delay: 4000,
+		},
+
+		pagination: {
+			el: ".fd-price-3_pagination",
+			clickable: true,
+		},
+
+	});
+}
+ 
+
+
+if($('.fd-price-3-active2').length) {
+	let slider = new Swiper('.fd-price-3-active2', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		autoplay: {
+			delay: 4000,
+		},
+
+		pagination: {
+			el: ".fd-price-3_pagination2",
+			clickable: true,
+		},
+
+	});
+}
+
+// price-3-slider
   
 
 

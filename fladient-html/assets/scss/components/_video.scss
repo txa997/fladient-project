@@ -1,0 +1,46 @@
+/* 
+    video-3-start
+*/
+
+
+.fd-video-3 {
+
+    &-area {
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #09142e;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 55%;
+        }
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-content  {
+        height: 640px;
+        position: relative;
+        z-index: 1;
+
+        @media #{$xs} {
+            height: 400px;
+        }
+        @media #{$sm} {
+            height: 500px;
+        }
+
+    }
+
+}
+/* 
+    video-3-end
+*/
