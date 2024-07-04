@@ -1578,6 +1578,14 @@ input:focus::placeholder, textarea:focus::placeholder {
 .txaa-split-subtitle-1:is(.fd-hero-2-title) .split-line {
   padding-bottom: 8px;
 }
+.txaa-split-subtitle-1:is(.fd-hero-3-title) {
+  letter-spacing: -2px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txaa-split-subtitle-1:is(.fd-hero-3-title) {
+    letter-spacing: 0px;
+  }
+}
 .txaa-split-subtitle-1 .split-line {
   overflow: hidden;
 }
@@ -2008,6 +2016,18 @@ input:focus::placeholder, textarea:focus::placeholder {
   transition: 0.3s var(--cube-1);
   overflow: hidden;
   transition-delay: 0s;
+}
+@media (max-width: 767px) {
+  .fd-pr-btn-1 {
+    font-size: 18px;
+    padding: 22px 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .fd-pr-btn-1 {
+    padding: 27px 37px;
+    font-size: 20px;
+  }
 }
 .fd-pr-btn-1 .icon {
   display: inline-block;
@@ -3523,6 +3543,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 100%;
   height: 71%;
   z-index: -1;
+  background: #F4F4F4;
 }
 .fd-hero-3-subtitle {
   background: transparent;
@@ -4798,47 +4819,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-left: auto;
   margin-right: auto;
 }
-.fd-price-3-toggle-btn {
-  max-width: 290px;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 2px solid #ebebeb;
-  border-radius: 29px;
-  padding: 3px;
-  position: relative;
-  z-index: 1;
-}
-.fd-price-3-toggle-btn-single {
-  font-size: 16px;
-  padding: 13px;
-  text-align: center;
-  color: #616368;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.fd-price-3-toggle-btn-single:hover {
-  color: var(--fd-clr-h-1);
-}
-.fd-price-3-toggle-btn::after {
-  content: "";
-  width: 49%;
-  height: calc(100% - 6px);
-  background: #fedfd9;
-  top: 3px;
-  left: 3px;
-  position: absolute;
-  border-radius: 29px;
-  z-index: -1;
-  transition: 0.4s;
-}
-.fd-price-3-toggle-btn:is(.annually)::after {
-  transform: translateX(100%);
-}
-.fd-price-3-toggle-btn:is(.annually) .fd-price-3-toggle-btn-single:nth-child(2) {
-  color: var(--fd-clr-h-1);
-}
 .fd-price-3-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4898,6 +4878,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .fd-price-3-card-content .price span {
   font-size: 18px;
+}
+.fd-price-3-card-content .price:is(.is-yearly) {
+  display: none;
 }
 .fd-price-3-card-content .package-name {
   text-align: center;
@@ -4972,6 +4955,54 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .fd-price-3-payment .item {
   flex: 0 0 auto;
+}
+
+.fd-price-3-toggle-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #ebebeb;
+  border-radius: 40px;
+  padding: 17px 30px;
+  position: relative;
+  gap: 70px;
+}
+.fd-price-3-toggle-btn-single {
+  font-size: 16px;
+  text-align: center;
+  color: #616368;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fd-price-3-toggle-btn-single:is(.is-active) {
+  color: var(--fd-clr-h-1);
+}
+.fd-price-3-toggle-btn input {
+  display: none;
+}
+.fd-price-3-toggle-btn input:checked + i::after {
+  transform: translateX(97%);
+}
+.fd-price-3-toggle-btn i {
+  position: absolute;
+  display: inline-block;
+  left: 3px;
+  top: 0;
+  width: calc(100% - 3px);
+  height: 100%;
+  transition: all 0.3s linear;
+}
+.fd-price-3-toggle-btn i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 50%;
+  height: calc(100% - 6px);
+  background-color: #fedfd9;
+  border-radius: 40px;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
 }
 
 /* 
@@ -6864,6 +6895,12 @@ input:focus::placeholder, textarea:focus::placeholder {
     brand-1-end
 */
 /* 
+    brand-3-start
+*/
+/* 
+    brand-3-end
+*/
+/* 
     blog-2-start
 */
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -7094,6 +7131,21 @@ input:focus::placeholder, textarea:focus::placeholder {
 /* 
     video-3-start
 */
+.fd-video-3-area {
+  margin-left: auto;
+  margin-right: auto;
+  height: 640px;
+}
+@media (max-width: 767px) {
+  .fd-video-3-area {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .fd-video-3-area {
+    height: 500px;
+  }
+}
 .fd-video-3-area::after {
   content: "";
   width: 100%;
@@ -7104,27 +7156,26 @@ input:focus::placeholder, textarea:focus::placeholder {
   left: 0;
   opacity: 55%;
 }
+.fd-video-3-area .btn-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.fd-video-3-area .btn-posi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 500ms var(--cube-1);
+  z-index: 2;
+}
 .fd-video-3-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-.fd-video-3-content {
-  height: 640px;
-  position: relative;
-  z-index: 1;
-}
-@media (max-width: 767px) {
-  .fd-video-3-content {
-    height: 400px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .fd-video-3-content {
-    height: 500px;
-  }
 }
 
 /* 
@@ -7502,6 +7553,51 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 /* 
    footer-2-end
+*/
+/* 
+   footer-3-start
+*/
+.fd-footer-3-area {
+  background: #09142e;
+}
+.fd-footer-3-logo {
+  max-width: 220px;
+}
+.fd-footer-3-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px 40px;
+  flex-wrap: wrap;
+}
+.fd-footer-3-menu li a {
+  display: inline-block;
+  font-family: var(--fd-font-pr-1);
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  transition: 0.3s;
+}
+.fd-footer-3-menu li a:hover {
+  color: var(--fd-clr-pr-1);
+  transform: translateX(3px);
+}
+.fd-footer-3-social .fd-social-link {
+  justify-content: center;
+}
+.fd-footer-3-social .fd-social-link .link-item {
+  background: transparent;
+}
+.fd-footer-3-social .fd-social-link .link-item:hover {
+  background: var(--fd-clr-pr-1);
+}
+.fd-footer-3-copyright {
+  opacity: 20%;
+}
+
+/* 
+   footer-3-end
 */
 
 /*# sourceMappingURL=main.css.map */

@@ -247,6 +247,14 @@ input:focus::placeholder, textarea:focus::placeholder {
         }
     }
 
+    &:is(.fd-hero-3-title) {
+        letter-spacing: -2px;
+        @media #{$md,$xs} {
+            letter-spacing: 0px;
+        }
+    }
+
+
 	.split-line {
         overflow: hidden;
 		div {
@@ -261,6 +269,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .txaa-split-subtitle-2 {
+    
     &:is(.fd-scn-title-1) {
         letter-spacing: -1px;
 
@@ -268,6 +277,7 @@ input:focus::placeholder, textarea:focus::placeholder {
             letter-spacing: 0px;
         }
     }
+
     &:is(.fd-scn-title-2) {
         letter-spacing: -2px;
         @media #{$md,$xs} {

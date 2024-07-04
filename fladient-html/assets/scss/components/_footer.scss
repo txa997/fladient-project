@@ -434,3 +434,65 @@
    footer-2-end
 */
 
+/* 
+   footer-3-start
+*/
+.fd-footer-3 {
+   &-area {
+      background: #09142e;
+   }
+
+   &-logo {
+      max-width: 220px;
+   }
+   
+   &-menu {
+      display: flex;
+      justify-content: center;
+      gap: 15px 40px;
+      flex-wrap: wrap;
+
+      li {
+         a {
+            display: inline-block;
+            font-family: var(--fd-font-pr-1);
+            font-weight: 800;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #fff;
+            transition: .3s;
+
+            &:hover {
+               color: var(--fd-clr-pr-1);
+               transform: translateX(3px);
+            }
+         }
+      }
+   }
+
+   &-social {
+      .fd-social-link {
+         justify-content: center;
+
+         .link-item {
+            background: transparent;
+
+            &:hover {
+               background: var(--fd-clr-pr-1);
+            }
+         }
+         
+      }
+   }
+
+   &-copyright {
+      opacity: 20%;
+   }
+}
+
+
+/* 
+   footer-3-end
+*/
+

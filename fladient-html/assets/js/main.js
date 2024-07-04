@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		fdh2.from(".fd-hero-2-slideleft " , { stagger: .3,  x: -100 , duration:1,  opacity:0 ,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<.5")
 		fdh2.from(".fd-hero-2-slideright " , { stagger: .3,  x: 100 , duration:1,  opacity:0 , ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<.5")
 
+		// h3-start
+		const fdh3 = gsap.timeline();
+		fdh3.from(".fd-hero-3-slide-down" , { stagger: .4, y: 100 , duration:1,  opacity:0 , delay: 1,   ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
 
 
 	})
@@ -183,7 +186,7 @@ if (menuToggle2) {
 }
 
 
-if (window.innerWidth >= 991) {
+if (window.innerWidth >= 992) {
 	const composeTl =  gsap.timeline({
 		scrollTrigger: {
 			trigger: ".fd-benifit-workflow-area",
@@ -230,6 +233,37 @@ if (window.innerWidth >= 991) {
 		duration: 1,
 	}, "<")
 
+}
+
+
+// showcase-3
+if (window.innerWidth >= 992) {
+
+	const races = document.querySelector(".races");
+	console.log(races.offsetWidth)
+	
+	function getScrollAmount() {
+		let racesWidth = races.scrollWidth;
+		return -(racesWidth - window.innerWidth);
+	}
+	
+	const tween = gsap.to(races, {
+		x: getScrollAmount,
+		duration: 3,
+		ease: "none",
+	});
+	
+	
+	ScrollTrigger.create({
+		trigger:".racesWrapper",
+		start:"top 5%",
+		end: () => `+=${getScrollAmount() * -1}`,
+		pin:true,
+		animation:tween,
+		scrub:1,
+		invalidateOnRefresh:true,
+		markers:false
+	})
 }
 
 
@@ -309,9 +343,6 @@ if($('.txaa-split-subtitle-2').length) {
 	
 	});
 }
-
-
-
 
 
 const txaafadedown = gsap.utils.toArray('.txaafadedown');
@@ -485,6 +516,56 @@ gsap.utils.toArray('.fd-overview-1-img').forEach((el, index) => {
 })
 
 
+// blta-fade-down
+gsap.utils.toArray('.txaaslideup').forEach((el, index) => {
+	let tl1 = gsap.timeline({
+	  scrollTrigger: {
+		trigger: el, // Updated to use the individual element
+		start: "top 90%",
+		toggleActions: "play none none reverse",
+		markers: false
+	  }
+	});
+  
+	tl1.from(el, { 
+	  opacity: 0, // Changed initial opacity to 0 for a fade-in effect
+	  yPercent: 100, 
+	  duration: 1, 
+	  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") 
+	});
+  });
+  
+
+// ftc-hero-3
+if (window.innerWidth >= 768) {
+	var fdhero3 = gsap.timeline({
+
+		scrollTrigger: {
+		  animation: fdhero3,
+		  trigger: '.fd-hero-3-area',
+		  start: "top 0%",
+		  scrub: 1,
+		  toggleActions: "play reverse play reverse",
+		  markers: false
+		}
+	});
+	fdhero3.to(".fd-hero-3-img-grid" , { scale: 1.2,	duration:1, ease: "ease", })
+}
+
+// cta-3
+var fdcta3 = gsap.timeline({
+
+	scrollTrigger: {
+	  animation: fdcta3,
+	  trigger: '.fd-video-3-area',
+	  start: "top 95%",
+	  end: "top 40%",
+	  scrub: 1,
+	  toggleActions: "play reverse play reverse",
+	  markers: false
+	}
+});
+fdcta3.from(".fd-video-3-area" , { width: "50%",	duration:1, ease: "ease", })
 
 
 
@@ -597,9 +678,98 @@ if($('.fd-price-3-active2').length) {
 	});
 }
 
-// price-3-slider
   
 
+// brand-3
+if($('.fd-brand-3-active').length) {
+	let slider = new Swiper('.fd-brand-3-active', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		autoplay: {
+			delay: 4000,
+		},
+
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			576: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+			992: {
+				slidesPerView: 4,
+			},
+			1200: {
+				slidesPerView: 5,
+			},
+		},
+
+	});
+}
+
+
+// cursor-follow
+var mWrap = $(".fd-video-3-area .btn-area ");
+  
+	mWrap.hover(function () {
+	  var mContent = $(this).find("#magnetic-content");
+	  var mArea = $(this).find("#magnetic-area");
+  
+	  function parallaxIt(e, target, movement = 1) {
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		var boundingRect = mArea[0].getBoundingClientRect();
+		var relX = e.pageX - boundingRect.left;
+		var relY = e.pageY - boundingRect.top;
+  
+		gsap.to(mContent, {
+		  x: (relX - boundingRect.width / 2) * movement,
+		  y: (relY - boundingRect.height / 2 - scrollTop) * movement,
+		  ease: "power1",
+		  duration: 0.6
+		});
+	  }
+  
+	  function callParallax(e) {
+		parallaxIt(e, mWrap);
+	  }
+  
+	  mArea.mousemove(function (e) {
+		callParallax(e);
+	  });
+	  mArea.mouseleave(function (e) {
+		gsap.to(mContent, {
+		  scale: 1,
+		  x: 0,
+		  y: 0,
+		  ease: "power1",
+		  duration: 0.6
+		});
+	  });
+	});
+  
+
+// price-toggle
+$(".fd-price-3-toggle-js").change(function() {
+    if(this.checked) {
+
+      	$('.js-montlypricing').css('display', 'none');
+		$('.js-yearlypricing').css('display', 'block');
+		$('.afterinput').addClass('is-active');
+		$('.beforeinput').removeClass('is-active');
+
+    } else {
+
+      $('.js-montlypricing').css('display', 'block');
+      $('.js-yearlypricing').css('display', 'none');
+      $('.afterinput').removeClass('is-active');
+      $('.beforeinput').addClass('is-active');
+
+	}
+});
 
 /* 
  	price-1-active-class

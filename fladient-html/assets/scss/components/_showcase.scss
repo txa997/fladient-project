@@ -9,6 +9,7 @@
     &-item {
         display: flex;
         gap: 25px;
+        // width: calc(100% + 500px);
 
         @media #{$md,$xs} {
             flex-wrap: wrap;

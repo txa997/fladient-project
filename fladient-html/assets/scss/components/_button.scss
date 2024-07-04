@@ -84,6 +84,16 @@
     overflow: hidden;
     transition-delay: 0s;
 
+    @media #{$xs} {
+        font-size: 18px;
+        padding: 22px 30px;
+    }
+
+    @media #{$sm} {
+        padding: 27px 37px;
+        font-size: 20px;
+    }
+
     .icon {
         display: inline-block;
         margin-left: 5px;
