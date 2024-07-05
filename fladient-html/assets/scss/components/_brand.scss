@@ -24,6 +24,10 @@
             padding: 30px;
             flex: 0 0 auto;
 
+            &:hover {
+                animation: fd-bounce 1s ;
+            }
+
             @media #{$xl} {
                 width: 225px;
                 height: 225px;

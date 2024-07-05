@@ -186,6 +186,7 @@ if (menuToggle2) {
 }
 
 
+
 if (window.innerWidth >= 992) {
 	const composeTl =  gsap.timeline({
 		scrollTrigger: {
@@ -238,32 +239,35 @@ if (window.innerWidth >= 992) {
 
 // showcase-3
 if (window.innerWidth >= 992) {
+	if($('.races').length) {
 
-	const races = document.querySelector(".races");
-	console.log(races.offsetWidth)
-	
-	function getScrollAmount() {
-		let racesWidth = races.scrollWidth;
-		return -(racesWidth - window.innerWidth);
+		const races = document.querySelector(".races");
+		console.log(races.offsetWidth)
+		
+		function getScrollAmount() {
+			let racesWidth = races.scrollWidth;
+			return -(racesWidth - window.innerWidth);
+		}
+		
+		const tween = gsap.to(races, {
+			x: getScrollAmount,
+			duration: 3,
+			ease: "none",
+		});
+		
+		
+		ScrollTrigger.create({
+			trigger:".racesWrapper",
+			start:"top 5%",
+			end: () => `+=${getScrollAmount() * -1}`,
+			pin:true,
+			animation:tween,
+			scrub:1,
+			invalidateOnRefresh:true,
+			markers:false
+		})
+
 	}
-	
-	const tween = gsap.to(races, {
-		x: getScrollAmount,
-		duration: 3,
-		ease: "none",
-	});
-	
-	
-	ScrollTrigger.create({
-		trigger:".racesWrapper",
-		start:"top 5%",
-		end: () => `+=${getScrollAmount() * -1}`,
-		pin:true,
-		animation:tween,
-		scrub:1,
-		invalidateOnRefresh:true,
-		markers:false
-	})
 }
 
 
@@ -516,7 +520,7 @@ gsap.utils.toArray('.fd-overview-1-img').forEach((el, index) => {
 })
 
 
-// blta-fade-down
+// fd-fade-down
 gsap.utils.toArray('.txaaslideup').forEach((el, index) => {
 	let tl1 = gsap.timeline({
 	  scrollTrigger: {
@@ -536,7 +540,24 @@ gsap.utils.toArray('.txaaslideup').forEach((el, index) => {
   });
   
 
-// ftc-hero-3
+// fd-hero-2
+if (window.innerWidth >= 992 ) {
+	var fdhero2 = gsap.timeline({
+
+		scrollTrigger: {
+		  animation: fdhero2,
+		  trigger: '.fd-hero-2-area',
+		  start: "top -30%",
+		  scrub: 1,
+		  toggleActions: "play reverse play reverse",
+		  markers: true
+		}
+	});
+	fdhero2.to(".fd-hero-2-img-grid" , { x: "-30%",	duration:1, ease: "ease", })
+			.to(".fd-hero-2-img-big" , { opacity: 0,	duration:.1, ease: "ease", }, "<=")
+}
+
+// fd-hero-3
 if (window.innerWidth >= 768) {
 	var fdhero3 = gsap.timeline({
 

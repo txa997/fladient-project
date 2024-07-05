@@ -2716,6 +2716,23 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 10px;
 }
 
+@keyframes fd-bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
 /* 
   spilting-wrating-end
 */
@@ -6832,6 +6849,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   justify-content: center;
   padding: 30px;
   flex: 0 0 auto;
+}
+.fd-brand-1-item-single:hover {
+  animation: fd-bounce 1s;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .fd-brand-1-item-single {
