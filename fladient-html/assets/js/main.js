@@ -550,7 +550,7 @@ if (window.innerWidth >= 992 ) {
 		  start: "top -30%",
 		  scrub: 1,
 		  toggleActions: "play reverse play reverse",
-		  markers: true
+		  markers: false
 		}
 	});
 	fdhero2.to(".fd-hero-2-img-grid" , { x: "-30%",	duration:1, ease: "ease", })
@@ -579,8 +579,8 @@ var fdcta3 = gsap.timeline({
 	scrollTrigger: {
 	  animation: fdcta3,
 	  trigger: '.fd-video-3-area',
-	  start: "top 95%",
-	  end: "top 40%",
+	  start: "top 80%",
+	  end: "top 20%",
 	  scrub: 1,
 	  toggleActions: "play reverse play reverse",
 	  markers: false
@@ -734,43 +734,45 @@ if($('.fd-brand-3-active').length) {
 
 
 // cursor-follow
-var mWrap = $(".fd-video-3-area .btn-area ");
+var mWrap = $(".fd-video-3-area");
   
-	mWrap.hover(function () {
-	  var mContent = $(this).find("#magnetic-content");
-	  var mArea = $(this).find("#magnetic-area");
-  
-	  function parallaxIt(e, target, movement = 1) {
+mWrap.hover(function () {
+	var mContent = $(this).find("#magnetic-content");
+	var mArea = $(this).find("#magnetic-area");
+
+	function parallaxIt(e, target, movement = 1) {
 		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		var boundingRect = mArea[0].getBoundingClientRect();
 		var relX = e.pageX - boundingRect.left;
 		var relY = e.pageY - boundingRect.top;
-  
+
 		gsap.to(mContent, {
-		  x: (relX - boundingRect.width / 2) * movement,
-		  y: (relY - boundingRect.height / 2 - scrollTop) * movement,
-		  ease: "power1",
-		  duration: 0.6
+			x: (relX - boundingRect.width / 2) * movement,
+			y: (relY - boundingRect.height / 2 - scrollTop) * movement,
+			ease: "none",
+			duration: 1
 		});
-	  }
-  
-	  function callParallax(e) {
+	}
+
+	function callParallax(e) {
 		parallaxIt(e, mWrap);
-	  }
-  
-	  mArea.mousemove(function (e) {
+	}
+
+	mArea.mousemove(function (e) {
 		callParallax(e);
-	  });
-	  mArea.mouseleave(function (e) {
-		gsap.to(mContent, {
-		  scale: 1,
-		  x: 0,
-		  y: 0,
-		  ease: "power1",
-		  duration: 0.6
-		});
-	  });
 	});
+
+	mArea.mouseleave(function (e) {
+		gsap.to(mContent, {
+			scale: 1,
+			x: 0,
+			y: 0,
+			ease: "none",
+			duration: 1
+		});
+	});
+
+});
   
 
 // price-toggle

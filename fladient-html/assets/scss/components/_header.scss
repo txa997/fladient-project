@@ -403,6 +403,23 @@
 /* 
   header-3-end
 */
+/* 
+  header-4-start
+*/
+
+.fd-header-4 {
+  &-area {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+/* 
+  header-4-end
+*/
 
 
 

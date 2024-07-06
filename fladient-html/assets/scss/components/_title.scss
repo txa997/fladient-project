@@ -16,6 +16,19 @@
     }
 }
 
+.fd-heading-2 {
+    font-family: var(--fd-font-pr-1);
+    line-height: 1.16;
+    color: var(--fd-clr-h-2);
+    text-transform: capitalize;
+    margin-bottom: 0px;
+
+    &:is(.has-clr-white) {
+        color: #fff;
+    }
+}
+
+
 .fd-heading-3 {
     font-family: var(--fd-font-pr-1);
     line-height: 1.30;
@@ -28,17 +41,14 @@
     }
 }
 
-.fd-heading-2 {
+.fd-heading-4 {
     font-family: var(--fd-font-pr-1);
     line-height: 1.16;
-    color: var(--fd-clr-h-2);
+    color: #000;
     text-transform: capitalize;
     margin-bottom: 0px;
-
-    &:is(.has-clr-white) {
-        color: #fff;
-    }
 }
+
 
 .fd-para-1 {
     font-family: var(--fd-font-pr-1);

@@ -228,3 +228,39 @@
 
     benifit-2-end
 */
+
+/* 
+
+    benifit-4-start
+*/
+.fd-benifit-4 {
+    &-container {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 35px;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 35px;
+
+        .fd-benifit-2 {
+            &-content {
+                background: #f4f4f5;
+
+                .content-title {
+                    font-size: 45px;
+                }
+
+                .content-disc {
+                    max-width: 500px;
+                    margin-left: auto;
+                    // margin-right: ;
+                }
+            }
+        }
+    }
+}
+/* 
+
+    benifit-4-end
+*/

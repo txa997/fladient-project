@@ -508,3 +508,79 @@
 /* 
     hero-3-end
 */
+/* 
+    hero-4-start
+*/
+
+.fd-hero-4 {
+    &-area {
+        padding-top: 300px;
+        padding-bottom: 285px;
+    
+    }
+
+    &-subtitle {
+        font-size: 24px;
+        margin-bottom: -40px;
+
+        @media #{$lg,$md} {
+            margin-bottom: 0px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+
+        @media #{$sm} {
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+    }
+
+    &-title {
+        font-size: 190px;
+        line-height: 1.72;
+        margin-bottom: -30px;
+
+        @media #{$xxl} {
+            font-size: 160px;
+        }
+
+        @media #{$xl} {
+            font-size: 140px;
+        }
+
+        @media #{$lg} {
+            font-size: 120px;
+            margin-bottom: 0;
+        }
+
+        @media #{$md} {
+            font-size: 100px;
+            margin-bottom: 0;
+        }
+
+        @media #{$xs} {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+
+        @media #{$sm} {
+            font-size: 70px;
+            margin-bottom: 0;
+        }
+    }
+
+    &-disc {
+        color: #4b4b4b;
+        font-weight: 500;
+        max-width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+}
+/* 
+    hero-4-end
+*/
