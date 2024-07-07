@@ -357,3 +357,84 @@
 /* 
     advantages-3-end
 */
+/* 
+    advantages-4-start
+*/
+.fd-advantages-4 {
+
+    &-area {
+        .fd-advantages-1-img {
+            margin-left: -272px;
+
+            @media #{$xxxl} {
+                margin-left: -115px;
+            }
+
+            @media #{$xxl,$xl,$lg,$md,$xs} {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    &-scn-title {
+        font-size: 70px;
+
+        @media #{$lg} {
+            font-size: 60px; 
+        }
+
+        @media #{$md} {
+            font-size: 50px; 
+        }
+
+        @media #{$xs} {
+            font-size: 30px; 
+        }
+
+        @media #{$sm} {
+            font-size: 40px; 
+        }
+    }
+
+    &-scn-disc {
+        max-width: 600px;
+    }
+
+    &-bg-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        padding: 0 35px;
+        border-radius: 20px;
+
+        @media #{$xl,$lg,$md,$xs} {
+            padding: 0 15px;
+        }
+
+        @media #{$xs} {
+            padding: 0 0px;
+        }
+
+        @media #{$sm} {
+            padding: 0 15px;
+        }
+        
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    &-list {
+        li {
+            color: #000;
+        }
+    }
+
+
+}
+/* 
+    advantages-4-end
+*/

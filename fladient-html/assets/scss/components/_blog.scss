@@ -129,3 +129,33 @@
 /* 
     blog-3-end
 */
+
+/* 
+    blog-4-start
+*/
+.fd-blog-4 {
+
+    &-scn-title {
+        font-size: 67px;
+
+    
+        @media #{$lg} {
+            font-size: 60px;
+        }
+    
+        @media #{$md} {
+            font-size: 50px; 
+        }
+    
+        @media #{$xs} {
+            font-size: 30px; 
+        }
+    
+        @media #{$sm} {
+            font-size: 40px; 
+        }
+    }
+}
+/* 
+    blog-4-end
+*/

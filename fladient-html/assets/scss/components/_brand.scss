@@ -99,9 +99,202 @@
 */
 
 /* 
-    brand-3-start
+    brand-4-start
 */
+.fd-brand-4 {
+    &-scn-title {
+        font-size: 67px;
+        text-align: center;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
 
+        @media #{$lg} {
+            font-size: 60px;
+        }
+    
+        @media #{$md} {
+            font-size: 50px; 
+        }
+    
+        @media #{$xs} {
+            font-size: 30px; 
+        }
+    
+        @media #{$sm} {
+            font-size: 40px; 
+        }
+    }
+
+    &-social {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        
+        @media #{$md,$xs} {
+            flex-wrap: wrap;   
+        }
+
+        &-single {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 178px;
+            height: 178px;
+            border: 2px solid #e9e9e9;
+            border-radius: 50%;
+            padding: 30px;
+            flex: 0 0 auto;
+
+
+
+            @media #{$xxl} {
+                width: 135px;
+                height: 135px;
+            }
+
+            @media #{$xl} {
+                width: 135px;
+                height: 135px;
+            }
+
+            @media #{$lg} {
+                width: 115px;
+                height: 115px;
+            }
+
+            @media #{$md,$xs} {
+                width: 100px;
+                height: 100px;
+            }
+
+            &:hover {
+                img {
+                    animation: 1s fd-bounce ;
+                }
+            }
+
+
+            &:nth-child(1) {
+                margin-top: 105px;
+                @media #{$md,$xs} {
+                    margin-top: 0;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-top: 50px;
+                @media #{$md,$xs} {
+                    margin-top: 0;
+                }
+            }
+
+            &:nth-child(3) {
+                margin-top: 15px;
+                @media #{$md,$xs} {
+                    margin-top: 0;
+                }
+            }
+
+            &:nth-child(4) {
+                margin-top: 0px;
+            }
+
+            &:nth-child(5) {
+                margin-top: 15px;
+                @media #{$md,$xs} {
+                    margin-top: 0;
+                }
+            }
+
+            &:nth-child(6) {
+                margin-top: 50px;
+                @media #{$md,$xs} {
+                    margin-top: 0;
+                }
+            }
+
+            &:nth-child(7) {
+                margin-top: 105px;
+                @media #{$md,$xs} {
+                    margin-top: 0;
+                }
+            }
+
+
+        }
+
+        &-sm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 108px;
+            height: 108px;
+            border: 2px solid #e9e9e9;
+            border-radius: 50%;
+            padding: 15px;
+            flex: 0 0 auto;
+
+            
+            @media #{$xl} {
+                width: 90px;
+                height: 90px;
+            }
+
+            
+            @media #{$lg} {
+                width: 80px;
+                height: 80px;
+            }
+            
+            @media #{$md,$xs} {
+                display: none;
+            }
+
+
+
+            &:hover {
+                img {
+                    animation: 1s fd-bounce ;
+                }
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                top: -20px;
+                left: 60px;
+            }
+
+            &:nth-child(3) {
+                position: absolute;
+                top: -20px;
+                right: 60px;
+            }
+
+            &:nth-child(4) {
+                position: absolute;
+                bottom: -20px;
+                left: 24.5%;
+
+                @media #{$xxl} {
+                    left: 29.5%;
+                }
+            }
+
+            &:nth-child(5) {
+                position: absolute;
+                bottom: -20px;
+                right: 24.5%;
+
+                @media #{$xxl} {
+                    right: 29.5%;
+                }
+            }
+        }
+    }
+
+}
 /* 
-    brand-3-end
+    brand-4-end
 */

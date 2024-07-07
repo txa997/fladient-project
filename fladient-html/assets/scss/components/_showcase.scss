@@ -91,3 +91,29 @@
 /* 
     showcase-3-end
 */
+
+/* 
+    showcase-4-start
+*/
+.fd-showcase-4 {
+    &-scn-title {
+        font-size: 60px;
+
+    
+        @media #{$md} {
+            font-size: 50px; 
+        }
+    
+        @media #{$xs} {
+            font-size: 30px; 
+        }
+    
+        @media #{$sm} {
+            font-size: 40px; 
+        }
+    }
+}
+/* 
+    showcase-4-end
+*/
+

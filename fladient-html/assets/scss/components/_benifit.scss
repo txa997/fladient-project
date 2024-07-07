@@ -243,18 +243,47 @@
         display: grid;
         gap: 35px;
 
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+
         .fd-benifit-2 {
             &-content {
                 background: #f4f4f5;
+                margin-bottom: 0px;
+
+                @media #{$md} {
+                    padding: 80px 25px;
+                }
 
                 .content-title {
                     font-size: 45px;
+
+                    @media #{$xxl} {
+                        font-size: 40px;
+                    }
+
+                    @media #{$xl} {
+                        font-size: 35px;
+                    }
+
+                    @media #{$lg} {
+                        font-size: 30px;
+                    }
+
+                    @media #{$xs} {
+                        font-size: 24px;
+                    }
+
+                    @media #{$sm} {
+                        font-size: 28px;
+                    }
                 }
 
                 .content-disc {
                     max-width: 500px;
                     margin-left: auto;
-                    // margin-right: ;
+                    margin-right: auto;
                 }
             }
         }

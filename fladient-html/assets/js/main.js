@@ -358,7 +358,7 @@ txaafadedown.forEach((box, i) => {
 
 	ScrollTrigger.create({
 		trigger: box,
-		start: "top 90%",
+		start: "top 95%",
 		animation: anim,
 		toggleActions: 'play none none reverse',
 		once: false,
@@ -587,6 +587,7 @@ var fdcta3 = gsap.timeline({
 	}
 });
 fdcta3.from(".fd-video-3-area" , { width: "50%",	duration:1, ease: "ease", })
+
 
 
 

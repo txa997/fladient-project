@@ -275,3 +275,46 @@
 /* 
     reports-3-end
 */
+
+/* 
+    reports-4-start
+*/
+.fd-reports-4 {
+
+    &-area {
+        .fd-reports-1-content {
+            padding-top: 80px;
+
+            @media #{$md,$xs} {
+                padding-top: 0px;
+            }
+        }
+
+        .fd-reports-1-img-2 {
+            left: 0;
+        }
+    }
+
+    &-scn-title {
+        font-size: 70px;
+
+        @media #{$lg} {
+            font-size: 60px; 
+        }
+
+        @media #{$md} {
+            font-size: 50px; 
+        }
+
+        @media #{$xs} {
+            font-size: 30px; 
+        }
+
+        @media #{$sm} {
+            font-size: 40px; 
+        }
+    }
+}
+/* 
+    reports-4-end
+*/
