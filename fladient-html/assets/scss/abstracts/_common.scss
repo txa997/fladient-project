@@ -310,6 +310,14 @@ input:focus::placeholder, textarea:focus::placeholder {
 	}
 }
 
+.txaa-split-subtitle-3 {
+	overflow: hidden;
+    
+	.split-line {
+        overflow: hidden;
+	}
+}
+
 
 .rtl-home {
     direction: rtl;

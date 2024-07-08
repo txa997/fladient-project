@@ -53,6 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
 		const fdh3 = gsap.timeline();
 		fdh3.from(".fd-hero-3-slide-down" , { stagger: .4, y: 100 , duration:1,  opacity:0 , delay: 1,   ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
 
+		// h4-start
+		const fdh4 = gsap.timeline();
+		fdh4.from(".fd-hero-4-bg" , { scale: 3, duration: 2 , delay: 1 })
+		.from(".fd-hero-4-title" , { y: 100, opacity: 0, duration:1 })
+		.from(".fd-hero-4-disc" , { y: 100, opacity: 0, duration:1 })
+		.from(".fd-hero-4-btn" , { y: 100, opacity: 0, duration:1 })
+
 
 	})
 
@@ -343,6 +350,46 @@ if($('.txaa-split-subtitle-2').length) {
 			duration: .7,
 			ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
 			stagger: 0.2,
+		});
+	
+	});
+}
+
+if($('.txaa-split-subtitle-3').length) {
+
+	var st2 = $(".txaa-split-subtitle-3");
+
+	if(st2.length == 0) return; gsap.registerPlugin(SplitText); st2.each(function(index, el) {
+	
+		el.split = new SplitText(el, { 
+		type: "lines,words,chars",
+		linesClass: "split-line"
+		});
+	
+		gsap.set(el, { perspective: 400 });
+	
+			if( $(el).hasClass('txaa-ani-subtitle-3') ){
+			gsap.set(el.split.words, {
+				opacity: 1,
+				y: "-100",
+	
+			});
+		}
+	
+		el.anim = gsap.to(el.split.words, {
+			scrollTrigger: {
+				trigger: el,
+				start: "top 90%",
+				markers: false,
+			},
+	
+			x: "0",
+			y: "0",
+			opacity: 1,
+			duration: .7,
+			ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "),
+			stagger: 0.2,
+			delay: 3
 		});
 	
 	});
@@ -733,6 +780,18 @@ if($('.fd-brand-3-active').length) {
 	});
 }
 
+
+// var tl = gsap.timeline({  });
+// var tl2 = gsap.timeline({   });
+
+// tl.to('.word', 
+//     { yPercent: -100 , stagger: 3 , duration: 1 },
+// )
+
+// tl2.to('.word', 
+//     { yPercent: -200, stagger: 3 , duration: 1 ,  },
+// 	"<=3"
+// );
 
 // cursor-follow
 var mWrap = $(".fd-video-3-area");

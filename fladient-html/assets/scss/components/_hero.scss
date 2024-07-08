@@ -519,9 +519,81 @@
     
     }
 
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        filter: blur(5px);
+        background: #f4f4f5;
+
+        &-circle-1 {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background: #00abff;
+            border-radius: 50%;
+            filter: blur(130px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            animation: hero-4-bg-animation-1 15s linear infinite;
+            transition: 1s;
+        }
+
+        &-circle-2 {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background: #ff606b;
+            border-radius: 50%;
+            filter: blur(130px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            animation: hero-4-bg-animation-2 15s linear infinite;
+            transition: 1s;
+        }
+
+        &-circle-3 {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background: #ffbe66;
+            border-radius: 50%;
+            filter: blur(130px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            animation: hero-4-bg-animation-1 11s linear infinite;
+            transition: 1s;
+        }
+
+        &-circle-4 {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background: #00e5ff;
+            border-radius: 50%;
+            filter: blur(130px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            animation: hero-4-bg-animation-2 11s linear infinite;
+            transition: 1s;
+        }
+    }
+    
     &-subtitle {
         font-size: 24px;
-        margin-bottom: -40px;
+        margin-bottom: 0px;
 
         @media #{$lg,$md} {
             margin-bottom: 0px;
@@ -539,37 +611,43 @@
     }
 
     &-title {
-        font-size: 190px;
-        line-height: 1.72;
-        margin-bottom: -30px;
+        margin-bottom: 50px;
 
-        @media #{$xxl} {
-            font-size: 160px;
+
+        &-single {
+            font-size: 190px;
+            line-height: 1.2;
+
+            @media #{$xxl} {
+                font-size: 160px;
+            }
+    
+            @media #{$xl} {
+                font-size: 140px;
+            }
+    
+            @media #{$lg} {
+                font-size: 120px;
+                margin-bottom: 0;
+            }
+    
+            @media #{$md} {
+                font-size: 100px;
+                margin-bottom: 0;
+            }
+    
+            @media #{$xs} {
+                font-size: 40px;
+                margin-bottom: 0;
+            }
+    
+            @media #{$sm} {
+                font-size: 70px;
+                margin-bottom: 0;
+            }
         }
 
-        @media #{$xl} {
-            font-size: 140px;
-        }
 
-        @media #{$lg} {
-            font-size: 120px;
-            margin-bottom: 0;
-        }
-
-        @media #{$md} {
-            font-size: 100px;
-            margin-bottom: 0;
-        }
-
-        @media #{$xs} {
-            font-size: 40px;
-            margin-bottom: 0;
-        }
-
-        @media #{$sm} {
-            font-size: 70px;
-            margin-bottom: 0;
-        }
     }
 
     &-disc {
@@ -581,6 +659,103 @@
         margin-bottom: 40px;
     }
 }
+
+
+.fd-hero-4-content {
+    
+    $speed: 16s;
+    $wordCount: 7;
+
+    .morphing {
+        position: relative;
+        min-height: 200px;
+        overflow: hidden;
+        // filter: contrast(25) blur(1px);
+
+    }
+
+    .word {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: word $speed infinite ease-in-out;
+        width: 100%;
+
+        @for $i from 0 to $wordCount {
+            &:nth-child(#{$i + 1}) {
+                animation-delay: ($speed / ($wordCount + 1) * $i) - $speed;
+            }
+        }
+
+        @keyframes word {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+}
+
+    
+@keyframes hero-4-bg-animation-1 {
+    0% {
+        transform: translate(-200% , -50%);
+    }
+    20% {
+        transform: translate(100% , -50%);
+    }
+    40% {
+        transform: translate(100% , 100%);
+    }
+    60% {
+        transform: translate(-100% , 100%);
+    }
+    80% {
+        transform: translate(-100% , -50%);
+    }
+    100% {
+        transform: translate(-200% , -50%);
+    }
+}
+    
+@keyframes hero-4-bg-animation-2 {
+    0% {
+        transform: translate(200% , -50%);
+    }
+    20% {
+        transform: translate(-100% , -50%);
+    }
+    40% {
+        transform: translate(-100% , 100%);
+    }
+    60% {
+        transform: translate(100% , 100%);
+    }
+    80% {
+        transform: translate(-100% , -50%);
+    }
+    100% {
+        transform: translate(200% , -50%);
+    }
+}
+
+
 /* 
     hero-4-end
 */
