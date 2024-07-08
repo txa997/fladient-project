@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		// h4-start
 		const fdh4 = gsap.timeline();
-		fdh4.from(".fd-hero-4-bg" , { scale: 3, duration: 2 , delay: 1 })
+		fdh4.from(".fd-hero-4-bg" , { scale: 0, transformOrigin: "center 20%" , duration: 2 , delay: 1 })
 		.from(".fd-hero-4-title" , { y: 100, opacity: 0, duration:1 })
 		.from(".fd-hero-4-disc" , { y: 100, opacity: 0, duration:1 })
 		.from(".fd-hero-4-btn" , { y: 100, opacity: 0, duration:1 })
@@ -780,18 +780,24 @@ if($('.fd-brand-3-active').length) {
 	});
 }
 
+  
 
-// var tl = gsap.timeline({  });
-// var tl2 = gsap.timeline({   });
+// hero-4
+if($('.fd-hero-4-active').length) {
+	let slider = new Swiper('.fd-hero-4-active', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 1000,
+		autoplay: {
+			delay: 4000,
+		},
 
-// tl.to('.word', 
-//     { yPercent: -100 , stagger: 3 , duration: 1 },
-// )
+		direction: 'vertical',
 
-// tl2.to('.word', 
-//     { yPercent: -200, stagger: 3 , duration: 1 ,  },
-// 	"<=3"
-// );
+	});
+}
+
+
 
 // cursor-follow
 var mWrap = $(".fd-video-3-area");
