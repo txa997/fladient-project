@@ -49,6 +49,14 @@
     margin-bottom: 0px;
 }
 
+.fd-heading-5 {
+    font-family: var(--fd-font-pr-2);
+    line-height: 1.16;
+    color: var(--fd-clr-h-4);
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
 
 .fd-para-1 {
     font-family: var(--fd-font-pr-1);
@@ -74,6 +82,19 @@
     line-height: 28px;
     font-size: 18px;
     color: var(--fd-clr-p-2);
+    margin-bottom: 0px;
+
+    &:is(.has-clr-white) {
+        color: #fff;
+    }
+}
+
+.fd-para-3 {
+    font-family: var(--fd-font-pr-2);
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 17px;
+    color: var(--fd-clr-h-4);
     margin-bottom: 0px;
 
     &:is(.has-clr-white) {
@@ -194,6 +215,41 @@
     font-weight: 900;
     font-size: 60px;
     margin-bottom: 0px;
+
+    &:is(.has-clr-white) {
+        color: #fff;
+    }
+
+    @media #{$xl} {
+        font-size: 50px;
+    }
+
+    @media #{$lg} {
+        font-size: 40px;
+    }
+
+    @media #{$md} {
+        font-size: 35px;
+    }
+    
+    @media #{$xs} {
+        font-size: 26px;
+    }
+    @media #{$sm} {
+        font-size: 30px;
+    }
+
+}
+
+
+.fd-scn-title-3 {
+    font-family: var(--fd-font-pr-2);
+    line-height: 1.4;
+    color: var(--fd-clr-h-4);
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 55px;
+    margin-bottom: 5px;
 
     &:is(.has-clr-white) {
         color: #fff;

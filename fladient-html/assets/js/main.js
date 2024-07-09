@@ -682,8 +682,8 @@ if (window.innerWidth >= 992) {
 		scrollTrigger: {
 		  animation: fdbenifit4,
 		  trigger: '.fd-benifit-4-area',
-		  start: "top 80%",
-		  end: "top 20%",
+		  start: "top 60%",
+		  end: "top 30%",
 		  scrub: 1,
 		  toggleActions: "play reverse play reverse",
 		  markers: false

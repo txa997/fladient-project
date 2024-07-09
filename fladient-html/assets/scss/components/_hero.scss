@@ -761,3 +761,161 @@
 /* 
     hero-4-end
 */
+
+/* 
+    hero-5-start
+*/
+
+.fd-full-screen {
+    height: 100vh;
+    width: 100%;
+}
+
+.fd-hero-5 {
+
+    &-container {
+
+        @media (min-width: 1600px) {
+            max-width: 1584px;
+        }
+    }
+
+    &-title {
+        font-size: 125px;
+        line-height: 1.2;
+        margin-bottom: 70px;
+
+        @media #{$xxl} {
+            font-size: 100px;
+        }
+
+        @media #{$xl} {
+            font-size: 90px;
+        }
+
+        @media #{$lg} {
+            font-size: 80px;
+        }
+
+        @media #{$md} {
+            font-size: 70px;
+            margin-bottom: 10px;
+
+        }
+
+        @media #{$xs} {
+            font-size: 50px;
+            margin-bottom: 10px;
+
+        }
+
+        @media #{$sm} {
+            font-size: 60px;
+            margin-bottom: 10px;
+
+        }
+
+        &-2 {
+            font-size: 125px;
+            line-height: 1.2;  
+            display: inline-block;
+
+            @media #{$xxl} {
+                font-size: 100px;
+            }
+    
+            @media #{$xl} {
+                font-size: 90px;
+            }
+    
+            @media #{$lg} {
+                font-size: 80px;
+            }
+    
+            @media #{$md} {
+                font-size: 70px;
+            }
+    
+            @media #{$xs} {
+                font-size: 50px;
+            }
+    
+            @media #{$sm} {
+                font-size: 60px;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 15px;
+                position: absolute;
+                right: 0;
+                top: 15px;
+                animation: fd-h5-title2 1s linear infinite;
+
+                @media #{$xs} {
+                    top: 0px;
+                }
+            }
+        }
+    }
+
+    &-content {
+        .right {
+            max-width: 640px;
+            margin-left: auto;
+
+            .inner-div {
+                max-width: 500px;
+                margin-left: auto;
+            }
+        }
+    }
+
+    &-disc {
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+
+    &-social {
+        position: absolute;
+        bottom: 6%;
+        width: 100%;
+        z-index: 1;
+
+        &-wrap {
+            gap: 30px;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: -1;
+        display: flex;
+        align-items: self-start;
+        justify-content: center;
+    }
+}
+
+@keyframes fd-h5-title2 {
+    0% {
+        color: var(--fd-clr-h-4);
+        
+    }
+
+    50% {
+        color: var(--fd-clr-pr-1);
+    }
+    100% {
+        color: var(--fd-clr-h-4);
+        
+    }
+}
+
+/* 
+    hero-5-end
+*/

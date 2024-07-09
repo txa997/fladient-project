@@ -427,6 +427,34 @@
   header-4-end
 */
 
+/* 
+  header-5-start
+*/
+.fd-header-5 {
+
+  &-area {
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+  }
+
+
+  &-action-link {
+    gap: 25px;
+
+    .fd-mobile-menu-btn-1 {
+      @media #{$over,xxxl,$xxl,$xl,$lg} {
+        display: none;
+      }
+    }
+  }
+}
+/* 
+  header-5-end
+*/
+
 
 
 
