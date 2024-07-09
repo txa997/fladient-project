@@ -56,10 +56,27 @@ document.addEventListener("DOMContentLoaded", function () {
 		// h4-start
 		const fdh4 = gsap.timeline();
 		fdh4.from(".fd-hero-4-bg" , { scale: 0, transformOrigin: "center 20%" , duration: 2 , delay: 1 })
-		.from(".fd-hero-4-title" , { y: 100, opacity: 0, duration:1 })
-		.from(".fd-hero-4-disc" , { y: 100, opacity: 0, duration:1 })
-		.from(".fd-hero-4-btn" , { y: 100, opacity: 0, duration:1 })
+		.from(".fd-hero-4-title" , { y: 100, opacity: 0, duration:1 , delay: .5 })
+		.from("[txa-header-2-main-row]" , { y: -100, opacity: 0, duration:1 }, "<=.5")
+		.from(".fd-hero-4-disc" , { y: 100, opacity: 0, duration:1 },"<=.5")
+		.from(".fd-hero-4-btn" , { y: 100, opacity: 0, duration:1 }, "<=.5")
 
+
+
+		// hero-4
+		if($('.fd-hero-4-active').length) {
+			let slider = new Swiper('.fd-hero-4-active', {
+				loop: true,
+				spaceBetween: 0,
+				speed: 1000,
+				autoplay: {
+					delay: 4000,
+				},
+
+				direction: 'vertical',
+
+			});
+		}
 
 	})
 
@@ -192,6 +209,24 @@ if (menuToggle2) {
 	
 }
 
+// fd-services-4
+if (window.innerWidth >= 992 ) {
+	var fdhero2 = gsap.timeline({
+
+		scrollTrigger: {
+		  animation: fdhero2,
+		  trigger: '.fd-services-4-img-grid',
+		  start: "top 10%",
+		  scrub: 1,
+		  toggleActions: "play reverse play reverse",
+		  pin: true,
+		  pinSpacing: true,
+		  markers: false
+		}
+	});
+	fdhero2.to(".fd-services-4-img-grid " , { x: "-30%",	duration:1, ease: "ease", })
+			.to(".fd-services-4-img-big" , { opacity: 0,	duration:.1, ease: "ease", }, "<=")
+}
 
 
 if (window.innerWidth >= 992) {
@@ -276,6 +311,7 @@ if (window.innerWidth >= 992) {
 
 	}
 }
+
 
 
 // title-animation
@@ -523,7 +559,6 @@ txaasx0.forEach((box, i) => {
 		animation: anim,
 		toggleActions: 'play none none reverse',
 		once: false,
-		
 		markers: false,
 
 	});
@@ -584,7 +619,8 @@ gsap.utils.toArray('.txaaslideup').forEach((el, index) => {
 	  duration: 1, 
 	  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") 
 	});
-  });
+});
+  
   
 
 // fd-hero-2
@@ -604,6 +640,7 @@ if (window.innerWidth >= 992 ) {
 			.to(".fd-hero-2-img-big" , { opacity: 0,	duration:.1, ease: "ease", }, "<=")
 }
 
+
 // fd-hero-3
 if (window.innerWidth >= 768) {
 	var fdhero3 = gsap.timeline({
@@ -619,6 +656,8 @@ if (window.innerWidth >= 768) {
 	});
 	fdhero3.to(".fd-hero-3-img-grid" , { scale: 1.2,	duration:1, ease: "ease", })
 }
+
+
 
 // cta-3
 var fdcta3 = gsap.timeline({
@@ -636,7 +675,78 @@ var fdcta3 = gsap.timeline({
 fdcta3.from(".fd-video-3-area" , { width: "50%",	duration:1, ease: "ease", })
 
 
+// fd-benifit-4
+if (window.innerWidth >= 992) {
+	var fdbenifit4 = gsap.timeline({
 
+		scrollTrigger: {
+		  animation: fdbenifit4,
+		  trigger: '.fd-benifit-4-area',
+		  start: "top 80%",
+		  end: "top 20%",
+		  scrub: 1,
+		  toggleActions: "play reverse play reverse",
+		  markers: false
+		}
+	});
+	fdbenifit4.from(".fd-benifit-4-container" , { padding: 0, gap: 0, duration:1, ease: "ease", })
+	.from(".fd-benifit-2-content " , {  borderRadius: 0,  duration:1, ease: "ease", }, "<=")
+}
+
+
+// fd-feature-4
+var fdfeature4 = gsap.timeline({
+
+	scrollTrigger: {
+	  animation: fdfeature4,
+	  trigger: '.fd-feature-4-area',
+	  start: "top 60%",
+	  end: "top 10%",
+	  scrub: 1,
+	  toggleActions: "play reverse play reverse",
+	  markers: false
+	}
+});
+fdfeature4.from(".fd-feature-4-bg" , { padding: 0, duration:1, ease: "ease", })
+.from(".fd-feature-4-bg img"  , { borderRadius: 0,  duration:1, ease: "ease", })
+
+
+const txaapadding0 = gsap.utils.toArray('.txaapadding0');
+txaapadding0.forEach((box, i) => {
+	const anim = gsap.from(box, 
+		
+	{ padding: 0 , duration: 1, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") });
+
+	ScrollTrigger.create({
+		trigger: box,
+		start: "top 60%",
+		end: "top 20%",
+		animation: anim,
+		toggleActions: 'play none none reverse',
+		once: false,
+		scrub: 1,
+		markers: false,
+
+	});
+});
+
+
+
+// fd-brand-4
+if (window.innerWidth >= 992) {
+	var fdbrand4 = gsap.timeline({
+
+		scrollTrigger: {
+		  animation: fdbrand4,
+		  trigger: '.fd-brand-4-wrap',
+		  start: "top 80%",
+		  toggleActions: "play reverse play reverse",
+		  markers: false
+		}
+	});
+	fdbrand4.from(".fd-brand-4-social-single" , { opacity: 0, scale: .3, y: -300, stagger: .2, duration:.3, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "), })
+	fdbrand4.from(".fd-brand-4-social-sm" , { opacity: 0 , scale: .5, y: -300, stagger: .3, duration:.3, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "), })
+}
 
 // course-1-slider
 if($('.fd-feature-1-active').length) {
@@ -782,20 +892,6 @@ if($('.fd-brand-3-active').length) {
 
   
 
-// hero-4
-if($('.fd-hero-4-active').length) {
-	let slider = new Swiper('.fd-hero-4-active', {
-		loop: true,
-		spaceBetween: 0,
-		speed: 1000,
-		autoplay: {
-			delay: 4000,
-		},
-
-		direction: 'vertical',
-
-	});
-}
 
 
 

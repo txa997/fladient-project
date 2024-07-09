@@ -414,6 +414,12 @@
     left: 0;
     width: 100%;
     z-index: 2;
+
+    .fd-header-2-main-row {
+      @media #{$md,$xs} {
+        padding: 10px 0;
+      }
+    }
   }
 }
 

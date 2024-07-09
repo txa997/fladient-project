@@ -47,7 +47,8 @@
         border-radius: 20px;
         padding: 0 35px;
 
-        @media #{$md} {
+
+        @media #{$lg,$md} {
             padding: 0 20px;
         }
 

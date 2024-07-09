@@ -509,13 +509,19 @@
       height: 100%;
       z-index: -1;
       padding: 0 35px;
+      border-radius: 20px;
+
+
+      img {
+         border-radius: 20px;
+      }
 
       @media #{$xxl,$xl,$lg,$md,$xs} {
          padding: 0 15px;
       }
 
       @media #{$xs} {
-         padding: 0 0px;
+         padding: 0 10px;
       }
 
       @media #{$sm} {

@@ -267,9 +267,10 @@
                         font-size: 35px;
                     }
 
-                    @media #{$lg} {
+                    @media #{$lg,$md} {
                         font-size: 30px;
                     }
+
 
                     @media #{$xs} {
                         font-size: 24px;

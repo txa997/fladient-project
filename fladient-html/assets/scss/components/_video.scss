@@ -43,26 +43,28 @@
 
             .fd-video-3-bg {
                 border-radius: 20px;
-                padding: 0 35px;
                 position: relative;
                 z-index: 1;
+                width: calc(100% - 70px);
+                margin-left: auto;
+                margin-right: auto;
 
                 @media #{$xs} {
-                    padding: 0 15px;
+                    width: calc(100% - 10px);
+                }
+
+                @media #{$sm} {
+                    width: calc(100% - 30px);
                 }
 
                 .overly {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    padding: 0 35px;
                     z-index: 1;
                     mix-blend-mode: multiply;
-
-                    @media #{$xs} {
-                        padding: 0 15px;
-                    }
                 }
+
             }
         }
     }
