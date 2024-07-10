@@ -242,6 +242,27 @@
             background: var(--fd-clr-pr-2);
         }
     }
+
+    &:is(.has-h5-pr-1) {
+        background: #407bf3;
+        font-size: 16px;
+        padding: 24px 30px;
+
+        &:is(.has-shadow) {
+            box-shadow: 14.433px 16.604px 6px 0px rgba(0, 0, 0, 0.14);
+        }
+    }
+
+    &:is(.has-h5-black) {
+        background: #000;
+        font-size: 16px;
+        padding: 24px 30px;
+
+        &:is(.has-shadow) {
+            box-shadow: 14.433px 16.604px 6px 0px rgba(0, 0, 0, 0.14);
+        }
+    }
+
 }
 /* 
     pr-btn-1-end

@@ -769,6 +769,14 @@
 .fd-full-screen {
     height: 100vh;
     width: 100%;
+
+
+}
+
+.fd-full-screen-none {
+    @media #{$md,$xs} {
+        height: 100%;
+    }
 }
 
 .fd-hero-5 {

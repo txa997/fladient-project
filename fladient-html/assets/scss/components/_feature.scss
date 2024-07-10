@@ -362,3 +362,265 @@
 /* 
     feature-4-end
 */
+/* 
+    feature-5-start
+*/
+.fd-feature-5 {
+
+    &-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &-content {
+        max-width: 815px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-disc {
+        margin-bottom: 40px;
+    }
+
+    &-img {
+        width: 64%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media #{$md,$xs} {
+            width: 100%;
+        }
+    }
+
+    &-img-btn {
+        &-1 {
+            position: absolute;
+            top: 23px;
+            left: 8%;
+
+            @media #{$xl} {
+                left: 0%;
+            }
+
+            @media #{$lg} {
+                left: 0%;
+                top: 0;
+            }
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+
+            .line {
+                display: inline-block;
+                width: 120px;
+                height: 2px;
+                background: #4FCD81;
+                position: absolute;
+                top: 45%;
+                left: 98%;
+                transform: translateY(-50%);
+
+                @media #{$lg,$md,$xs} {
+                    width: 60px;
+                }
+                
+                &::after {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    background: #4FCD81;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 0;
+                    top: -6px;
+                }
+            }
+
+            .fd-pr-btn-1 {
+                font-weight: 900;
+                background: linear-gradient( 90deg, rgb(134,225,174) 0%, rgb(75,204,126) 100%);
+
+                .text {
+          
+                    &::before {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        &-2 {
+            position: absolute;
+            top: 69px;
+            right: 10%;
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+
+            @media #{$xxl,$xl} {
+                top: 58px;
+                right: 6%;
+            }
+
+            @media #{$lg,$md,$xs} {
+                top: 0;
+                right: 0;
+            }
+
+            .line {
+                display: inline-block;
+                width: 120px;
+                height: 2px;
+                background: #F7988B;
+                position: absolute;
+                top: 45%;
+                right: 98%;
+                transform: translateY(-50%);
+                
+                &::after {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    background: #F7988B;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: -6px;
+                }
+            }
+
+            .fd-pr-btn-1 {
+                font-weight: 900;
+                background: linear-gradient( 90deg, rgb(247,155,142) 0%, rgb(247,95,75) 100%);
+
+                .text {
+                    &::before {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        &-3 {
+            position: absolute;
+            bottom: 142px;
+            left: 4%;
+
+            
+
+            @media #{$xxl} {
+                bottom: 113px;
+            }
+
+            @media #{$xl} {
+                bottom: 83px;
+                left: 0;
+            }
+
+            @media #{$lg} {
+                bottom: 60px;
+                left: 0;
+            }
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+
+            .line {
+                display: inline-block;
+                width: 345px;
+                height: 2px;
+                background: #AB4CFB;
+                position: absolute;
+                top: 45%;
+                left: 98%;
+                transform: translateY(-50%);
+
+                @media #{$xxl,$xl} {
+                    width: 265px;
+                }
+
+                @media #{$lg} {
+                    width: 175px;
+                }
+                
+                &::after {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    background: #AB4CFB;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 0;
+                    top: -6px;
+                }
+            }
+
+            .fd-pr-btn-1 {
+                font-weight: 900;
+                background: linear-gradient( 90deg, rgb(203,144,254) 0%, rgb(169,73,251) 100%);
+
+                .text {
+                    &::before {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        &-4 {
+            position: absolute;
+            bottom: 15px;
+            right: 4%;
+
+            @media #{$xl,$lg} {
+                right: 0%;
+            }
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+            .line {
+                display: inline-block;
+                width: 145px;
+                height: 2px;
+                background: #6EAAFA;
+                position: absolute;
+                top: 45%;
+                right: 98%;
+                transform: translateY(-50%);
+
+                @media #{$xxl,$xl} {
+                    width: 85px;
+
+                }
+                
+                &::after {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    background: #6EAAFA;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: -6px;
+                }
+            }
+
+            .fd-pr-btn-1 {
+                font-weight: 900;
+                background: linear-gradient( 90deg, rgb(113,172,250) 0%, rgb(64,130,250) 100%);
+
+                .text {
+                    &::before {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 
+    feature-5-end
+*/

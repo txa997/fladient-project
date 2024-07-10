@@ -112,3 +112,68 @@
 /* 
     about-2-end
 */
+/* 
+    about-5-start
+*/
+.fd-about-5 {
+
+    &-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1.8fr 1fr;
+        gap: 30px;
+
+        @media #{$md,$xs} {
+            grid-template-columns:  1fr;
+        }
+
+        .iner-div {
+            display: grid;
+            grid-template-columns: 1.7fr 1fr;
+            gap: 50px;
+
+            @media #{$xs} {
+                grid-template-columns: 1fr;
+            }
+
+            .devices-disc {
+                margin-bottom: 40px;
+            }
+        }
+
+        .illus-2 {
+            width: 25%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .illus-1 {
+            width: 49%;
+            position: absolute;
+            right: 0;
+            top: 230px;
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+        }
+
+        .left {
+            padding-top: 50px;
+            .fd-scn-title-3 {
+                max-width: 600px;
+                margin-bottom: 120px;
+            }
+        }
+    }
+}
+
+
+/* 
+    about-5-end
+*/

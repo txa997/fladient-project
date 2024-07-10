@@ -219,3 +219,145 @@
     services-4-end
 */
 
+
+/* 
+    services-5-start
+*/
+.fd-services-5 {
+    &-area {
+        background: #000;
+        padding-top: 90px;
+
+        @media #{$md,$xs} {
+            padding-bottom: 100px;
+        }
+    }
+
+    &-item {
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto ;
+        align-items: center;
+
+
+        &-single {
+            display: flex;
+            align-content: center;
+            height: 250px;
+
+            @media #{$xs} {
+                flex-wrap: wrap;
+                height: 100%;
+                gap: 30px;
+                margin-bottom: 50px;
+            }
+
+
+            .item-content {
+                align-self: center;
+                max-width: 630px;
+                padding-left: 100px;
+
+                @media #{$lg,$md,$xs} {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+
+            .item-subtitle {
+                font-size: 14px;
+                color: var(--fd-clr-pr-1);
+                margin-bottom: 15px;
+            }
+
+            .item-title {
+                font-size: 30px;
+                color: #fff;
+                transition: .3s;
+
+                @media #{$xl,$lg} {
+                    font-size: 25px;
+                }
+
+                @media #{$md,$xs} {
+                    font-size: 22px;
+                }
+
+                &:hover {
+                    color: var(--fd-clr-pr-1);
+                }
+            }
+
+            .item-img {
+                width: 55%;
+
+                @media #{$xxl,$xl,$lg} {
+                    width: 40%;
+                }
+
+                @media #{$xs} {
+                    width: 100%;
+                }
+
+                &::after {
+                    content: "";
+                    width: 300px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 100%);
+                }
+
+            }
+
+            .item-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 78px;
+                height: 78px;
+                border-radius: 50%;
+                background: #303535;
+                font-size: 30px;
+                color: #c4ef17;
+                position: absolute;
+                right: -70px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: .3s;
+                opacity: 0;
+
+                @media #{$lg,$md,$xs} {
+                    display: none;
+                }
+
+                &:hover {
+                    background: var(--fd-clr-pr-1);
+                }
+            }
+
+            &:hover {
+                .item-btn {
+                    opacity: 1;
+                }
+            }
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+
+                .item-img::after {
+                    left: 0;
+                    background: linear-gradient(270deg, rgba(2, 0, 36, 0) 0%, rgb(0, 0, 0) 100%);
+                }
+            }
+            
+        }
+    }
+}
+
+
+/* 
+    services-5-end
+*/
+
