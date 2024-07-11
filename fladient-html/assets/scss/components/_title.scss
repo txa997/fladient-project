@@ -255,23 +255,27 @@
         color: #fff;
     }
 
-    @media #{$xl} {
+    @media #{$xxl} {
         font-size: 50px;
     }
 
+    @media #{$xl} {
+        font-size: 45px;
+    }
+
     @media #{$lg} {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     @media #{$md} {
-        font-size: 35px;
+        font-size: 32px;
     }
     
     @media #{$xs} {
         font-size: 24px;
     }
     @media #{$sm} {
-        font-size: 30px;
+        font-size: 28px;
     }
 
 }

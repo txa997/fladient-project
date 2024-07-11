@@ -136,6 +136,10 @@
             grid-template-columns: 1.7fr 1fr;
             gap: 50px;
 
+            @media #{$lg} {
+                grid-template-columns: 1fr;
+            }
+
             @media #{$xs} {
                 grid-template-columns: 1fr;
             }
@@ -157,6 +161,10 @@
             position: absolute;
             right: 0;
             top: 230px;
+
+            @media #{$lg} {
+                top: 150px;
+            }
 
             @media #{$md,$xs} {
                 display: none;

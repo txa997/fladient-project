@@ -363,3 +363,125 @@
 /* 
     workflow-3-end
 */
+
+
+/* 
+    workflow-5-start
+*/
+.fd-workflow-5 {
+
+    &-area {
+        @media #{$lg,$md,$xs} {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    &-container {
+        @media (min-width: 1400px) {
+            max-width: 1370px;
+        }
+    }
+
+    &-scn-title {
+        max-width: 770px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        align-items: start;
+
+        @media #{$lg} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media #{$md} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media #{$xs} {
+            grid-template-columns: 1fr ;
+        }
+    }
+
+    &-img {
+        grid-row-start: 1;
+        grid-column-start: 2;
+     
+        grid-row-end: 3;
+        grid-column-end: 3;
+
+        @media #{$xs} {
+            grid-row-start: unset;
+            grid-column-start: unset;
+         
+            grid-row-end: unset;
+            grid-column-end: unset;
+    
+        }
+
+        &-1 {
+            border-radius: 20px;
+        }
+
+        &-2 {
+            position: absolute;
+            bottom: -182px;
+            width: 85%;
+
+            @media #{$lg,$md} {
+                bottom: -112px;
+            }
+
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+
+    &-item {
+        background: #fff;
+        border-radius: 20px;
+        padding: 35px  35px;
+
+        .item-title {
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 17px;
+
+            @media #{$md} {
+                font-size: 20px;
+            }
+
+            @media #{$xs} {
+                font-size: 20px;
+                flex-wrap: wrap;
+            }
+
+            i {
+                font-size: 50px;
+                flex: 0 0 auto;
+            }
+            
+        }
+    }
+    
+    &-qoute {
+        a {
+            transition: .3s ;
+            &:hover {
+                color: var(--fd-clr-pr-1);
+            }
+        }
+    }
+}
+
+/* 
+    workflow-5-end
+*/

@@ -318,3 +318,93 @@
 /* 
     reports-4-end
 */
+/* 
+    reports-5-start
+*/
+.fd-report-5 {
+
+    &-area {
+        @media #{$lg,$md,$xs} {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    &-container {
+
+        @media (min-width: 1500px) {
+            max-width: 1450px;
+        }
+        
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media #{$xl} {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        @media #{$lg,$md,$xs} {
+            grid-template-columns:  1fr;
+        }
+    }
+
+    &-content {
+
+
+        .fd-about-2-feature-wrap {
+            grid-template-columns: 1fr;
+        }
+
+        .scn-disc {
+            margin-bottom: 40px;
+        }
+
+        .iner-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            @media #{$xs} {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &-img-wrap {
+        gap: 15px;
+
+        @media #{$xs} {
+            flex-wrap: wrap;
+        }
+
+        &:nth-child(2) {
+            @media #{$xl} {
+                display: none !important;
+            }
+        }
+
+        &:nth-child(3) {
+            @media #{$xl} {
+                display: none !important;
+            }
+        }
+    }
+
+    &-img {
+        width: 215px;
+        height: 195px;
+        border-radius: 20px;
+        flex: 0 0 auto;
+    }
+}
+
+
+
+/* 
+    reports-5-end
+*/
+

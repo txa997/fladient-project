@@ -447,7 +447,7 @@
     &-area {
         flex-direction: column;
 
-        @media #{$md,$xs} {
+        @media #{$lg,$md,$xs} {
             padding-top: 100px;
             padding-bottom: 100px;
         }

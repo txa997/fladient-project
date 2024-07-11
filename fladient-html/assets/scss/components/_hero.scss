@@ -774,7 +774,7 @@
 }
 
 .fd-full-screen-none {
-    @media #{$md,$xs} {
+    @media #{$lg,$md,$xs} {
         height: 100%;
     }
 }
