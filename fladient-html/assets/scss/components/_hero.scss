@@ -781,6 +781,15 @@
 
 .fd-hero-5 {
 
+    &-area {
+        @media #{$md,$xs} {
+            padding-top: 150px;
+            height: 100%;
+            flex-direction: column;
+        }
+    }
+
+
     &-container {
 
         @media (min-width: 1600px) {
@@ -860,6 +869,7 @@
                 top: 15px;
                 animation: fd-h5-title2 1s linear infinite;
 
+
                 @media #{$xs} {
                     top: 0px;
                 }
@@ -869,12 +879,21 @@
 
     &-content {
         .right {
-            max-width: 640px;
+            max-width: 575px;
             margin-left: auto;
+
+            @media #{$xl,$lg} {
+                margin-left: unset;
+            }
 
             .inner-div {
                 max-width: 500px;
                 margin-left: auto;
+
+                @media #{$xl,$lg} {
+                    margin-left: unset;
+                }
+    
             }
         }
     }
@@ -882,6 +901,8 @@
     &-disc {
         font-weight: 800;
         margin-bottom: 30px;
+
+
     }
 
     &-social {
@@ -904,8 +925,26 @@
         text-align: center;
         z-index: -1;
         display: flex;
-        align-items: self-start;
+        align-items: start;
         justify-content: center;
+        padding-top: 100px;
+
+        @media #{$xl,$lg} {
+            justify-content: end;
+        }
+
+        @media #{$md,$xs} {
+            position: unset;
+        }
+
+        img {
+            width: 50%;
+
+            @media #{$xl,$lg,$md,$xs} {
+                width: 80%;
+            }
+        }
+
     }
 }
 

@@ -78,6 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		}
 
+		// h4-start
+		const fdh5 = gsap.timeline();
+		fdh5.from("[fd-h5-img-down]" , { yPercent: 100, duration: 1 , delay: 1 , ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
+		fdh5.from("[fd-h5-slide-left]" , { opacity: 0, x: -200, duration: 1 ,  ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
+		.from("[fd-h5-slide-down]" , { opacity: 0, y: 200, duration: 1 , stagger: .3 , ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<=")
+
+		fdh5.from("[fd-h5-img-down]" , {     filter: "hue-rotate(360deg)", duration: 3 , ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<" )
+		
+
 	})
 
 });
@@ -1098,6 +1107,55 @@ $('.parallax-img').parallaxie({
 });
 
 
+if (window.innerWidth >= 1200 ) {
+	if($('#pagepiling'.length)) {
+		$('#pagepiling').pagepiling({
+
+			menu: '#onePageMenu',
+
+			anchors: ['hero', 'about', 'overview',  'project',  'purchase', 'gallery' , 'features', 'services' , 'price' , 'vision' ],
+
+			navigation: {
+				'position': 'right',
+				'tooltips': ['Hero', 'About', 'Overview', 'Project', 'Purchase', 'Gallery' , 'Features', 'Services' , 'Price' , 'vision' ]
+			},
+
+			afterRender: function () {
+				$('#pp-nav').addClass('custom');
+				pageScrollIndecator();
+			},
+
+			onLeave: function () {
+				pageScrollIndecator();
+			},
+
+			afterLoad: function (anchorLink, index) {
+				if (index > 1) {
+					$('#pp-nav').removeClass('custom');
+				} else {
+					$('#pp-nav').addClass('custom');
+				}
+
+			}
+
+		});
+
+		function pageScrollIndecator() {
+			var allSection = $('#pagepiling .section');
+			var sectionCount = parseInt(allSection.length);
+
+			var activeSection = $('#pagepiling').children('.section.active');
+			var activeCount = allSection.index(activeSection);
+
+			var activeIndex = parseInt(activeCount) + 1;
+			var scale = (activeIndex / sectionCount).toFixed(3);
+
+			$('.pagescroll-indication span').css({
+				'transform': 'scaleY(' + scale + ')'
+			});
+		}
+	}
+}
 
 
 })(jQuery);

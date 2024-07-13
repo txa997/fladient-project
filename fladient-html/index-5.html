@@ -13,6 +13,7 @@
 		<!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/pagepiling.css">
         <link rel="stylesheet" href="assets/css/flaticon_fd-icon.css">
         <link rel="stylesheet" href="assets/css/swiper.min.css">
         <link rel="stylesheet" href="assets/css/animate.css">
@@ -20,7 +21,7 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
      
-    <body class="fd-home-1" >
+    <body class="fd-home-5" >
 
 
 
@@ -46,16 +47,17 @@
                 <div class="fd-header-1-container">
                     <div class="fd-header-1-main-row d-flex align-items-center justify-content-between">
 
-                        <a href="index-5.html" aria-label="name" class="fd-header-1-main-logo d-block">
-                            <img src="assets/img/logo/logo-3.png" alt="">
+                        <a href="index-5.html" aria-label="name" class="fd-header-5-main-logo d-block p-relative">
+                            <img class="logo-1" src="assets/img/logo/logo-3.png" alt="">
+                            <img class="logo-2" src="assets/img/logo/logo-2.png" alt="">
                         </a>
 
                         <!-- menu -->
                         <nav class="main-navigation d-none d-lg-block">
                             <ul id="main-nav" class="nav navbar-nav clearfix">
 
-                                <li class="dropdown">
-                                    <a class="is-active" href="!#">home</a>
+                                <li class="dropdown" data-menuanchor="home">
+                                    <a class="is-active" href="#home">home</a>
                                     <ul class="dropdown-menu clearfix">
                                         <li>
                                             <a  href="index.html">home 1</a>
@@ -74,109 +76,27 @@
                                         </li>
                                     </ul>
                                 </li>
+
+                                <li data-menuanchor="about">
+                                    <a href="#about">about</a>
+                                </li>
+
+                                <li data-menuanchor="overview">
+                                    <a href="#overview">overview</a>
+                                </li>
+
+                                <li data-menuanchor="features">
+                                    <a href="#features">features</a>
+                                </li>
+
+                                <li data-menuanchor="price">
+                                    <a href="#price">price</a>
+                                </li>
+
+                                <li data-menuanchor="purchase">
+                                    <a href="#purchase">purchase</a>
+                                </li>
                                                             
-                                <li class="dropdown">
-                                    <a href="!#">pages</a>
-                                    <ul class="dropdown-menu clearfix">
-
-                                        <li class="dropdown">
-                                            <a href="!#">about</a>
-                                            <ul class="dropdown-menu clearfix">
-                                                <li>
-                                                    <a href="about-1.html">about one</a>
-                                                </li>
-                                                <li>
-                                                    <a href="about-2.html">about two</a>
-                                                </li>
-                                                <li>
-                                                    <a href="about-3.html">about three</a>
-                                                </li>
-                                                
-                                            </ul>
-                                        </li>
-                                        
-                                        <li class="dropdown">
-                                            <a href="!#">instructor</a>
-                                            <ul class="dropdown-menu clearfix">
-                                                <li>
-                                                    <a href="instructor.html">instructor</a>
-                                                </li>
-                                                <li>
-                                                    <a href="instructor-details.html">instructor details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        
-                                        <li class="dropdown">
-                                            <a href="!#">blog</a>
-                                            <ul class="dropdown-menu clearfix">
-                                                <li>
-                                                    <a href="blog.html">blog one</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-2.html">blog two</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-details.html">blog details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-
-                                        <li>
-                                            <a href="prices.html">prices</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="gallery.html">gallery</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="privacy-policy.html">privacy policy</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="error.html">404</a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="!#">courses</a>
-                                    
-                                    <ul class="dropdown-menu clearfix">
-                                        <li>
-                                            <a href="course-1.html">courses one</a>
-                                        </li>
-                                        <li>
-                                            <a href="course-2.html">courses  two</a>
-                                        </li>
-                                        <li>
-                                            <a href="course-3.html">courses  three</a>
-                                        </li>
-                                        <li>
-                                            <a href="course-details.html">courses  details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li  class="dropdown">
-                                    <a href="!#">events</a>
-
-                                    <ul class="dropdown-menu clearfix">
-                                        <li>
-                                            <a href="event.html">events</a>
-                                        </li>
-                                        <li>
-                                            <a href="event-details.html">event details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a href="contact-us.html">contact us</a>
-                                </li>
 
                             </ul>
                         </nav>
@@ -212,608 +132,676 @@
         </div>
         <!-- header-end -->
 
-        <!-- hero-start -->
-        <div class="fd-hero-5-area bg-default fix p-relative fd-full-screen justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
-            <div class="container fd-hero-5-container">
-                <div class="fd-hero-5-content">
-                    <div class="left">
-                        <h1 class="fd-hero-5-title fd-heading-5 fd-font-800">apple</h1>
-                    </div>
-                    <div class="right">
-                        <h1 class="fd-hero-5-title-2 fd-heading-5 fd-font-800 p-relative">version <span>pro</span></h1>
-                        <div class="inner-div">
-                            <p class="fd-para-3 fd-hero-5-disc">The most rugged and capable Apple Watch pushes the limits again. Featuring</p>
-                            <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow">
-                                <span class="text" data-back="book a demo" data-front="book a demo"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="main">
+            <div id="pagepiling" >
 
-            <div class="fd-hero-5-social  ">
-                <div class="container fd-hero-5-container">
-                    <div class="fd-hero-5-social-wrap d-flex align-items-center justify-content-between flex-wrap">
-                        <div class="fd-header-2-social ">
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-square-behance"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-dribbble"></i>
-                            </a>
-                        </div>
-        
-                        <a href="#" aria-label="name" class="fd-support-btn">
-                            <i class="fa-solid fa-headset"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="fd-hero-5-img">
-                <img src="assets/img/hero/h5-img-1.png" alt="">
-            </div>
-        </div>
-        <!-- hero-end -->
-
-        <!-- advantage-start -->
-        <div class="fd-advantage-5-area bg-default  fix p-relative fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
-            <div class="container fd-hero-5-container">
-                <div class="fd-advantage-5-content">
-                    <h1 class="fd-scn-title-3">Apple’s First  spatial Operating system.</h1>
-                    <p class="fd-para-3 fd-advantage-5-disc">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged and corrosion</p>
-                    
-                    <div class="fd-advantage-5-feature mb-50">
-                        <div class="fd-advantage-5-feature-item">
-                            <div class="item-icon d-flex align-items-center justify-content-center">
-                                <i class="flaticon-save-money flaticon"></i>
-                            </div>
-                            <h5 class="item-title fd-heading-5 fd-font-600">automatic payouts</h5>
-                        </div>
-                        <div class="fd-advantage-5-feature-item">
-                            <div class="item-icon d-flex align-items-center justify-content-center">
-                                <i class="flaticon-browser-settings flaticon"></i>
-                            </div>
-                            <h5 class="item-title fd-heading-5 fd-font-600">Efficient Payout</h5>
-                        </div>
-                    </div>
-
-                    <div class="fd-advantage-5-content-btn d-flex flex-wrap align-items-center">
-
-                        <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-black">
-                            <span class="text" data-back="book a demo" data-front="book a demo"></span>
-                        </a>
-
-                        <div class="fd-header-2-social ">
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-square-behance"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-dribbble"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fd-hero-5-social  ">
-                <div class="container fd-hero-5-container">
-                    <div class="fd-hero-5-social-wrap d-flex  justify-content-end">
-
-        
-                        <a href="#" aria-label="name" class="fd-support-btn">
-                            <i class="fa-solid fa-headset"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fd-advantage-5-img-posi">
-                <div class="fd-advantage-5-img">
-                    <img src="assets/img/advantages/a5-img-1.png" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- advantage-end -->
-
-        <!-- feature-start -->
-        <div class="fd-feature-5-area bg-default  fix p-relative fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
-            <div class="container fd-hero-5-container">
-                <div class="fd-feature-5-content text-center mb-35">
-                    <h1 class="fd-scn-title-3">Free your Desktop. And your apps will follow.</h1>
-                    <p class="fd-para-3 fd-feature-5-disc">Ready for Action. The customizable Action button gives you quick, physical control over a variety of functions. It can do things like start a workout, mark a Compass Waypoint, or begin a dive. Just like you, it’s full of potential</p>
-                    
-                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1 has-shadow">
-                        <span class="text" data-back="book a demo" data-front="book a demo"></span>
-                    </a>
-                </div>
-
-                <div class="fd-feature-5-img-wrap p-relative text-center">
-                    <div class="fd-feature-5-img">
-                        <img src="assets/img/feature/f5-img-1.png" alt="">
-                    </div>
-
-                    <div class="fd-feature-5-img-btn-1">
-                        <span class="line"></span>
-                        <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
-                            <span class="text" data-back="premium comfort" data-front="premium comfort"></span>
-                        </a>
-                    </div>
-                    <div class="fd-feature-5-img-btn-2">
-                        <span class="line"></span>
-                        <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
-                            <span class="text" data-back="positional" data-front="positional"></span>
-                        </a>
-                    </div>
-                    <div class="fd-feature-5-img-btn-3">
-                        <span class="line"></span>
-                        <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
-                            <span class="text" data-back="infinite display" data-front="infinite display"></span>
-                        </a>
-                    </div>
-                    <div class="fd-feature-5-img-btn-4">
-                        <span class="line"></span>
-                        <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
-                            <span class="text" data-back="positional tracking" data-front="positional tracking"></span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="fd-hero-5-social  ">
-                <div class="container fd-hero-5-container">
-                    <div class="fd-hero-5-social-wrap d-flex align-items-center justify-content-between flex-wrap">
-                        <div class="fd-header-2-social ">
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-square-behance"></i>
-                            </a>
-                            <a href="#" aria-label="name" class="item-link">
-                                <i class="fa-brands fa-dribbble"></i>
-                            </a>
-                        </div>
-        
-                        <a href="#" aria-label="name" class="fd-support-btn">
-                            <i class="fa-solid fa-headset"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- feature-end -->
-
-        <!-- services-start -->
-        <div class="fd-services-5-area fd-full-screen fd-full-screen-none fix justify-content-center align-items-center d-flex">
-            <div class="fd-services-5-item">
-
-                <!-- single -->
-                <div class="fd-services-5-item-single">
-                    <div class="item-img fix img-cover p-relative">
-                        <img src="assets/img/services/s5-img-1.png" alt="">
-                    </div>
-                    <div class="item-content p-relative">
-                        <h6 class="item-subtitle fd-heading-5 fd-font-400 text-uppercase ">full-range</h6>
-                        <h4 class="item-title fd-heading-5 fd-font-700 ">
-                            <a href="#" aria-label="name">Revolutionary Dualchip Performance.</a>
-                        </h4>
-
-                        <a href="#" aria-label="name" class="item-btn">
-                            <i class="fa-solid fa-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- single -->
-                <div class="fd-services-5-item-single">
-                    <div class="item-img fix img-cover p-relative">
-                        <img src="assets/img/services/s5-img-2.png" alt="">
-                    </div>
-                    <div class="item-content p-relative">
-                        <h6 class="item-subtitle fd-heading-5 fd-font-400 text-uppercase ">full-range</h6>
-                        <h4 class="item-title fd-heading-5 fd-font-700  ">
-                            <a href="#" aria-label="name">Responsive, precision eye tracking.</a>
-                        </h4>
-
-                        <a href="#" aria-label="name" class="item-btn">
-                            <i class="fa-solid fa-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- single -->
-                <div class="fd-services-5-item-single">
-                    <div class="item-img fix img-cover p-relative">
-                        <img src="assets/img/services/s5-img-3.png" alt="">
-                    </div>
-                    <div class="item-content p-relative">
-                        <h6 class="item-subtitle fd-heading-5 fd-font-400 text-uppercase ">full-range</h6>
-                        <h4 class="item-title fd-heading-5 fd-font-700  ">
-                            <a href="#" aria-label="name">Our most advanced Spatial Audio system ever</a>
-                        </h4>
-
-                        <a href="#" aria-label="name" class="item-btn">
-                            <i class="fa-solid fa-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- services-end -->
-
-        <!-- about-start -->
-        <div class="fd-about-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
-            <div class="container fd-hero-5-container">
-                <div class="fd-about-5-content mb-35">
-
-                    <!-- left-content -->
-                    <div class="left p-relative">
-                        <h1 class="fd-scn-title-3">Advance your Business To New Heights</h1>
-                        <img class="illus-1" src="assets/img/about/a5-illus-1.png" alt="">
-                        <img class="illus-2" src="assets/img/about/a5-illus-2.png" alt="">
-
-                        <div class="iner-div">
-                            <div class="devices-img">
-                                <img src="assets/img/about/a5-devices-1.png" alt="">
-                            </div>
-
-                            <div class="content">
-                                <p class="fd-para-3 devices-disc">Ready for Action. The customizable Action button gives you quick, physical control over a variety of functions.</p>
-                                <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-black">
-                                    <span class="text" data-back="purchase now" data-front="purchase now"></span>
-                                </a>
+                <!-- hero-start -->
+                <div class="section">
+                    <div class="fd-hero-5-area bg-default fix p-relative fd-full-screen justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
+                        <div class="container fd-hero-5-container">
+                            <div class="fd-hero-5-content">
+                                <div class="left">
+                                    <h1 class="fd-hero-5-title fd-heading-5 fd-font-800 " fd-h5-slide-left>apple</h1>
+                                </div>
+                                <div class="right">
+                                    <h1 class="fd-hero-5-title-2 fd-heading-5 fd-font-800 p-relative " fd-h5-slide-down>vision <span>pro</span></h1>
+                                    <div class="inner-div">
+                                        <p class="fd-para-3 fd-hero-5-disc " fd-h5-slide-down >The most rugged and capable Apple Watch pushes the limits again. Featuring</p>
+                                        <div class="d-inline-block" fd-h5-slide-down  >
+                                            <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow" >
+                                                <span class="text" data-back="book a demo" data-front="book a demo"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- right-content -->
-                    <div class="right">
-                        <div class="fd-about-5-img">
-                            <img src="assets/img/about/a5-img-1.png" alt="">
-                        </div>
-                    </div>
-
-                   
-
-                </div>
-
-
-            </div>
-        </div>
-        <!-- about-end -->
-
-        <!-- interactive-start -->
-        <div class="fd-interactive-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/interactive/i5-bg-img-1.png">
             
-            <div class="container fd-hero-5-container">
-                <div class="fd-interactive-5-wrap mb-40">
-                    <div class="fd-interactive-5-scn-title">
-                        <h1 class="fd-scn-title-3 has-clr-white">Apple’s first spatial operating system.</h1>
-                    </div>
-
-                    <div class="js-marquee-wrapper fix">
-                        <div class="fd-interactive-5-item-wrap">
-
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-1.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-1.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-2.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-2.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-3.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-3.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-4.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-4.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-5.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-5.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-6.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-6.png" alt="">
-                            </a>
-    
-                        
+                        <div class="fd-hero-5-social  " fd-h5-slide-down>
+                            <div class="container fd-hero-5-container">
+                                <div class="fd-hero-5-social-wrap d-flex align-items-center justify-content-between flex-wrap">
+                                    <div class="fd-header-2-social ">
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-square-behance"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                    
+                                    <a href="#" aria-label="name" class="fd-support-btn">
+                                        <i class="fa-solid fa-headset"></i>
+                                    </a>
+                                </div>
+                            </div>
+            
                         </div>
-                    </div>
-
-                </div>
-
-                <div class="fd-interactive-5-wrap-2">
-
-                    <div class="js-marquee-wrapper-2 fix">
-                        <div class="fd-interactive-5-item-wrap-2">
-
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-1.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-1.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-2.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-2.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-3.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-3.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-4.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-4.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-5.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-5.png" alt="">
-                            </a>
-    
-                            <!-- single-item -->
-                            <a href="assets/img/interactive/i5-img-6.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
-                                <img src="assets/img/interactive/i5-img-6.png" alt="">
-                            </a>
-    
+            
+                        <div class="fd-hero-5-img fix">
+                            <img fd-h5-img-down src="assets/img/hero/h5-img-2.png" alt="">
                         </div>
-                    </div>
-
-                    <div class="fd-interactive-5-scn-disc">
-                        <p class="fd-para-3 scn-disc has-clr-white">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged and corrosion resistant.</p>
-                        <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow">
-                            <span class="text" data-back="about us" data-front="about us"></span>
-                        </a>
-                    </div>
+                    </div>                    
                 </div>
+                <!-- hero-end -->
 
-            </div>
-        </div>
-        <!-- interactive-end -->
-
-        <!-- report-start -->
-        <div class="fd-report-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
-            <div class="container fd-report-5-container">
-                <div class="fd-report-5-wrap ">
-
-                    <!-- left -->
-                    <div class="fd-report-5-content">
-                        <h1 class="fd-scn-title-3">Apple’s First Spatial Operating System.</h1>
-                        <p class="fd-para-3 scn-disc">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged corrosion resistant,</p>
-
-                        <div class="iner-div">
-                            <div class="left">
-                                <div class="fd-about-2-feature-wrap mb-55">
-
-                                    <!-- feature-item -->
-                                    <div class="fd-about-2-feature ">
-                                        <div class="item-icon">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </div>
-                                        <h4 class="item-title fd-heading-2  fd-font-800">Enhance Campaign Effectiveness</h4>
-                                    </div>
-    
-                                    <!-- feature-item -->
-                                    <div class="fd-about-2-feature ">
-                                        <div class="item-icon">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </div>
-                                        <h4 class="item-title fd-heading-2  fd-font-800">Access Comprehensive Analytics</h4>
-                                    </div>
-    
-                                    <!-- feature-item -->
-                                    <div class="fd-about-2-feature ">
-                                        <div class="item-icon">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </div>
-                                        <h4 class="item-title fd-heading-2  fd-font-800">Improve Customer Targeting</h4>
-                                    </div>
-    
+                <!-- advantage-start -->
+                <div class="section">
+                    <div class="fd-advantage-5-area bg-default  fix p-relative fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
+                        <div class="container fd-hero-5-container">
+                            <div class="fd-advantage-5-content">
+                                <div class="fix">
+                                    <h1 class="fd-scn-title-3 fd-h5-title-ani-1 fd-transition-3 fd-delay-500 ">Apple’s First  spatial Operating system.</h1>
+                                </div>
+                                <div class="fix mb-45">
+                                    <p class="fd-para-3 fd-advantage-5-disc fd-h5-title-ani-1 fd-transition-3 fd-delay-1000">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged and corrosion</p>
                                 </div>
 
-                                <!-- btn -->
-                                <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-black">
-                                    <span class="text" data-back="get start a project" data-front="get start a project"></span>
-                                </a>
+                                
+                                <div class="fd-advantage-5-feature mb-50">
+                                    <div class="fd-advantage-5-feature-item fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                        <div class="item-icon d-flex align-items-center justify-content-center">
+                                            <i class="flaticon-save-money flaticon"></i>
+                                        </div>
+                                        <h5 class="item-title fd-heading-5 fd-font-600">automatic payouts</h5>
+                                    </div>
+                                    <div class="fd-advantage-5-feature-item fd-fade-down-1 fd-transition-3 fd-delay-1500">
+                                        <div class="item-icon d-flex align-items-center justify-content-center">
+                                            <i class="flaticon-browser-settings flaticon"></i>
+                                        </div>
+                                        <h5 class="item-title fd-heading-5 fd-font-600">Efficient Payout</h5>
+                                    </div>
+                                </div>
+            
+                                <div class="fd-advantage-5-content-btn d-flex flex-wrap align-items-center fd-fade-down-1 fd-transition-3 fd-delay-2000">
+            
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-black">
+                                        <span class="text" data-back="book a demo" data-front="book a demo"></span>
+                                    </a>
+            
+                                    <div class="fd-header-2-social ">
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-square-behance"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="fd-advantages-1-qoute-box">
-                                <p class="fd-advantages-1-qoute fd-para-1">“Our Avantage can help you with picking out the best service for your company.”</p>
-                                <img src="assets/img/advantages/a1-sig.png" class="signature" alt="">
-                                <h5 class="name fd-heading-1 fd-clr-white">Founder at Fladient</h5>
+                        </div>
+            
+                        <div class="fd-hero-5-social  ">
+                            <div class="container fd-hero-5-container">
+                                <div class="fd-hero-5-social-wrap d-flex  justify-content-end">
+            
+                    
+                                    <a href="#" aria-label="name" class="fd-support-btn">
+                                        <i class="fa-solid fa-headset"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="fd-advantage-5-img-posi">
+                            <div class="fd-advantage-5-img fix">
+                                <img src="assets/img/advantages/a5-img-1.png" alt="" class="fd-h5-img-down fd-transition-3">
                             </div>
                         </div>
                     </div>
-
-                    <div class="fd-report-5-right">
-
-                        <div class="fd-report-5-img-wrap d-flex justify-content-center mb-30 flex-wrap">
-                            <div class="fd-report-5-img fix img-cover">
-                                <img src="assets/img/interactive/i5-img-1.png" alt="">
-                            </div>
-                            <div class="fd-report-5-img fix img-cover">
-                                <img src="assets/img/interactive/i5-img-2.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="fd-report-5-img-wrap d-flex justify-content-center mb-30">
-                            <div class="fd-report-5-img fix img-cover">
-                                <img src="assets/img/interactive/i5-img-3.png" alt="">
-                            </div>
-                            <div class="fd-report-5-img fix img-cover">
-                                <img src="assets/img/interactive/i5-img-4.png" alt="">
-                            </div>
-                            <div class="fd-report-5-img fix img-cover">
-                                <img src="assets/img/interactive/i5-img-5.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="fd-report-5-img-wrap d-flex justify-content-center ">
-                            <div class="fd-report-5-img fix img-cover">
-                                <img src="assets/img/interactive/i5-img-6.png" alt="">
-                            </div>
-                            <div class="fd-report-5-img fix img-cover">
-                                <img src="assets/img/interactive/i5-img-1.png" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                   
-
                 </div>
+                <!-- advantage-end -->
+
+                <!-- feature-start -->
+                <div class="section">
+                    <div class="fd-feature-5-area bg-default  fix p-relative fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
+                        <div class="container fd-hero-5-container">
+                            <div class="fd-feature-5-content text-center mb-35">
+                                <div class="fix">
+                                    <h1 class="fd-scn-title-3 fd-transition-3 fd-delay-500 fd-h5-title-ani-1">Free your Desktop. And your apps will follow.</h1>
+                                </div>
+                                <div class="fix mb-40">
+                                    <p class="fd-para-3 fd-feature-5-disc fd-transition-3 fd-delay-1000 fd-h5-title-ani-1">Ready for Action. The customizable Action button gives you quick, physical control over a variety of functions. It can do things like start a workout, mark a Compass Waypoint, or begin a dive. Just like you, it’s full of potential</p>
+                                </div>
+
+                                <div class="fd-fade-down-1 fd-delay-1500 fd-transition-3">
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1 has-shadow">
+                                        <span class="text" data-back="book a demo" data-front="book a demo"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+            
+                            <div class="fd-feature-5-img-wrap p-relative text-center">
+                                <div class="fd-feature-5-img fix">
+                                    <img src="assets/img/feature/f5-img-1.png" alt="" class="fd-h5-img-down fd-transition-3 fd-delay-1000" >
+                                </div>
+            
+                                <div class="fd-feature-5-img-btn-1">
+                                    <span class="line"></span>
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
+                                        <span class="text" data-back="premium comfort" data-front="premium comfort"></span>
+                                    </a>
+                                </div>
+                                <div class="fd-feature-5-img-btn-2">
+                                    <span class="line"></span>
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
+                                        <span class="text" data-back="positional" data-front="positional"></span>
+                                    </a>
+                                </div>
+                                <div class="fd-feature-5-img-btn-3">
+                                    <span class="line"></span>
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
+                                        <span class="text" data-back="infinite display" data-front="infinite display"></span>
+                                    </a>
+                                </div>
+                                <div class="fd-feature-5-img-btn-4">
+                                    <span class="line"></span>
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-uppercase has-h5-pr-1">
+                                        <span class="text" data-back="positional tracking" data-front="positional tracking"></span>
+                                    </a>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                        <div class="fd-hero-5-social  fd-fade-down-1 fd-transition-3 fd-delay-2000">
+                            <div class="container fd-hero-5-container">
+                                <div class="fd-hero-5-social-wrap d-flex align-items-center justify-content-between flex-wrap">
+                                    <div class="fd-header-2-social ">
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-square-behance"></i>
+                                        </a>
+                                        <a href="#" aria-label="name" class="item-link">
+                                            <i class="fa-brands fa-dribbble"></i>
+                                        </a>
+                                    </div>
+                    
+                                    <a href="#" aria-label="name" class="fd-support-btn">
+                                        <i class="fa-solid fa-headset"></i>
+                                    </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- feature-end -->
+
+                <!-- services-start -->
+                <div class="section">
+                    <div class="fd-services-5-area fd-full-screen fd-full-screen-none fix justify-content-center align-items-center d-flex">
+                        <div class="fd-services-5-item">
+            
+                            <!-- single -->
+                            <div class="fd-services-5-item-single fd-fade-down-1 fd-transition-3 fd-delay-500">
+                                <div class="item-img fix img-cover p-relative">
+                                    <img src="assets/img/services/s5-img-1.png" alt="">
+                                </div>
+                                <div class="item-content p-relative">
+                                    <h6 class="item-subtitle fd-heading-5 fd-font-400 text-uppercase ">full-range</h6>
+                                    <h4 class="item-title fd-heading-5 fd-font-700 ">
+                                        <a href="#" aria-label="name">Revolutionary Dualchip Performance.</a>
+                                    </h4>
+            
+                                    <a href="#" aria-label="name" class="item-btn">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <!-- single -->
+                            <div class="fd-services-5-item-single fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                <div class="item-img fix img-cover p-relative">
+                                    <img src="assets/img/services/s5-img-2.png" alt="">
+                                </div>
+                                <div class="item-content p-relative">
+                                    <h6 class="item-subtitle fd-heading-5 fd-font-400 text-uppercase ">full-range</h6>
+                                    <h4 class="item-title fd-heading-5 fd-font-700  ">
+                                        <a href="#" aria-label="name">Responsive, precision eye tracking.</a>
+                                    </h4>
+            
+                                    <a href="#" aria-label="name" class="item-btn">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <!-- single -->
+                            <div class="fd-services-5-item-single fd-fade-down-1 fd-transition-3 fd-delay-1500">
+                                <div class="item-img fix img-cover p-relative">
+                                    <img src="assets/img/services/s5-img-3.png" alt="">
+                                </div>
+                                <div class="item-content p-relative">
+                                    <h6 class="item-subtitle fd-heading-5 fd-font-400 text-uppercase ">full-range</h6>
+                                    <h4 class="item-title fd-heading-5 fd-font-700  ">
+                                        <a href="#" aria-label="name">Our most advanced Spatial Audio system ever</a>
+                                    </h4>
+            
+                                    <a href="#" aria-label="name" class="item-btn">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- services-end -->
+
+                <!-- about-start -->
+                <div class="section">
+                    <div class="fd-about-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
+                        <div class="container fd-hero-5-container">
+                            <div class="fd-about-5-content mb-35">
+            
+                                <!-- left-content -->
+                                <div class="left p-relative">
+                                    <div class="fix mb-120">
+                                        <h1 class="fd-scn-title-3 fd-h5-title-ani-1 fd-transition-3 fd-delay-500">Advance your Business To New Heights</h1>
+                                    </div>
+                          
+                                    <img class="illus-1 fd-fade-down-1 fd-transition-3 fd-delay-1500" src="assets/img/about/a5-illus-1.png" alt="">
+                                    <img class="illus-2 fd-fade-down-1 fd-transition-3 fd-delay-1000" src="assets/img/about/a5-illus-2.png" alt="">
+            
+                                    <div class="iner-div">
+                                        <div class="devices-img">
+                                            <img src="assets/img/about/a5-devices-1.png" alt="" class="fd-fade-down-1 fd-transition-3 fd-delay-1500">
+                                        </div>
+            
+                                        <div class="content">
+                                            <div class="fix mb-40">
+                                                <p class="fd-para-3 devices-disc fd-h5-title-ani-1 fd-transition-3 fd-delay-1000">Ready for Action. The customizable Action button gives you quick, physical control over a variety of functions.</p>
+                                            </div>
+
+                                            <div class="fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                                <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-black">
+                                                    <span class="text" data-back="purchase now" data-front="purchase now"></span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- right-content -->
+                                <div class="right">
+                                    <div class="fd-about-5-img">
+                                        <img src="assets/img/about/a5-img-1.png" alt="" class="fd-fade-down-1 fd-transition-3 fd-delay-2000">
+                                    </div>
+                                </div>
+            
+                               
+            
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- about-end -->
+
+                <!-- interactive-start -->
+                <div class="section">
+                    <div class="fd-interactive-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/interactive/i5-bg-img-1.png">
+            
+                        <div class="container fd-hero-5-container">
+                            <div class="fd-interactive-5-wrap mb-40">
+                                <div class="fd-interactive-5-scn-title fix">
+                                    <h1 class="fd-scn-title-3 has-clr-white fd-h5-title-ani-1 fd-transition-3 fd-delay-500">Apple’s first spatial operating system.</h1>
+                                </div>
+            
+                                <div class="js-marquee-wrapper fix">
+                                    <div class="fd-interactive-5-item-wrap">
+            
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-1.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-1.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-2.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-2.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-3.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-3.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-4.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-4.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-5.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-5.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-6.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-6.png" alt="">
+                                        </a>
+                
+                                    
+                                    </div>
+                                </div>
+            
+                            </div>
+            
+                            <div class="fd-interactive-5-wrap-2">
+            
+                                <div class="js-marquee-wrapper-2 fix">
+                                    <div class="fd-interactive-5-item-wrap-2">
+            
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-1.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-1.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-2.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-2.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-3.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-3.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-4.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-4.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-5.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-5.png" alt="">
+                                        </a>
+                
+                                        <!-- single-item -->
+                                        <a href="assets/img/interactive/i5-img-6.png" aria-label="name" class="fd-interactive-5-item fix img-cover popup_img" >
+                                            <img src="assets/img/interactive/i5-img-6.png" alt="">
+                                        </a>
+                
+                                    </div>
+                                </div>
+            
+                                <div class="fd-interactive-5-scn-disc">
+                                    <div class="fix mb-70">
+                                        <p class="fd-para-3 scn-disc has-clr-white fd-h5-title-ani-1 fd-transition-3 fd-delay-500">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged and corrosion resistant.</p>
+                                    </div>
+
+                                    <div class="fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                        <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow">
+                                            <span class="text" data-back="about us" data-front="about us"></span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- interactive-end -->
+
+                <!-- report-start -->
+                <div class="section">
+                    <div class="fd-report-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
+                        <div class="container fd-report-5-container">
+                            <div class="fd-report-5-wrap ">
+            
+                                <!-- left -->
+                                <div class="fd-report-5-content">
+                                    <div class="fix">
+                                        <h1 class="fd-scn-title-3 fd-h5-title-ani-1 fd-transition-3 fd-delay-500">Apple’s First Spatial Operating System.</h1>
+                                    </div>
+                                  
+                                    <div class="fix mb-40">
+                                        <p class="fd-para-3 scn-disc fd-h5-title-ani-1 fd-transition-3 fd-delay-1000">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged corrosion resistant,</p>
+                                    </div>
+
+            
+                                    <div class="iner-div">
+                                        <div class="left">
+                                            <div class="fd-about-2-feature-wrap mb-55">
+            
+                                                <!-- feature-item -->
+                                                <div class="fd-about-2-feature fd-fade-down-1 fd-transition-3 fd-delay-500">
+                                                    <div class="item-icon">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <h4 class="item-title fd-heading-2  fd-font-800">Enhance Campaign Effectiveness</h4>
+                                                </div>
+                
+                                                <!-- feature-item -->
+                                                <div class="fd-about-2-feature fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                                    <div class="item-icon">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <h4 class="item-title fd-heading-2  fd-font-800">Access Comprehensive Analytics</h4>
+                                                </div>
+                
+                                                <!-- feature-item -->
+                                                <div class="fd-about-2-feature fd-fade-down-1 fd-transition-3 fd-delay-1500">
+                                                    <div class="item-icon">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <h4 class="item-title fd-heading-2  fd-font-800">Improve Customer Targeting</h4>
+                                                </div>
+                
+                                            </div>
+            
+                                            <!-- btn -->
+                                            <div class="fd-fade-down-1 fd-transition-3 fd-delay-2000">
+                                                <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-black">
+                                                    <span class="text" data-back="get start a project" data-front="get start a project"></span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="fd-advantages-1-qoute-box fd-fade-down-1 fd-transition-3 fd-delay-2000">
+                                            <p class="fd-advantages-1-qoute fd-para-1">“Our Avantage can help you with picking out the best service for your company.”</p>
+                                            <img src="assets/img/advantages/a1-sig.png" class="signature" alt="">
+                                            <h5 class="name fd-heading-1 fd-clr-white">Founder at Fladient</h5>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="fd-report-5-right">
+            
+                                    <div class="fd-report-5-img-wrap d-flex justify-content-center mb-30 flex-wrap fd-fade-down-1 fd-transition-3 fd-delay-500">
+                                        <div class="fd-report-5-img fix img-cover ">
+                                            <img src="assets/img/interactive/i5-img-1.png" alt="">
+                                        </div>
+                                        <div class="fd-report-5-img fix img-cover">
+                                            <img src="assets/img/interactive/i5-img-2.png" alt="">
+                                        </div>
+                                    </div>
+            
+                                    <div class="fd-report-5-img-wrap d-flex justify-content-center mb-30 fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                        <div class="fd-report-5-img fix img-cover">
+                                            <img src="assets/img/interactive/i5-img-3.png" alt="">
+                                        </div>
+                                        <div class="fd-report-5-img fix img-cover">
+                                            <img src="assets/img/interactive/i5-img-4.png" alt="">
+                                        </div>
+                                        <div class="fd-report-5-img fix img-cover">
+                                            <img src="assets/img/interactive/i5-img-5.png" alt="">
+                                        </div>
+                                    </div>
+            
+                                    <div class="fd-report-5-img-wrap d-flex justify-content-center fd-fade-down-1 fd-transition-3 fd-delay-1500">
+                                        <div class="fd-report-5-img fix img-cover">
+                                            <img src="assets/img/interactive/i5-img-6.png" alt="">
+                                        </div>
+                                        <div class="fd-report-5-img fix img-cover">
+                                            <img src="assets/img/interactive/i5-img-1.png" alt="">
+                                        </div>
+                                    </div>
+            
+                                </div>
+            
+            
+                               
+            
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- report-end -->
+
+                <!-- workflow-start -->
+                <div class="section">
+                    <div class="fd-workflow-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
+                        <div class="container fd-workflow-5-container">
+            
+                            <!-- scn-title -->
+                            <div class="fd-workflow-5-scn-title text-center mb-50">
+                                <div class="fix " >
+                                    <h1 class="fd-scn-title-3 fd-h5-title-ani-1 fd-transition-3 fd-delay-500">Apple’s First Spatial </h1>
+                                </div>
+                                <div class="fix " >
+                                    <p class="fd-para-3 scn-disc fd-h5-title-ani-1 fd-transition-3 fd-delay-1000">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged</p>
+                                </div>
+                            </div>
+            
+                            <div class="fd-workflow-5-wrap mb-50">
+            
+                                <div class="fd-workflow-5-item fd-fade-down-1 fd-transition-3 fd-delay-500">
+                                    <h5 class="item-title fd-font-500 fd-heading-5">
+                                        <i class="flaticon-browser-settings flaticon"></i>
+                                        Discover & Strategy
+                                    </h5>
+                                    <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
+                                </div>
+            
+                                <div class="fd-workflow-5-img p-relative fd-fade-down-1 fd-transition-3 fd-delay-500">
+                                    <div class="fd-workflow-5-img-1 fix img-cover">
+                                        <img src="assets/img/interactive/i5-img-5.png" alt="">
+                                    </div>
+                                    <div class="fd-workflow-5-img-2 fd-fade-down-1 fd-transition-3 fd-delay-1500">
+                                        <img src="assets/img/workflow/w5-device-1.png" alt="">
+                                    </div>
+                                </div>
+            
+                                <div class="fd-workflow-5-item fd-fade-down-1 fd-transition-3 fd-delay-500">
+                                    <h5 class="item-title fd-font-500 fd-heading-5">
+                                        <i class="flaticon-innovation flaticon"></i>
+                                        solution design
+                                    </h5>
+                                    <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
+                                </div>
+            
+                                <div class="fd-workflow-5-item fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                    <h5 class="item-title fd-font-500 fd-heading-5">
+                                        <i class="flaticon-stakeholder flaticon"></i>
+                                        technology enabling
+                                    </h5>
+                                    <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
+                                </div>
+            
+                                <div class="fd-workflow-5-item fd-fade-down-1 fd-transition-3 fd-delay-1000">
+                                    <h5 class="item-title fd-font-500 fd-heading-5">
+                                        <i class="flaticon-pre-release-access flaticon"></i>
+                                        mobile-first systems
+                                    </h5>
+                                    <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
+                                </div>
+            
+                            </div>
+            
+                            <h5 class="fd-workflow-5-qoute fd-heading-2 fd-font-600 text-center wow fd-fade-down-1 fd-transition-3 fd-delay-2000" data-splitting="">Developers, project managers, And digital marketing <a href="#" aria-label="name" class="d-inline-block"><u>Professionals Dedicated</u> </a></h5>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- workflow-end -->
+
+                <!-- price-start -->
+                <div class="section">
+                    <div class="fd-price-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/price/p5-img-1.png">
+                        <div class="container fd-hero-5-container">
+            
+                            <!-- scn-title -->
+                            <div class="fd-price-5-content">
+                                <div class="fix">
+                                    <h1 class="fd-scn-title-3 has-clr-white fd-h5-title-ani-1 fd-transition-3 fd-delay-500">VR Headset For Enterprises</h1>
+                                </div>
+                                <div class="fix mb-45">
+                                    <p class="fd-para-3 scn-disc fd-h5-title-ani-1 fd-transition-3 fd-delay-1000">We develop the relationships that underpin the next phase in your Organisation’s growth. We do this by discerning the people and that Platforms where interests converge.</p>
+                                </div>
+                               
+
+            
+                                <h4 class="fd-heading-5 start-price fd-font-700 fd-fade-down-1 fd-transition-3 fd-delay-1500">
+                                    <span class="d-block fd-font-500">starting at</span>
+                                    $999.99
+                                </h4>
+            
+                                <div class="fd-fade-down-1 fd-transition-3 fd-delay-2000">
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow">
+                                        <span class="text" data-back="Buy now while on offer" data-front="Buy now while on offer"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- price-end -->
+
+                <!-- overview-start -->
+                <div class="section">
+                    <div class="fd-overview-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/overview/o5-img-1.png">
+                        <div class="container fd-hero-5-container">
+            
+                            <!-- scn-title -->
+                            <div class="fd-overview-5-content">
+                                <div class="fix">
+                                    <h1 class="fd-scn-title-3 has-clr-white fd-h5-title-ani-1 fd-transition-3 fd-delay-500">Superior Performance Along with Exceptional Power Efficiency</h1>
+                                </div>
+
+                               <div class="fd-fade-down-1 fd-transition-3 fd-delay-500">
+                                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow">
+                                        <span class="text" data-back="get start a project" data-front="get start a project"></span>
+                                    </a>
+                               </div>
+
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- overview-end -->
+
 
 
             </div>
         </div>
-        <!-- report-end -->
-
-        <!-- workflow-start -->
-        <div class="fd-workflow-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/illus/h4-scn-bg-1.png">
-            <div class="container fd-workflow-5-container">
-
-                <!-- scn-title -->
-                <div class="fd-workflow-5-scn-title text-center mb-50">
-                    <h1 class="fd-scn-title-3">Apple’s First Spatial </h1>
-                    <p class="fd-para-3 scn-disc">Apple Watch Ultra 2 is crafted for unparalleled performance. The lightweight titanium case is rugged</p>
-                </div>
-
-                <div class="fd-workflow-5-wrap mb-50">
-
-                    <div class="fd-workflow-5-item">
-                        <h5 class="item-title fd-font-500 fd-heading-5">
-                            <i class="flaticon-browser-settings flaticon"></i>
-                            Discover & Strategy
-                        </h5>
-                        <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
-                    </div>
-
-                    <div class="fd-workflow-5-img p-relative">
-                        <div class="fd-workflow-5-img-1 fix img-cover">
-                            <img src="assets/img/interactive/i5-img-5.png" alt="">
-                        </div>
-                        <div class="fd-workflow-5-img-2">
-                            <img src="assets/img/workflow/w5-device-1.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="fd-workflow-5-item">
-                        <h5 class="item-title fd-font-500 fd-heading-5">
-                            <i class="flaticon-innovation flaticon"></i>
-                            solution design
-                        </h5>
-                        <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
-                    </div>
-
-                    <div class="fd-workflow-5-item">
-                        <h5 class="item-title fd-font-500 fd-heading-5">
-                            <i class="flaticon-stakeholder flaticon"></i>
-                            technology enabling
-                        </h5>
-                        <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
-                    </div>
-
-                    <div class="fd-workflow-5-item">
-                        <h5 class="item-title fd-font-500 fd-heading-5">
-                            <i class="flaticon-pre-release-access flaticon"></i>
-                            mobile-first systems
-                        </h5>
-                        <p class="item-disc fd-para-3">We are web designers, developers, project managers digital</p>
-                    </div>
-
-                </div>
-
-                <h5 class="fd-workflow-5-qoute fd-heading-2 fd-font-600 text-center wow" data-splitting="">Developers, project managers, And digital marketing <a href="#" aria-label="name" class="d-inline-block"><u>Professionals Dedicated</u> </a></h5>
-
-            </div>
-        </div>
-        <!-- workflow-end -->
-
-        <!-- price-start -->
-        <div class="fd-price-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/price/p5-img-1.png">
-            <div class="container fd-hero-5-container">
-
-                <!-- scn-title -->
-                <div class="fd-price-5-content">
-                    <h1 class="fd-scn-title-3 has-clr-white">VR Headset For Enterprises</h1>
-                    <p class="fd-para-3 scn-disc ">We develop the relationships that underpin the next phase in your Organisation’s growth. We do this by discerning the people and that Platforms where interests converge.</p>
-
-                    <h4 class="fd-heading-5 start-price fd-font-700">
-                        <span class="d-block fd-font-500">starting at</span>
-                        $999.99
-                    </h4>
-
-                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow">
-                        <span class="text" data-back="Buy now while on offer" data-front="Buy now while on offer"></span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        <!-- price-end -->
-
-        <!-- overview-start -->
-        <div class="fd-overview-5-area bg-default  fix  fd-full-screen fd-full-screen-none justify-content-center align-items-center d-flex" data-background="assets/img/overview/o5-img-1.png">
-            <div class="container fd-hero-5-container">
-
-                <!-- scn-title -->
-                <div class="fd-overview-5-content">
-                    <h1 class="fd-scn-title-3 has-clr-white">Superior Performance Along with Exceptional Power Efficiency</h1>
-                   
-                    <a href="#" aria-label="name" class="fd-pr-btn-1 text-capitalize has-h5-pr-1 has-shadow">
-                        <span class="text" data-back="get start a project" data-front="get start a project"></span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        <!-- overview-end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- mobile-menu-start -->
         <div class="mobile-menu lenis lenis-smooth" >
@@ -1139,15 +1127,7 @@
             </div>
         </div>
         <!-- search-popup -->
-        
-        <!-- scroll-top-start -->
-        <div class="scroll-top">
-            <div class="scroll-top-wrap">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="injected-svg" data-src="https://static.elfsight.com/icons/app-back-to-top-arrow-3.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="m7.997 10 3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10l-3 .001V18h-2v-7.999L7.997 10z"></path></svg>
-            </div>
-        </div>
-        <!-- scroll-top-start -->
-        
+
         
 
         
@@ -1156,6 +1136,7 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
         <script src="assets/js/wow.js"></script>
+        <script src="assets/js/pagepiling.js"></script>
         <script src="assets/js/marquee.min.js"></script>
         <script src="assets/js/magnific-popup.min.js"></script>
         <script src="assets/js/SplitText.min.js"></script>
