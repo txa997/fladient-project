@@ -166,7 +166,7 @@ if (menuToggle2) {
 		ease: 'Expo.easeInOut'
 	});
 	menubgline.from('.mobile-menu-bg span' , {
-		duration: 1,
+		duration: .5,
 		width: 0,
 		stagger: 0.1,
 		ease: 'Expo.easeInOut'
@@ -175,36 +175,27 @@ if (menuToggle2) {
 		xPercent: -50,
 		opacity: 0,
 		ease: 'Expo.easeInOut',
-		duration: 1,
-	}, "<" );
+	}, );
 	menubgline.from('.mobile-menu-close' , {
-		duration: 1,
 		xPercent: 50,
 		rotate: 360,
 		ease: 'Expo.easeInOut',
 		opacity: 0,
 
-	}, "<");
+	}, "<=" );
 	menubgline.from('.mobile-main-navigation ' , {
-		duration: .5,
 		opacity: 0,
 		y: 50,
-	},"<.5");
+	},);
 	menubgline.from('.mobile-menu-search-bar' , {
 		opacity: 0,
 		y: 50,
-	}, "<");
-
-	menubgline.from('.mobile-menu-right' , {
-		opacity: 0,
-		visibility: "hidden",
-		y: 50,
-	});
+	}, "<=");
 
 	menubgline.from('.mobile-menu-socail-link' , {
 		opacity: 0,
 		x: 50,
-	});
+	}, "<=");
 
 
 	
@@ -1106,56 +1097,57 @@ $('.parallax-img').parallaxie({
 	speed: 0.5,    
 });
 
-
-if (window.innerWidth >= 1200 ) {
-	if($('#pagepiling'.length)) {
+// home-5
+if($('#pagepiling').length) {
+	if (window.innerWidth >= 1200 ) {
 		$('#pagepiling').pagepiling({
-
+	
 			menu: '#onePageMenu',
-
+	
 			anchors: ['hero', 'about', 'overview',  'project',  'purchase', 'gallery' , 'features', 'services' , 'price' , 'vision' ],
-
+	
 			navigation: {
 				'position': 'right',
 				'tooltips': ['Hero', 'About', 'Overview', 'Project', 'Purchase', 'Gallery' , 'Features', 'Services' , 'Price' , 'vision' ]
 			},
-
+	
 			afterRender: function () {
 				$('#pp-nav').addClass('custom');
 				pageScrollIndecator();
 			},
-
+	
 			onLeave: function () {
 				pageScrollIndecator();
 			},
-
+	
 			afterLoad: function (anchorLink, index) {
 				if (index > 1) {
 					$('#pp-nav').removeClass('custom');
 				} else {
 					$('#pp-nav').addClass('custom');
 				}
-
+	
 			}
-
+	
 		});
-
+	
 		function pageScrollIndecator() {
 			var allSection = $('#pagepiling .section');
 			var sectionCount = parseInt(allSection.length);
-
+	
 			var activeSection = $('#pagepiling').children('.section.active');
 			var activeCount = allSection.index(activeSection);
-
+	
 			var activeIndex = parseInt(activeCount) + 1;
 			var scale = (activeIndex / sectionCount).toFixed(3);
-
+	
 			$('.pagescroll-indication span').css({
 				'transform': 'scaleY(' + scale + ')'
 			});
 		}
 	}
 }
+
 
 
 })(jQuery);

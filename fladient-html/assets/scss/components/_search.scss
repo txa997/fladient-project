@@ -3,7 +3,7 @@
     search-box-css-start
 */
 .popup-search-box {
-    background-color: var(--kd-clr-pr-1);
+    background-color: #fff;
     position: fixed;
     display: flex;
     left: 0;
@@ -24,7 +24,7 @@
         border: none;
         outline: none;
         border-radius: 5px;
-        background: #fff;
+        background: #ddd;
         color: #000;
         flex: 0 0 auto;
         transition: 300ms var(--cube-1);
@@ -44,7 +44,7 @@
         }
 
         &:hover {
-            background: var(--kd-clr-sd-1);
+            background: var(--fd-clr-pr-1);
             color: #000;
         }
     }
@@ -54,7 +54,7 @@
     }
 
     .title {
-        color: #fff;
+        color: #000;
         margin-bottom: 25px;
         font-size: 40px;
 
@@ -101,7 +101,7 @@
         & input {
             width: 100%;
             height: 60px;
-            background: #fff;
+            background: #f0f0f0;
             border: 1px solid #0000003d;
             border-radius: 5px;
             border: none;
@@ -125,7 +125,7 @@
         top: 0px;
         bottom: 0;
         padding: 0 30px;
-        background: var(--kd-clr-sd-1);
+        background: #f0f0f0;
         color: #000;
         font-size: 24px;
         border-radius: 0;
@@ -140,7 +140,7 @@
 
         &:hover {
             color: #fff;
-            background: #000;
+            background: var(--fd-clr-pr-1);
         }
     }
 }

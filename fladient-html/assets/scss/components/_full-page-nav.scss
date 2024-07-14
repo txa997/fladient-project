@@ -27,7 +27,7 @@
       span {
           flex-wrap: wrap;
           display: block;
-          background-color: var(--kd-clr-pr-1);
+          background-color: #fff;
           width: 100%;
        
           &:nth-child(1) {
@@ -68,13 +68,13 @@
       gap: 15px;
 
       .mobile-menu-logo {
-        max-width: 180px;
+        max-width: 220px;
       } 
     }
 
     &-close {
       font-size: 30px;
-      color: #fff;
+      color: #000;
       cursor: pointer;
       i {
         line-height: 1;
@@ -82,14 +82,14 @@
         transition: 300ms ease-in-out;
       }
       &:hover {
-        color: var(--kd-clr-sd-1);
+        color: var(--fd-clr-pr-1);
       }
     }
 
     &-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 100px;
+      gap: 200px;
 
       @media #{$md,$xs} {
         grid-template-columns: 1fr;
@@ -97,13 +97,6 @@
       }
    }
 
-  &-right {
-    height: 460px;
-    overflow: scroll;
-    padding: 30px 0;
-    margin-top: -30px;
-
-  }
 }
 
 
@@ -111,29 +104,27 @@
 .mobile-menu-search-form-1 {
   input {
     height: 60px;
-    border-radius: 5px;
     padding: 0 30px;
-    background: #fff;
-    font-family: var(--kd-font-pr-1);
+    background: #f0f0f0;
     width: 100%;
     border: none;
     outline: none;
-    color: #000;
+    color: #3d3d3d;
     margin-bottom: 10px;
+    font-size: 16px;
   }
   .form-btn {
     border: none;
     outline: none;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 12px 20px;
+    background: #f0f0f0;
+    padding: 10px 20px;
     color: #000;
     transition: 300ms var(--cube-1);
     text-transform: capitalize;
-    font-family: var(--kd-font-pr-1);
+    font-size: 16px;
 
     &:hover {
-      background-color: var(--kd-clr-sd-1);
+      background-color: var(--fd-clr-pr-1);
       color: #000;
       transform: scale(95%);
     }
@@ -149,12 +140,12 @@
     display: inline-block;
     font-size: 22px;
     line-height: 1;
-    color: #fff;
+    color: #000;
     opacity: .8;
     transition: 300ms var(--cube-1);
 
     &:hover {
-      color: var(--kd-clr-sd-1);
+      color: var(--fd-clr-pr-1);
       opacity: 1;
     }
   }
@@ -175,14 +166,14 @@
       }
 
       a {
-        color: #fff;
-        font-family: var(--kd-font-pr-1);
+        color: #000;
+        font-family: var(--fd-font-pr-1);
         font-size: 24px;
         text-transform: capitalize;
         font-weight: 600;
 
         &:hover {
-          color: var(--kd-clr-sd-1);
+          color: var(--fd-clr-pr-1);
         }
       }
 
@@ -196,20 +187,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgb(255 255 255 / 15%);
+        background: #ddd;
         font-size: 14px;
-        color: #fff;
+        color: #000;
         transition: 400ms ease-in-out;
-        border-radius: 5px;
 
         &:hover {
-          background-color: var(--kd-clr-sd-1);
+          background-color: var(--fd-clr-pr-1);
         }
 
         &:is(.active) {
           -webkit-transform: rotate(90deg);
                   transform: rotate(90deg);
-                  background-color: var(--kd-clr-sd-1);
+                  background-color: var(--fd-clr-pr-1);
         }
       }
 
