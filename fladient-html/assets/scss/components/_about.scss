@@ -182,3 +182,155 @@
 /* 
     about-5-end
 */
+
+/* 
+    about-6-start
+*/
+.fd-about-6 {
+
+    &-area {
+        @media #{$lg,$md,$xs} {
+            padding-bottom: 100px;
+        }
+ 
+    }
+
+    &-scn-title {
+        .fd-scn-title-1 {
+            font-size: 52px;
+            font-weight: 700;
+
+            @media #{$xl} {
+                font-size: 50px;
+            }
+
+            @media #{$lg} {
+                font-size: 40px;
+            }
+
+            @media #{$md} {
+                font-size: 35px;
+            }
+            
+            @media #{$xs} {
+                font-size: 26px;
+            }
+            @media #{$sm} {
+                font-size: 30px;
+            }
+
+        }
+    }
+
+    &-img {
+        margin-left: -200px;
+        padding-right: 30px;
+
+        @media #{$md,$xs} {
+            margin-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+
+
+    &-content {
+        .disc {
+            margin-bottom: 30px;
+        }
+
+        &-list {
+
+            &:is(.fd-list-1) {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 15px 40px;
+
+                @media #{$xs} {
+                    grid-template-columns: auto ;
+                }
+
+
+                &:is(.has-style-3) {
+                    li {
+                        font-weight: 500 ;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+    }
+
+    &-tabs-btn {
+        background: #465DE2;
+        border-radius: 100px 0 0 100px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        padding: 20px 52px;
+
+        @media #{$xs} {
+            gap: 10px 30px;
+            flex-wrap: wrap;
+        }
+
+        &::after {
+            content: "";
+            width: 75%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #fff;
+            border-radius: 100px 0 0 100px;
+            opacity: .2;
+            z-index: -1;
+            
+
+            @media #{$lg} {
+                width: 65%;
+            }
+
+            @media #{$xs} {
+                display: none;
+            }
+        }
+
+        button {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+            background: transparent;
+            color: #fff;
+            text-align: left;
+            text-transform: capitalize;
+
+            &:hover {
+                color: #ddd;
+            }
+
+            &:is(.active) {
+                color: #fff;
+            }
+        }
+    }
+
+
+    &-tabs-pane-grid {
+        display: grid;
+        grid-template-columns: 1fr 2.2fr;
+        gap: 30px;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+/* 
+    about-6-end
+*/

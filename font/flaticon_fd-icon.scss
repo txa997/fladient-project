@@ -2,11 +2,11 @@ $flaticon_fd-icon-font: "flaticon_fd-icon";
 
 @font-face {
     font-family: $flaticon_fd-icon-font;
-    src: url("./flaticon_fd-icon.woff2?b85f0d3a4a589e67f8d93380f99a945b") format("woff2"),
-url("./flaticon_fd-icon.woff?b85f0d3a4a589e67f8d93380f99a945b") format("woff"),
-url("./flaticon_fd-icon.eot?b85f0d3a4a589e67f8d93380f99a945b#iefix") format("embedded-opentype"),
-url("./flaticon_fd-icon.ttf?b85f0d3a4a589e67f8d93380f99a945b") format("truetype"),
-url("./flaticon_fd-icon.svg?b85f0d3a4a589e67f8d93380f99a945b#flaticon_fd-icon") format("svg");
+    src: url("./flaticon_fd-icon.woff2?eb2e3374e0f4a62df9f814b8d8947c96") format("woff2"),
+url("./flaticon_fd-icon.woff?eb2e3374e0f4a62df9f814b8d8947c96") format("woff"),
+url("./flaticon_fd-icon.eot?eb2e3374e0f4a62df9f814b8d8947c96#iefix") format("embedded-opentype"),
+url("./flaticon_fd-icon.ttf?eb2e3374e0f4a62df9f814b8d8947c96") format("truetype"),
+url("./flaticon_fd-icon.svg?eb2e3374e0f4a62df9f814b8d8947c96#flaticon_fd-icon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,29 +21,59 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon_fd-icon-map: (
-    "customer-service": "\f101",
-    "phone": "\f102",
-    "save-money": "\f103",
-    "app-development": "\f104",
-    "finance": "\f105",
-    "data-collection": "\f106",
-    "invention": "\f107",
-    "ux-design": "\f108",
-    "app-development-1": "\f109",
-    "stakeholder": "\f10a",
-    "browser-settings": "\f10b",
-    "production": "\f10c",
-    "lauch": "\f10d",
-    "innovation": "\f10e",
-    "stakeholder-1": "\f10f",
-    "relationship": "\f110",
-    "pre-release-access": "\f111",
-    "content-creation": "\f112",
-    "video-marketing": "\f113",
+    "viber": "\f101",
+    "location": "\f102",
+    "customer-service": "\f103",
+    "user": "\f104",
+    "phone": "\f105",
+    "save-money": "\f106",
+    "cyber-security": "\f107",
+    "calendar": "\f108",
+    "app-development": "\f109",
+    "right": "\f10a",
+    "left": "\f10b",
+    "finance": "\f10c",
+    "messages": "\f10d",
+    "data-collection": "\f10e",
+    "customer-service-1": "\f10f",
+    "invention": "\f110",
+    "star": "\f111",
+    "security": "\f112",
+    "ux-design": "\f113",
+    "app-development-1": "\f114",
+    "highlight": "\f115",
+    "live-chat": "\f116",
+    "customization": "\f117",
+    "stakeholder": "\f118",
+    "live-chat-1": "\f119",
+    "browser-settings": "\f11a",
+    "production": "\f11b",
+    "lauch": "\f11c",
+    "innovation": "\f11d",
+    "stakeholder-1": "\f11e",
+    "data-flow": "\f11f",
+    "cybersecurity": "\f120",
+    "relationship": "\f121",
+    "pre-release-access": "\f122",
+    "thin-arrow": "\f123",
+    "content-creation": "\f124",
+    "chat": "\f125",
+    "video-marketing": "\f126",
+    "chat-1": "\f127",
+    "star-1": "\f128",
 );
 
+.flaticon-viber:before {
+    content: map-get($flaticon_fd-icon-map, "viber");
+}
+.flaticon-location:before {
+    content: map-get($flaticon_fd-icon-map, "location");
+}
 .flaticon-customer-service:before {
     content: map-get($flaticon_fd-icon-map, "customer-service");
+}
+.flaticon-user:before {
+    content: map-get($flaticon_fd-icon-map, "user");
 }
 .flaticon-phone:before {
     content: map-get($flaticon_fd-icon-map, "phone");
@@ -51,17 +81,41 @@ $flaticon_fd-icon-map: (
 .flaticon-save-money:before {
     content: map-get($flaticon_fd-icon-map, "save-money");
 }
+.flaticon-cyber-security:before {
+    content: map-get($flaticon_fd-icon-map, "cyber-security");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon_fd-icon-map, "calendar");
+}
 .flaticon-app-development:before {
     content: map-get($flaticon_fd-icon-map, "app-development");
+}
+.flaticon-right:before {
+    content: map-get($flaticon_fd-icon-map, "right");
+}
+.flaticon-left:before {
+    content: map-get($flaticon_fd-icon-map, "left");
 }
 .flaticon-finance:before {
     content: map-get($flaticon_fd-icon-map, "finance");
 }
+.flaticon-messages:before {
+    content: map-get($flaticon_fd-icon-map, "messages");
+}
 .flaticon-data-collection:before {
     content: map-get($flaticon_fd-icon-map, "data-collection");
 }
+.flaticon-customer-service-1:before {
+    content: map-get($flaticon_fd-icon-map, "customer-service-1");
+}
 .flaticon-invention:before {
     content: map-get($flaticon_fd-icon-map, "invention");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_fd-icon-map, "star");
+}
+.flaticon-security:before {
+    content: map-get($flaticon_fd-icon-map, "security");
 }
 .flaticon-ux-design:before {
     content: map-get($flaticon_fd-icon-map, "ux-design");
@@ -69,8 +123,20 @@ $flaticon_fd-icon-map: (
 .flaticon-app-development-1:before {
     content: map-get($flaticon_fd-icon-map, "app-development-1");
 }
+.flaticon-highlight:before {
+    content: map-get($flaticon_fd-icon-map, "highlight");
+}
+.flaticon-live-chat:before {
+    content: map-get($flaticon_fd-icon-map, "live-chat");
+}
+.flaticon-customization:before {
+    content: map-get($flaticon_fd-icon-map, "customization");
+}
 .flaticon-stakeholder:before {
     content: map-get($flaticon_fd-icon-map, "stakeholder");
+}
+.flaticon-live-chat-1:before {
+    content: map-get($flaticon_fd-icon-map, "live-chat-1");
 }
 .flaticon-browser-settings:before {
     content: map-get($flaticon_fd-icon-map, "browser-settings");
@@ -87,15 +153,33 @@ $flaticon_fd-icon-map: (
 .flaticon-stakeholder-1:before {
     content: map-get($flaticon_fd-icon-map, "stakeholder-1");
 }
+.flaticon-data-flow:before {
+    content: map-get($flaticon_fd-icon-map, "data-flow");
+}
+.flaticon-cybersecurity:before {
+    content: map-get($flaticon_fd-icon-map, "cybersecurity");
+}
 .flaticon-relationship:before {
     content: map-get($flaticon_fd-icon-map, "relationship");
 }
 .flaticon-pre-release-access:before {
     content: map-get($flaticon_fd-icon-map, "pre-release-access");
 }
+.flaticon-thin-arrow:before {
+    content: map-get($flaticon_fd-icon-map, "thin-arrow");
+}
 .flaticon-content-creation:before {
     content: map-get($flaticon_fd-icon-map, "content-creation");
 }
+.flaticon-chat:before {
+    content: map-get($flaticon_fd-icon-map, "chat");
+}
 .flaticon-video-marketing:before {
     content: map-get($flaticon_fd-icon-map, "video-marketing");
+}
+.flaticon-chat-1:before {
+    content: map-get($flaticon_fd-icon-map, "chat-1");
+}
+.flaticon-star-1:before {
+    content: map-get($flaticon_fd-icon-map, "star-1");
 }

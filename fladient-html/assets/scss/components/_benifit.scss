@@ -294,3 +294,83 @@
 
     benifit-4-end
 */
+/* 
+    benifit-5-start
+*/
+
+.fd-benifit-5 {
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 100px;
+        align-items: center;
+
+        @media #{$xxl,$xl} {
+            gap: 30px;
+        }
+
+        @media #{$lg,$md,$xs} {
+            gap: 50px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-scn-title {
+        .scn-disc {
+            max-width: 570px;
+        }
+    }
+
+    &-feature {
+        gap: 20px;
+
+        &-single {
+            max-width: 190px;
+            flex: 0 0 auto;
+            width: 100%;
+            border-radius: 10px;
+            padding: 25px 30px;
+
+            .item-icon {
+                margin-bottom: 10px;
+            }
+
+            .item-title {
+                font-size: 22px;
+                line-height: 1.27;
+
+                @media #{$xs} {
+                    font-size: 18px;
+                }
+
+                @media #{$sm} {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
+    &-img {
+        box-shadow: -15px 22px 52px 0 rgba(0,0,0,.06);
+        border: 20px;
+        overflow: hidden;
+        margin-right: -390px;
+
+        @media #{$xxl} {
+            margin-right: -150px;
+        }
+
+        @media #{$xl} {
+            margin-right: -100px;
+        }
+
+        @media #{$lg,$md,$xs} {
+            margin-right: 0px;
+        }
+    }
+}
+
+
+/* 
+    benifit-5-end
+*/

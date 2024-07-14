@@ -257,6 +257,14 @@ input:focus::placeholder, textarea:focus::placeholder {
         }
     }
 
+    &:is(.fd-scn-title-1) {
+        letter-spacing: -2px;
+        @media #{$md,$xs} {
+            letter-spacing: 0px;
+        }
+    }
+
+
 
 	.split-line {
         overflow: hidden;

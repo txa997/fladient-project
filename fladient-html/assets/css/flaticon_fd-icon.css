@@ -8,6 +8,7 @@ url("../webfonts/flaticon_fd-icon.ttf?a9b3ee6568b3d3305f65d66ff2e62833") format(
 url("../webfonts/flaticon_fd-icon.svg?a9b3ee6568b3d3305f65d66ff2e62833#flaticon_fd-icon") format("svg")
 }
 
+
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     font-family: flaticon_fd-icon !important;
     font-style: normal;
@@ -19,61 +20,124 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-customer-service:before {
+.flaticon-viber:before {
     content: "\f101";
 }
-.flaticon-phone:before {
+.flaticon-location:before {
     content: "\f102";
 }
-.flaticon-save-money:before {
+.flaticon-customer-service:before {
     content: "\f103";
 }
-.flaticon-app-development:before {
+.flaticon-user:before {
     content: "\f104";
 }
-.flaticon-finance:before {
+.flaticon-phone:before {
     content: "\f105";
 }
-.flaticon-data-collection:before {
+.flaticon-save-money:before {
     content: "\f106";
 }
-.flaticon-invention:before {
+.flaticon-cyber-security:before {
     content: "\f107";
 }
-.flaticon-ux-design:before {
+.flaticon-calendar:before {
     content: "\f108";
 }
-.flaticon-app-development-1:before {
+.flaticon-app-development:before {
     content: "\f109";
 }
-.flaticon-stakeholder:before {
+.flaticon-right:before {
     content: "\f10a";
 }
-.flaticon-browser-settings:before {
+.flaticon-left:before {
     content: "\f10b";
 }
-.flaticon-production:before {
+.flaticon-finance:before {
     content: "\f10c";
 }
-.flaticon-lauch:before {
+.flaticon-messages:before {
     content: "\f10d";
 }
-.flaticon-innovation:before {
+.flaticon-data-collection:before {
     content: "\f10e";
 }
-.flaticon-stakeholder-1:before {
+.flaticon-customer-service-1:before {
     content: "\f10f";
 }
-.flaticon-relationship:before {
+.flaticon-invention:before {
     content: "\f110";
 }
-.flaticon-pre-release-access:before {
+.flaticon-star:before {
     content: "\f111";
 }
-.flaticon-content-creation:before {
+.flaticon-security:before {
     content: "\f112";
 }
-.flaticon-video-marketing:before {
+.flaticon-ux-design:before {
     content: "\f113";
+}
+.flaticon-app-development-1:before {
+    content: "\f114";
+}
+.flaticon-highlight:before {
+    content: "\f115";
+}
+.flaticon-live-chat:before {
+    content: "\f116";
+}
+.flaticon-customization:before {
+    content: "\f117";
+}
+.flaticon-stakeholder:before {
+    content: "\f118";
+}
+.flaticon-live-chat-1:before {
+    content: "\f119";
+}
+.flaticon-browser-settings:before {
+    content: "\f11a";
+}
+.flaticon-production:before {
+    content: "\f11b";
+}
+.flaticon-lauch:before {
+    content: "\f11c";
+}
+.flaticon-innovation:before {
+    content: "\f11d";
+}
+.flaticon-stakeholder-1:before {
+    content: "\f11e";
+}
+.flaticon-data-flow:before {
+    content: "\f11f";
+}
+.flaticon-cybersecurity:before {
+    content: "\f120";
+}
+.flaticon-relationship:before {
+    content: "\f121";
+}
+.flaticon-pre-release-access:before {
+    content: "\f122";
+}
+.flaticon-thin-arrow:before {
+    content: "\f123";
+}
+.flaticon-content-creation:before {
+    content: "\f124";
+}
+.flaticon-chat:before {
+    content: "\f125";
+}
+.flaticon-video-marketing:before {
+    content: "\f126";
+}
+.flaticon-chat-1:before {
+    content: "\f127";
+}
+.flaticon-star-1:before {
+    content: "\f128";
 }
 
