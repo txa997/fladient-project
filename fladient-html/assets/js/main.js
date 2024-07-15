@@ -85,6 +85,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		.from("[fd-h5-slide-down]" , { opacity: 0, y: 200, duration: 1 , stagger: .3 , ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<=")
 
 		fdh5.from("[fd-h5-img-down]" , {     filter: "hue-rotate(360deg)", duration: 3 , ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") }, "<" )
+
+		// breadcrumb
+		const breadcrumb = gsap.timeline();
+		breadcrumb.from("[fd-breadcrumb-s-d]" , { opacity: 0, y: 200, duration: 1 , stagger: .3 , delay: 1, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
+
+
+
+
+		
 		
 
 	})
@@ -730,8 +739,6 @@ txaapadding0.forEach((box, i) => {
 	});
 });
 
-
-
 // fd-brand-4
 if (window.innerWidth >= 992) {
 	var fdbrand4 = gsap.timeline({
@@ -746,6 +753,24 @@ if (window.innerWidth >= 992) {
 	});
 	fdbrand4.from(".fd-brand-4-social-single" , { opacity: 0, scale: .3, y: -300, stagger: .2, duration:.3, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "), })
 	fdbrand4.from(".fd-brand-4-social-sm" , { opacity: 0 , scale: .5, y: -300, stagger: .3, duration:.3, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 "), })
+}
+
+// overview-6
+if (window.innerWidth >= 992 ) {
+	var overview6 = gsap.timeline({
+
+		scrollTrigger: {
+		  animation: overview6,
+		  trigger: '.fd-overview-6-screen',
+		  start: "top 70%",
+		  toggleActions: "play reverse play reverse",
+		  markers: false
+		}
+	});
+	overview6.from(".fd-o6-s1" , { transform: "translate(700px, 0px) rotate(0deg)", opacity: 0, duration:1, ease: "ease", })
+	overview6.from(".fd-o6-s2" , { transform: "translate(360px, 0px) rotate(0deg)", opacity: 0, duration:1, ease: "ease", }, "<=")
+	overview6.from(".fd-o6-s4" , { transform: "translate(-360px, 0px) rotate(0deg)", opacity: 0, duration:1, ease: "ease", }, "<=")
+	overview6.from(".fd-o6-s5" , { transform: "translate(-700px, 0px) rotate(0deg)", opacity: 0, duration:1, ease: "ease", }, "<=")
 }
 
 // course-1-slider
