@@ -147,3 +147,120 @@
 /* 
     contact-3-end
 */
+/* 
+    contact-5-start
+*/
+.fd-contact-5 {
+    &-item {
+        margin-bottom: 40px;
+
+        .title-icon {
+            width: 62px;
+            height: 62px;
+            background: #5797F9;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 26px;
+
+            &:is(.has-clr-2) {
+                background: #73DA9E;
+            }
+
+            &:is(.has-clr-3) {
+                background: #AC52FB;
+            }
+        }
+
+        .title-flex {
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .title-text {
+            font-size: 28px;
+            line-height: 1.21;
+        }
+
+        .item-disc {
+            font-size: 20px;
+            line-height: 30px;
+            color: #A7A6A6;
+            margin-bottom: 10px;
+        }
+        
+        .item-link {
+            font-size: 20px;
+            line-height: 28px;
+
+            a {
+                display: inline-block;
+                transition: .3s;
+
+                &:hover {
+                    color: var(--fd-clr-pr-1);
+                }
+            }
+        }
+    }
+
+    &-img {
+        height: 610px;
+        border-radius: 30px;
+
+        @media #{$lg} {
+            height: 500px;
+        }
+
+        @media #{$md} {
+            height: 400px;
+        }
+
+        @media #{$xs} {
+            height: 300px;
+        }
+    }
+}
+
+/* 
+    contact-5-end
+*/
+
+/* 
+    contact-6-start
+*/
+.fd-contact-6 {
+    &-scn-title {
+        max-width: 885px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-map {
+        height: 100%;
+
+        @media #{$md,$xs} {
+            height: 400px;
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            filter: grayscale(1);
+        }
+    }
+
+    &-form {
+        .fd-form {
+            padding-top: 11px;
+            textarea {
+                height: 90px;
+            }
+        }
+    }
+}
+
+/* 
+    contact-6-end
+*/

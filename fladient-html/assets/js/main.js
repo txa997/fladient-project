@@ -91,11 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		breadcrumb.from("[fd-breadcrumb-s-d]" , { opacity: 0, y: 200, duration: 1 , stagger: .3 , delay: 1, ease: CustomEase.create("custom", "M0,0 C0.126,0.382 0.447,0.77 0.621,1 0.646,1.032 0.818,1.001 1,1 ") })
 
 
-
-
-		
-		
-
 	})
 
 });
@@ -915,10 +910,25 @@ if($('.fd-brand-3-active').length) {
 	});
 }
 
+// blog-img
+if($('.fd-blog-img-active').length) {
+	let slider = new Swiper('.fd-blog-img-active', {
+		loop: true,
+		spaceBetween: 0,
+		speed: 500,
+		autoplay: {
+			delay: 4000,
+		},
+
+		navigation: {
+			nextEl: ".blog_img_next",
+			prevEl: ".blog_img_prev",
+		},
+
+	});
+}
+
   
-
-
-
 
 // cursor-follow
 var mWrap = $(".fd-video-3-area");

@@ -1,0 +1,223 @@
+/* 
+    faqs-start
+*/
+.fd-faq-1 {
+
+    &-scn-title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @media #{$md,$xs} {
+            flex-wrap: wrap;
+        }
+
+        .scn-disc {
+            max-width: 520px;
+            margin-left: auto;
+            @media #{$md,$xs} {
+                margin-left: unset;
+            }
+        }
+    }
+    
+    &-wrap {
+        max-width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-row {
+        display: grid;
+        grid-template-columns: 1fr 2.2fr;
+        gap: 50px;
+
+        @media #{$lg} {
+            gap: 30px;
+        }
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    &-tabs-btn {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            .nav-link {
+                font-size: 20px;
+                line-height: 30px;
+                width: 100%;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 17px 20px;
+                background: transparent;
+                border: 1px solid #E9E9E9;
+                border-radius: 10px;
+                align-items: center;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+
+                i {
+                    font-weight: 500;
+                    display: inline-block;
+                    transition: .3s;
+                }
+
+                .text {
+                    display: inline-block;
+                    transition: .3s;
+                }
+
+                &::after {
+                    content: "\f178";
+                    font-family: "Font Awesome 6 Pro";
+                    position: absolute;
+                    top: 50%;
+                    left: -50px;
+                    transform: translateY(-50%);
+                    background: var(--fd-clr-pr-1);
+                    color: #fff;
+                    font-size: 20px;
+                    padding: 0px 12px;
+                    border-radius: 0 28px 28px 0;
+                    transition: .3s;
+                }
+
+                &:is(.active) {
+                    border-top-color: var(--fd-clr-pr-1);
+                    border-left-color: var(--fd-clr-pr-1);
+                    border-bottom-color: transparent;
+                    border-right-color: transparent;
+                    color: var(--fd-clr-h-4);
+                    background: #F8F8F8;
+
+                    &::after {
+                        left: 0;
+                    }
+
+                    .text {
+                        transform: translateX(50px);
+                    }
+
+                    i {
+                        transform: translateX(50px);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &-card {
+        background: #43BAFF;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: inset 0 0 15px rgb(0 0 0 / 25%);
+        
+        .card-icon {
+            font-size: 70px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 26px;
+            line-height: 1.30;
+            margin-bottom: 12px;
+        }
+
+        .card-disc {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+.fd-faq-1-accordion {
+
+    
+    &-item {
+        background: transparent;
+        border-radius: 10px;
+        border: 1px solid #E9E9E9;
+        padding: 0 22px;
+
+        .item-title {
+            font-size: 20px;
+            line-height: 1.5;
+            background: transparent;
+            text-align: left;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            width: 100%;
+            padding: 19px 0px;
+            border-radius: 0px;
+            transition: .3s;
+            border-bottom: 1px solid ;
+            border-bottom-color: transparent ;
+
+
+            .icon {
+                display: inline-flex;
+                flex: 0 0 auto;
+                width: 18px;
+                height: 18px;
+                background: #6A38C2;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                line-height: 18px;
+                color: #fff;
+                margin-left: auto;
+                transition: 0.3s;
+                font-size: 12px;
+            }
+
+            &:is(:not(.collapsed)) {
+                border-bottom-color: #E9E9E9 ;
+
+                .icon {
+                    i {
+                        &::before {
+                            content: "\f068";
+                        }  
+                    }
+
+                }
+            }
+
+
+        }
+        
+        .item-body {
+            .disc  {
+                line-height: 30px;
+                padding-left: 55px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                padding-right: 35px;
+
+                @media #{$xs} {
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+/* 
+    faqs-end
+*/

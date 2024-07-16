@@ -12,8 +12,8 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
-	background-color: #fff;
-	transition: 1000ms var(--cube-1);
+	background-color: #191917;
+	transition: all 1s cubic-bezier(0.55, 0.085, 0, 0.99);
 
 	.preloader-wrap {
 		display: flex;
@@ -30,12 +30,13 @@
 		}
 		
 		.icon-ani {
-			width: 240px;
+			width: 300px;
 		}
 	}
 
 	&:is(.preloaded) {
 		transform: translateY(-100%);
+		border-radius: 0 0 1000px 1000px;
 	}
 
 }
